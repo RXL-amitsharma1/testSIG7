@@ -1,0 +1,35 @@
+table.dataTable tfoot td {
+    border-top: 1px solid #ece5e5;
+}
+#signalMemoReportTable_wrapper .dataTables_scrollBody{
+    max-height: 65vh;
+}
+
+.email-class .dt-column-title {
+    text-align: center !important;
+}
+#mceu_29-body {
+    display: none;
+}
+.action-class{
+    text-align: center !important;
+}
+
+.signal-source-class .select2-container--default {
+    max-width: 198px !important;
+}
+.signal-memo-new-row .fa, #signalMemoReportTable .fa {
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -10px;
+}
+
+.trigger-val-class .select2-container--default {
+    max-width: 150px !important;
+}
+
+.dd-content {
+    margin-left: -25px;
+    position: relative;
+    bottom: 7px;
+}

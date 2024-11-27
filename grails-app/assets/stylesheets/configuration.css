@@ -1,0 +1,101 @@
+#setFaersDateRange , #setEvdasDateRange,  #setVaersDateRange, #faersLatestQuarter, #vigibaseLatestQuarter, #setVigibaseDateRange {
+    font-style: italic;
+}
+.toAddContainer {
+    height: 40px;
+}
+
+.loading {
+    margin-left: 15px;
+}
+
+.labelBold {
+    font-weight: bold !important;
+}
+
+#advancedOptionsLink:link {
+    color: #428bca;
+}
+
+#advancedOptionsLink:visited {
+    color: #428bca;
+}
+
+#hideOptions {
+    margin-left: 10px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.iconSearch {
+    color: #81BEF7;
+    position: absolute;
+    right: 18px;
+    bottom: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.templateContainer {
+    margin-bottom: 20px;
+}
+
+.showDictionarySelection, .showDictionarySelectionMart {
+    border:1px solid #d2d2d2;
+    border-radius: 2px;
+    height: 92px;
+    overflow-y: auto;
+}
+
+/*#imgProducts {*/
+/*content:url("../images/popupProducts_001.png");*/
+/*}*/
+
+/* Parameters */
+/*TODO: Find a way to vertically align this*/
+.inputSQLKey {
+    margin-top: 8px;
+    margin-right: -18px;
+}
+
+.fuelux .datepicker-calendar-days td.past button {
+    color: #231f20;;
+}
+
+/* Template/Query View Icons */
+.templateQueryIcon {
+    vertical-align: middle;
+}
+
+.templateQueryIcon:hover, .templateQueryIcon:focus {
+    text-decoration: none;
+}
+
+.hide {
+    display:none;
+}
+input#myStartTime[readonly]{
+     background-color: #fff;
+}
+input#myStartTime[disabled]{
+    background-color: #eee;
+}
+ul.advancedOptionsModal{
+    list-style-type: circle;
+}
+ul.dataSheetAdvancedModal{
+    list-style-type: circle;
+}
+.datasheetSelectWidth {
+    width: 188px !important;
+}
+
+.literatureSearchString {
+    border:1px solid #d2d2d2;
+    border-radius: 2px;
+    height: 92px;
+    overflow-y: auto;
+}

@@ -1,0 +1,59 @@
+.business-configuration-row .row {
+    padding-top: 5px;
+}
+/*
+Not working and causing css issue on datatable, so commenting
+*/
+/*table {
+    transform: translateZ(0);
+}*/
+.business-configuration-row {
+    overflow: auto;
+    border: 1px solid #bbbbbb;
+    transition: 0.1s linear all;
+    cursor: move;
+    border-radius: 7px;
+    margin: 19px 10px -16px 20px;
+    padding:5px;
+    width:94%;
+}
+
+.business-configuration-row > .col-xs-3,.business-configuration-row > .col-xs-2 {
+    margin: 10px
+}
+
+.expression {
+    margin-bottom: 10px;
+    width:100%
+}
+
+.expression > .keywordExpression {
+    margin-top : 23px;
+    margin-left : 19px;
+}
+
+.diff-button-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.business-configuration-border, divs {
+    border: 1px solid #D4D4D4;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.error {
+    height: 10px;
+}
+
+.arrow .error {
+    color: red;
+    height: 10px;
+}
+.col-md-3 >ul{
+    list-style-type: none;
+}

@@ -1,0 +1,11 @@
+/* Advanced filter CSS*/
+
+.filterGroupCheckboxDiv {
+    width: 15%;
+    margin-top: 0.5%;
+}
+
+.filterGroupCheckbox {
+    width: 11px;
+    height: 11px;
+}

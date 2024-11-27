@@ -1,0 +1,51 @@
+.apiexport {
+        margin-left: 7px;
+        font-size: 14px;
+        cursor: pointer;
+        color: #000000;
+        background-color: #ffffff00;
+        border-radius: 4px;
+        padding: 2px 6px;
+    }
+    .apiexport:hover {
+        margin-left: 7px;
+        font-size: 14px;
+        cursor: pointer;
+        color: #ffffff;
+        background-color: #00000078;
+        border-radius: 4px;
+        padding: 0px 4px;
+    }
+    .controlPannelContainer {
+        /*height: 350px;*/
+        height: 100%;
+        background-color: #ffffff;
+        padding-left: 20px;
+        margin: 0px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .apiBtn {
+        margin-bottom: 10px;
+    }
+    .etlStatusBtn {
+        background-color: #00b19d;
+        color: #ffffff;
+        border-radius: 7px;
+        padding: 1px 10px;
+        font-weight:bold;
+    }
+    .glyphicon-refresh-animate {
+        -animation: spin .7s infinite linear;
+        -webkit-animation: spin2 .7s infinite linear;
+    }
+
+    @-webkit-keyframes spin2 {
+        from { -webkit-transform: rotate(0deg);}
+        to { -webkit-transform: rotate(360deg);}
+    }
+
+    @keyframes spin {
+        from { transform: scale(1) rotate(0deg);}
+        to { transform: scale(1) rotate(360deg);}
+    }

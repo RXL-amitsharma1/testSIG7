@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class>
+    <pageHeading>PV Signal Application Parameters</pageHeading>
+    <pageSubHeading>Entered parameters will get updated in config.groovy</pageSubHeading>
+    <version>6.0</version>
+    <fields id="PVS_STATISTICS_SERVER_URL">
+        <fieldType>text</fieldType>
+        <label>Statistics Server Url</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter statistics server url</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>STATISTICS_SERVER_URL</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>statistics.url</configKey>
+    </fields>
+    <fields id="PVS_PRR_ENABLED">
+        <fieldType>text</fieldType>
+        <label>PRR enabled</label>
+        <defaultValue>false</defaultValue>
+        <tooltip>Is PRR enabled</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>PRR_ENABLED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>statistics.enable.prr</configKey>
+    </fields>
+    <fields id="PVS_EBGM_ENABLED">
+        <fieldType>text</fieldType>
+        <label>Is EBGM enabled</label>
+        <defaultValue>true</defaultValue>
+        <tooltip>Is EBGM enabled</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>EBGM_ENABLED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>statistics.enable.ebgm</configKey>
+    </fields>
+    <fields id="PVS_ROR_ENABLED">
+        <fieldType>text</fieldType>
+        <label>ROR enabled</label>
+        <defaultValue>false</defaultValue>
+        <tooltip>Is ROR enabled</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>ROR_ENABLED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>statistics.enable.ror</configKey>
+    </fields>
+    <fields id="PVS_IS_EVDAS_ENABLED">
+        <fieldType>text</fieldType>
+        <label>IS EVDAS enabled</label>
+        <defaultValue>true</defaultValue>
+        <tooltip>Is EVDAS enabled</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>IS_EVDAS_ENABLED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>signal.evdas.enabled</configKey>
+    </fields>
+    <fields id="SIGNAL_MIGRATION_FLAG">
+        <fieldType>text</fieldType>
+        <label>Enter value(true/false) for Signal Migration Flag</label>
+        <defaultValue>false</defaultValue>
+        <tooltip>Enter value(true/false) for Signal Migration Flag</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>SIGNAL_MIGRATION_FLAG</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>signal.legacy.migrations</configKey>
+    </fields>
+
+    <fields id="PVS_EVDAS_SUBSTANCE_LIST">
+        <fieldType>text</fieldType>
+        <label>EVDAS Substance list</label>
+        <defaultValue>["APREMILAST","DACLATASVIR","NIVOLUMAB","IPILIMUMAB","APIXABAN","SOFOSBUVIR"]</defaultValue>
+        <tooltip>Enter EVDAS Substance list</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>EVDAS_SUBSTANCE_LIST</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>signal.evdas.case.line.listing.default.substance.list</configKey>
+    </fields>
+    <fields id="PVS_IS_FAERS_ENABLED">
+        <fieldType>text</fieldType>
+        <label>Is FAERS enabled</label>
+        <defaultValue>true</defaultValue>
+        <tooltip>Is FAERS enabled</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>IS_FAERS_ENABLED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>signal.faers.enabled</configKey>
+    </fields>
+    <fields id="PVS_WEB_APP_USER">
+        <fieldType>text</fieldType>
+        <label>PVS user</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter PVS user</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_USER</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.dataSource.username</configKey>
+        <compareTo>PVS_WEB_SCHEMA</compareTo>
+    </fields>
+    <fields id="PVS_WEB_APP_USER_PASSWORD">
+        <fieldType>password</fieldType>
+        <label>PVS user password</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter PVS user password</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_USER_PASSWORD</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.dataSource.password</configKey>
+        <compareTo>PVS_WEB_SCHEMA_PASSWORD</compareTo>
+    </fields>
+    <fields id="PVS_PVA_DB_HOSTNAME_PORT_AND_INSTANCE">
+        <fieldType>text</fieldType>
+        <label>IP:PORT/Instance of the PVA DB</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter PVA DB hostname:port/instance</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVA_DB_HOSTNAME_PORT_AND_INSTANCE</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.pva.url</configKey>
+        <compareTo>USER_CREATION_DB</compareTo>
+    </fields>
+    <fields id="PVS_PVA_USER">
+        <fieldType>text</fieldType>
+        <label>PVA user</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter PVA user</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVA_USER</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.pva.username</configKey>
+        <compareTo>PVR_USER_DB_APP</compareTo>
+
+    </fields>
+    <fields id="PVS_PVA_USER_PASSWORD">
+        <fieldType>password</fieldType>
+        <label>PVA user password</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter PVA user password</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVA_USER_PASSWORD</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.pva.password</configKey>
+        <compareTo>PVR_USER_DB_PASSWORD</compareTo>
+
+    </fields>
+    <fields id="PVS_FAERS_DB_HOSTNAME_PORT_AND_INSTANCE">
+        <fieldType>text</fieldType>
+        <label>IP:PORT/Instance of the FAERS DB</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter FAERS DB hostname:port/instance</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>FAERS_DB_HOSTNAME_PORT_AND_INSTANCE</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.faers.url</configKey>
+        <compareTo>PVR_DATABASE_FAERS</compareTo>
+
+    </fields>
+    <fields id="PVS_FAERS_USER">
+        <fieldType>text</fieldType>
+        <label>FAERS user</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter FAERS user</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>FAERS_USER</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.faers.username</configKey>
+        <compareTo>PVS_DB_USER_FAERS</compareTo>
+
+    </fields>
+    <fields id="PVS_FAERS_USER_PASSWORD">
+        <fieldType>password</fieldType>
+        <label>FAERS user password</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter FAERS user password</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>FAERS_USER_PASSWORD</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.faers.password</configKey>
+        <compareTo>PVS_DB_USER_PASSWORD_FAERS</compareTo>
+
+    </fields>
+    <fields id="PVS_EVDAS_USER">
+        <fieldType>text</fieldType>
+        <label>EVDAS user</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter EVDAS user</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>EVDAS_USER</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.eudra.username</configKey>
+        <compareTo>PVS_DB_USER_EVDAS</compareTo>
+
+    </fields>
+    <fields id="PVS_EVDAS_USER_PASSWORD">
+        <fieldType>password</fieldType>
+        <label>EVDAS user password</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter EVDAS user password</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>EVDAS_USER_PASSWORD</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.eudra.password</configKey>
+        <compareTo>PVS_DB_USER_PASSWORD_EVDAS</compareTo>
+    </fields>
+    <fields id="PVS_PVREPORTS_URL">
+        <fieldType>text</fieldType>
+        <label>PVREPORTS url</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter PVREPORTS url</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>PVREPORTS_URL</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>pvreports.url</configKey>
+        <compareTo>APP_BASE_URL</compareTo>
+    </fields>
+    <fields id="PVS_SMTP_SERVER">
+        <fieldType>text</fieldType>
+        <label>Enter SMTP Server</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter SMTP Server</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>SMTP_SERVER</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.mail.host</configKey>
+    </fields>
+    <fields id="PVS_SMTP_PORT">
+        <fieldType>text</fieldType>
+        <label>Enter SMTP port</label>
+        <defaultValue>25</defaultValue>
+        <tooltip>Enter SMTP port</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>SMTP_PORT</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.mail.port</configKey>
+    </fields>
+    <fields id="PVS_SMTP_USERNAME">
+        <fieldType>text</fieldType>
+        <label>Enter SMTP username</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter SMTP username</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_SMTP_USERNAME</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.mail.username</configKey>
+    </fields>
+    <fields id="PVS_SMTP_PASSWORD">
+        <fieldType>password</fieldType>
+        <label>Enter SMTP password</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter SMTP password</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_SMTP_PASSWORD</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.mail.password</configKey>
+    </fields>
+    <fields id="PVS_DEFAULT_EMAIL_ID">
+        <fieldType>text</fieldType>
+        <label>Default email id</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter default email id</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>DEFAULT_EMAIL_ID</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.mail.default.from</configKey>
+    </fields>
+    <fields id="PVS_LDAP_CONTEXT_MANGER_DN">
+        <fieldType>text</fieldType>
+        <label>Enter LDAP Context Manager DN</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter LDAP Context Manager DN</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_LDAP_CONTEXT_MANGER_DN</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.plugin.springsecurity.ldap.context.managerDn</configKey>
+        <compareTo>LDAP_CONTEXT_MANGER_DN</compareTo>
+    </fields>
+    <fields id="PVS_LDAP_ADMIN_USER_PASSWORD">
+        <fieldType>text</fieldType>
+        <label>Enter LDAP admin user password</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter LDAP admin user password</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_LDAP_ADMIN_USER_PASSWORD</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.plugin.springsecurity.ldap.context.managerPassword</configKey>
+        <compareTo>LDAP_ADMIN_USER_PASSWORD</compareTo>
+    </fields>
+    <fields id="PVS_LDAP_SERVER_FQDN_NAME">
+        <fieldType>text</fieldType>
+        <label>Enter LDAP server fqdn name</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter LDAP server fqdn name</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_LDAP_SERVER_FQDN_NAME</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.plugin.springsecurity.ldap.context.server</configKey>
+        <compareTo>LDAP_SERVER_FQDN_NAME</compareTo>
+    </fields>
+    <fields id="PVS_LDAP_SEARCH_BASE">
+        <fieldType>text</fieldType>
+        <label>Enter LDAP Search Base attribute</label>
+        <defaultValue>ou=users,dc=eng,dc=rxlogix,dc=com</defaultValue>
+        <tooltip>Enter LDAP Search Base attribute</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_LDAP_SEARCH_BASE</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.plugin.springsecurity.ldap.search.base</configKey>
+        <compareTo>LDAP_SEARCH_BASE</compareTo>
+    </fields>
+    <fields id="PVS_LDAP_GROUP_SEARCH_BASE">
+        <fieldType>text</fieldType>
+        <label>Enter LDAP Group Search Base attribute</label>
+        <defaultValue>ou=groups,dc=eng,dc=rxlogix,dc=com</defaultValue>
+        <tooltip>Enter LDAP Group Search Base attribute</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_LDAP_GROUP_SEARCH_BASE</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.plugin.springsecurity.ldap.authorities.groupSearchBase</configKey>
+        <compareTo>LDAP_GROUP_SEARCH_BASE</compareTo>
+    </fields>
+    <fields id="PVS_LDAP_SEARCH_FILTER">
+        <fieldType>text</fieldType>
+        <label>Enter LDAP search filter</label>
+        <defaultValue>(uid={0})</defaultValue>
+        <tooltip>Enter LDAP search filter</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_LDAP_SEARCH_FILTER</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.plugin.springsecurity.ldap.search.filter</configKey>
+        <compareTo>LDAP_SEARCH_FILTER</compareTo>
+    </fields>
+    <fields id="PVS_LDAP_GROUP_SEARCH_FILTER">
+        <fieldType>text</fieldType>
+        <label>Enter LDAP Group search filter</label>
+        <defaultValue>uniqueMember={0}</defaultValue>
+        <tooltip>Enter LDAP Group search filter</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_LDAP_GROUP_SEARCH_FILTER</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.plugin.springsecurity.ldap.authorities.groupSearchFilter</configKey>
+        <compareTo>LDAP_GROUP_SEARCH_FILTER</compareTo>
+    </fields>
+    <fields id="PVS_LDAP_FULLNAME_ATTRIBUTE">
+        <fieldType>text</fieldType>
+        <label>Enter LDAP Fullname attribute</label>
+        <defaultValue>cn</defaultValue>
+        <tooltip>Enter LDAP Fullname attribute</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_LDAP_FULLNAME_ATTRIBUTE</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.plugin.springsecurity.ldap.fullName.attribute</configKey>
+        <compareTo>LDAP_FULLNAME_ATTRIBUTE</compareTo>
+    </fields>
+    <fields id="PVS_LDAP_MAIL_ATTRIBUTE">
+        <fieldType>text</fieldType>
+        <label>Enter LDAP mail attribute</label>
+        <defaultValue>mail</defaultValue>
+        <tooltip>Enter LDAP mail attribute</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_LDAP_MAIL_ATTRIBUTE</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.plugin.springsecurity.ldap.email.attribute</configKey>
+        <compareTo>LDAP_MAIL_ATTRIBUTE</compareTo>
+    </fields>
+    <fields id="PVS_LDAP_USERNAME_ATTRIBUTE">
+        <fieldType>text</fieldType>
+        <label>Enter LDAP username attribute</label>
+        <defaultValue>uid</defaultValue>
+        <tooltip>Enter LDAP username attribute</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_LDAP_USERNAME_ATTRIBUTE</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.plugin.springsecurity.ldap.uid.attribute</configKey>
+        <compareTo>LDAP_USERNAME_ATTRIBUTE</compareTo>
+    </fields>
+    <fields id="PVS_LDAP_USERS_SEARCH_FILTER">
+        <fieldType>text</fieldType>
+        <label>Enter LDAP user search filter attribute</label>
+        <defaultValue>(&amp;(|(uid=*{0}*)(cn=*{0}*)(mail=*{0}*)))</defaultValue>
+        <tooltip>Enter LDAP user search filter attribute</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>PVS_LDAP_USERS_SEARCH_FILTER</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.plugin.springsecurity.ldap.users.search.filter</configKey>
+        <compareTo>LDAP_USERS_SEARCH_FILTER</compareTo>
+    </fields>
+    <fields id="SEEDING_USER">
+        <fieldType>text</fieldType>
+        <label>Enter seeding user</label>
+        <defaultValue>signaldev</defaultValue>
+        <tooltip>Enter seeding user</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>SEEDING_USER</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>pvsignal.seeding.user</configKey>
+    </fields>
+    <fields id="PVS_APP_SERVER_URL">
+        <fieldType>text</fieldType>
+        <label>APP server url</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter app server url</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>APP_SERVER_URL</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>grails.serverURL</configKey>
+    </fields>
+    <fields id="GRAILS_MAIL_ENABLED">
+        <fieldType>text</fieldType>
+        <label>Enter (true/false) Grails Mail Enabled </label>
+        <defaultValue>true</defaultValue>
+        <tooltip>Enter (true/false) Grails Mail Enabled</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>GRAILS_MAIL_ENABLED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+    </fields>
+    <fields id="WORKFLOW_GROUP_SECURITY">
+        <fieldType>text</fieldType>
+        <label>Enter (true/false) WorkflowGroup Based Security </label>
+        <defaultValue>true</defaultValue>
+        <tooltip>Enter (true/false) WorkflowGroup Based Security</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>WORKFLOW_GROUP_SECURITY</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>pvsignal.workflowGroup.based.security</configKey>
+    </fields>
+    <fields id="SIGNAL_SPOTFIRE_ENABLED">
+        <fieldType>text</fieldType>
+        <label>Enter (true/false) Signal Spotfire Enabled</label>
+        <defaultValue>true</defaultValue>
+        <tooltip>Enter (true/false) Signal Spotfire Enabled</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>SIGNAL_SPOTFIRE_ENABLED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>signal.spotfire.enabled</configKey>
+    </fields>
+    <fields id="PVS_HAZELCAST_NETWORK_NODES">
+        <fieldType>text</fieldType>
+        <label>Hazelcast network nodes</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter hazelcast network nodes</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>HAZELCAST_NETWORK_NODES</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>hazelcast.network.nodes</configKey>
+    </fields>
+    <fields id="PVS_DMS_ENABLED">
+        <fieldType>text</fieldType>
+        <label>Is DMS enabled</label>
+        <defaultValue>false</defaultValue>
+        <tooltip>Is DMS enabled</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>DMS_ENABLED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>dms.enabled</configKey>
+    </fields>
+    <fields id="HELP_URL">
+        <fieldType>text</fieldType>
+        <label>Enter Help Url</label>
+        <defaultValue>https://www.google.com</defaultValue>
+        <tooltip>Enter Help Url</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>HELP_URL</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>helpUrl</configKey>
+    </fields>
+    <fields id="EVDAS_FOLDER_BASE">
+        <fieldType>text</fieldType>
+        <label>Enter EVDAS Folder Base Path</label>
+        <defaultValue>/opt/prod/conf</defaultValue>
+        <tooltip>Enter EVDAS Folder Base Path</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>EVDAS_FOLDER_BASE</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>signal.evdas.case.line.listing.import.folder.base</configKey>
+    </fields>
+    <fields id="PVCC_API_URL">
+        <fieldType>text</fieldType>
+        <label>Enter PVCC API Url</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter PVCC API Url</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>PVCC_API_URL</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>pvcc.api.url</configKey>
+        <compareTo>PVS_APP_SERVER_URL</compareTo>
+    </fields>
+    <fields id="VALIDATE_SIGNAL_SHAREWITH_FLAG">
+        <fieldType>text</fieldType>
+        <label>Enter (true/false) Validate Signal sharewith flag</label>
+        <defaultValue>false</defaultValue>
+        <tooltip>Enter (true/false) Validate Signal sharewith flag</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>VALIDATE_SIGNAL_SHAREWITH_FLAG</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>validatedSignal.shareWith.enabled</configKey>
+    </fields>
+    <fields id="CUSTOM_THIRD_PARTY_ANALYSIS_LABEL">
+        <fieldType>text</fieldType>
+        <label>Enter custom third party Analysis Label</label>
+        <defaultValue>Analysis</defaultValue>
+        <tooltip>Enter custom third party Analysis Label</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>CUSTOM_THIRD_PARTY_ANALYSIS_LABEL</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>custom.thirdParty.analysis.label</configKey>
+    </fields>
+    <fields id="CUSTOM_THIRD_PARTY_ANALYSIS_ENABLE_FLAG">
+        <fieldType>text</fieldType>
+        <label>Enter (true/false) custom third party Analysis enable flag</label>
+        <defaultValue>false</defaultValue>
+        <tooltip>Enter (true/false) custom third party Analysis enable flag</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>CUSTOM_THIRD_PARTY_ANALYSIS_ENABLE_FLAG</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>custom.thirdParty.analysis.enabled</configKey>
+    </fields>
+    <fields id="CUSTOM_THIRD_PARTY_ANALYSIS_URL">
+        <fieldType>text</fieldType>
+        <label>Enter custom third party Analysis URL</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter custom third party Analysis URL</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>CUSTOM_THIRD_PARTY_ANALYSIS_URL</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>custom.thirdParty.analysis.url</configKey>
+    </fields>
+    <fields id="STATISTICS_INPUT_FILEPATH">
+        <fieldType>text</fieldType>
+        <label>Enter path for Statistics Input file</label>
+        <defaultValue>/tmp/</defaultValue>
+        <tooltip>Enter path for Statistics Input file</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>STATISTICS_INPUT_FILEPATH</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>statistics.inputfile.path</configKey>
+    </fields>
+
+    <!--5.0 Ends-->
+    <!--application.properties-->
+
+    <fields id="PVCC_DATABASE_URL">
+        <fieldType>text</fieldType>
+        <label>Enter PVCC Database URL</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter PVCC Database URL</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>PVCC_DATABASE_URL</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>spring.pvadatasource.jdbc-url</configKey>
+        <compareTo>USER_CREATION_DB</compareTo>
+    </fields>
+    <fields id="PVCC_USERNAME">
+        <fieldType>text</fieldType>
+        <label>Enter PVCC username</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter PVCC username</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>PVCC_USERNAME</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>spring.pvadatasource.username</configKey>
+        <compareTo>PVR_USER_DB_APP</compareTo>
+    </fields>
+    <fields id="PVCC_PASSWORD">
+        <fieldType>password</fieldType>
+        <label>Enter PVCC password </label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter PVCC password </tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>PVCC_PASSWORD</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>spring.pvadatasource.password</configKey>
+        <compareTo>PVR_USER_DB_PASSWORD</compareTo>
+    </fields>
+    <fields id="CATEGORY_CODELIST_ID">
+        <fieldType>text</fieldType>
+        <label>Enter category codelist ID</label>
+        <defaultValue>1</defaultValue>
+        <tooltip>Enter category codelist ID</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>CATEGORY_CODELIST_ID</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>category.codeListId</configKey>
+    </fields>
+    <fields id="PVCC_FAERS_DATABASE_URL">
+        <fieldType>text</fieldType>
+        <label>Enter FAERS PVCC Database URL</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter FAERS PVCC Database URL</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>PVCC_FAERS_DATABASE_URL</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>spring.faersdatasource.jdbc-url</configKey>
+        <compareTo>PVR_DATABASE_FAERS</compareTo>
+    </fields>
+    <fields id="PVCC_FAERS_USERNAME">
+        <fieldType>text</fieldType>
+        <label>Enter FAERS PVCC username</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter FAERS PVCC username</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>PVCC_FAERS_USERNAME</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>spring.faersdatasource.username</configKey>
+        <compareTo>PVS_DB_USER_FAERS</compareTo>
+    </fields>
+    <fields id="PVCC_FAERS_PASSWORD">
+        <fieldType>password</fieldType>
+        <label>Enter FAERS PVCC password </label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter FAERS PVCC password </tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>PVCC_FAERS_PASSWORD</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>spring.faersdatasource.password</configKey>
+        <compareTo>PVS_DB_USER_PASSWORD_FAERS</compareTo>
+    </fields>
+
+    <!--system.properties-->
+    <fields id="SYSTEM_PROPERTY_CPU">
+        <fieldType>text</fieldType>
+        <label>Enter CPU allocation </label>
+        <defaultValue>4</defaultValue>
+        <tooltip>Enter CPU allocation </tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>SYSTEM_PROPERTY_CPU</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>CPU</configKey>
+    </fields>
+    <fields id="SYSTEM_PROPERTY_MEMORY">
+        <fieldType>text</fieldType>
+        <label>Enter Memory allocation </label>
+        <defaultValue>8G</defaultValue>
+        <tooltip>Enter Memory allocation </tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>SYSTEM_PROPERTY_MEMORY</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>MEMORY</configKey>
+    </fields>
+    <fields id="SYSTEM_PROPERTY_TIMEOUT">
+        <fieldType>text</fieldType>
+        <label>Enter timeout interval </label>
+        <defaultValue>7200</defaultValue>
+        <tooltip>Enter timeout interval </tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>SYSTEM_PROPERTY_TIMEOUT</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>TIMEOUT</configKey>
+    </fields>
+    <fields id="PVS_VAERS_DB_HOSTNAME_PORT_AND_INSTANCE">
+        <fieldType>text</fieldType>
+        <label>IP:PORT/Instance of the VAERS DB</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter VAERS DB hostname:port/instance</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>VAERS_DB_HOSTNAME_PORT_AND_INSTANCE</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.vaers.url</configKey>
+        <compareTo>PVR_DATABASE_VAERS</compareTo>
+    </fields>
+    <fields id="PVS_VAERS_USER">
+        <fieldType>text</fieldType>
+        <label>VAERS user</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter VAERS user</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>VAERS_USER</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.vaers.username</configKey>
+        <compareTo>PVS_DB_USER_VAERS</compareTo>
+
+    </fields>
+    <fields id="PVS_VAERS_USER_PASSWORD">
+        <fieldType>password</fieldType>
+        <label>VAERS user password</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter VAERS user password</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>VAERS_USER_PASSWORD</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.vaers.password</configKey>
+        <compareTo>PVS_DB_USER_PASSWORD_VAERS</compareTo>
+
+    </fields>
+    <fields id="PVS_IS_VAERS_ENABLED">
+        <fieldType>text</fieldType>
+        <label>Is VAERS enabled</label>
+        <defaultValue>false</defaultValue>
+        <tooltip>Is VAERS enabled</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>IS_VAERS_ENABLED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>signal.vaers.enabled</configKey>
+    </fields>
+    <fields id="REFRESH_VIEW_INSTANCE">
+        <fieldType>text</fieldType>
+        <label>Refresh View Instance</label>
+        <defaultValue>false</defaultValue>
+        <tooltip>Refresh View Instance</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>REFRESH_VIEW_INSTANCE</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>refresh.view.instance</configKey>
+    </fields>
+    <fields id="DISPOSITION_SIGNAL_OUTCOME_MAPPING_ENABLED">
+        <fieldType>text</fieldType>
+        <label>Enable Disposition Signal Outcome Mapping</label>
+        <defaultValue>false</defaultValue>
+        <tooltip>Enable Disposition Signal Outcome Mapping</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>DISPOSITION_SIGNAL_OUTCOME_MAPPING_ENABLED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>disposition.signal.outcome.mapping.enabled</configKey>
+    </fields>
+    <fields id="PVS_DSS_SERVER_URL">
+        <fieldType>text</fieldType>
+        <label>DSS Server Url</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter DSS server url</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>DSS_SERVER_URL</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>dss.scores.url</configKey>
+    </fields>
+    <fields id="PVS_DSS_ENABLED">
+        <fieldType>text</fieldType>
+        <label>Is DSS enabled</label>
+        <defaultValue>true</defaultValue>
+        <tooltip>Is DSS enabled</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>DSS_ENABLED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>statistics.enable.dssScores</configKey>
+    </fields>
+    <fields id="ENABLE_TREND_FLAG_CALCULATION">
+        <fieldType>text</fieldType>
+        <label>Is Trend flag calculation enabled</label>
+        <defaultValue>true</defaultValue>
+        <tooltip>Is Trend flag calculation enabled</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>ENABLE_TREND_FLAG_CALCULATION</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>signal.agg.calculate.trend.flag</configKey>
+    </fields>
+    <fields id="SPRING_RABBITMQ_HOST">
+        <fieldType>text</fieldType>
+        <label>Host of the Rabbit MQ</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter Rabbit MQ hostname</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>SPRING_RABBITMQ_HOST</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>spring.rabbitmq.host</configKey>
+    </fields>
+    <fields id="SPRING_RABBITMQ_PORT">
+        <fieldType>text</fieldType>
+        <label>Port of the Rabbit MQ</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter Rabbit MQ Port</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>SPRING_RABBITMQ_PORT</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>spring.rabbitmq.port</configKey>
+    </fields>
+    <fields id="SPRING_RABBITMQ_USERNAME">
+        <fieldType>text</fieldType>
+        <label>Rabbit MQ user</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter Rabbit MQ user</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>SPRING_RABBITMQ_USERNAME</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>spring.rabbitmq.username</configKey>
+    </fields>
+    <fields id="SPRING_RABBITMQ_PASSWORD">
+        <fieldType>password</fieldType>
+        <label>Rabbit MQ user password</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter Rabbit MQ user password</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>SPRING_RABBITMQ_PASSWORD</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>spring.rabbitmq.password</configKey>
+    </fields>
+    <fields id="SIGNAL_CATEGORIES_MIGRATION_ENABLED">
+        <fieldType>text</fieldType>
+        <label>Migrate Categories From Mart to Webapp</label>
+        <defaultValue>false</defaultValue>
+        <tooltip>Migrate Categories From Mart to Webapp</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>SIGNAL_CATEGORIES_MIGRATION_ENABLED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>signal.categories.migration.enabled</configKey>
+    </fields>
+    <fields id="DEACTIVATED_NODES_PLACEHOLDER">
+        <fieldType>text</fieldType>
+        <label>Deactivated nodes placeholder</label>
+        <defaultValue>[‘IME’,‘DME']</defaultValue>
+        <tooltip>Deactivated nodes placeholder</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>DEACTIVATED_NODES_PLACEHOLDER</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>DEACTIVATED_NODES</configKey>
+    </fields>
+    <fields id="SYSTEM_PROPERTY_CPU_PER_ALERT">
+        <fieldType>text</fieldType>
+        <label>CPU Per Alert</label>
+        <defaultValue>1</defaultValue>
+        <tooltip>CPU Per Alert</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>SYSTEM_PROPERTY_CPU_PER_ALERT</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>CPU_PER_ALERT</configKey>
+    </fields>
+    <fields id="USE_DEFAULT_CORES_PER_ALERT">
+        <fieldType>text</fieldType>
+        <label>Default Cores Per Alert</label>
+        <defaultValue>True</defaultValue>
+        <tooltip>Default Cores Per Alert</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>USE_DEFAULT_CORES_PER_ALERT</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>CORES</configKey>
+    </fields>
+    <fields id="SYSTEM_PROPERTY_WORKERS">
+        <fieldType>text</fieldType>
+        <label>System CPU Workers</label>
+        <defaultValue>3</defaultValue>
+        <tooltip>System CPU Workers</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>SYSTEM_PROPERTY_WORKERS</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>WORKERS</configKey>
+    </fields>
+    <fields id="DSS_ENABLE_AUTOPROPOSED">
+        <fieldType>text</fieldType>
+        <label>Enable DSS Auto Proposed</label>
+        <defaultValue>true</defaultValue>
+        <tooltip>Enable DSS Auto Proposed</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>DSS_ENABLE_AUTOPROPOSED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>dss.enable.autoProposed</configKey>
+    </fields>
+    <fields id="SIGNAL_END_OF_REVIEW">
+        <fieldType>text</fieldType>
+        <label>Validated Signal End Of Review</label>
+        <defaultValue>'["Date Closed"]'</defaultValue>
+        <tooltip>Validated Signal End Of Review</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>SIGNAL_END_OF_REVIEW</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>validatedSignal.end.of.review</configKey>
+    </fields>
+    <fields id="RABBITMQ_ENABLED">
+        <fieldType>text</fieldType>
+        <label>RabbitMQ Enabling Flag</label>
+        <defaultValue>false</defaultValue>
+        <tooltip>RabbitMQ Enabling Flag</tooltip>
+        <required>true</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>RABBITMQ_ENABLED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>rmq.enabled</configKey>
+    </fields>
+    <fields id="PVS_VIGIBASE_DB_HOSTNAME_PORT_AND_INSTANCE">
+        <fieldType>text</fieldType>
+        <label>IP:PORT/Instance of the VIGIBASE DB</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter VIGIBASE DB hostname:port/instance</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>VIGIBASE_DB_HOSTNAME_PORT_AND_INSTANCE</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.vigibase.url</configKey>
+        <compareTo>PVR_DATABASE_VIGIBASE</compareTo>
+    </fields>
+    <fields id="PVS_VIGIBASE_USER">
+        <fieldType>text</fieldType>
+        <label>VIGIBASE user</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter VIGIBASE user</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>VIGIBASE_USER</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.vigibase.username</configKey>
+        <compareTo>PVS_DB_USER_VIGIBASE</compareTo>
+    </fields>
+    <fields id="PVS_VIGIBASE_USER_PASSWORD">
+        <fieldType>password</fieldType>
+        <label>VIGIBASE user password</label>
+        <defaultValue></defaultValue>
+        <tooltip>Enter VIGIBASE user password</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^.*$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>false</advanceRequired>
+        <labelForPdf>VIGIBASE_USER_PASSWORD</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>environments.production.dataSources.vigibase.password</configKey>
+        <compareTo>PVS_DB_USER_PASSWORD_VIGIBASE</compareTo>
+    </fields>
+    <fields id="PVS_IS_VIGIBASE_ENABLED">
+        <fieldType>text</fieldType>
+        <label>Is VIGIBASE enabled</label>
+        <defaultValue>false</defaultValue>
+        <tooltip>Is VIGIBASE enabled</tooltip>
+        <required>false</required>
+        <requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+        <regexPattern>^(?i)(true|false)$</regexPattern>
+        <regexInvalidErrorMsg>Enter valid value for the field</regexInvalidErrorMsg>
+        <advanceRequired>true</advanceRequired>
+        <labelForPdf>IS_VIGIBASE_ENABLED</labelForPdf>
+        <needIpPortValidation>false</needIpPortValidation>
+        <configKey>signal.vigibase.enabled</configKey>
+    </fields>
+</class>
+

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:tibco:spotfire.dxp.automation" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="urn:tibco:spotfire.dxp.automation" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="urn:tibco:spotfire.dxp.automation">
+      <s:element name="ExecuteJob">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jobXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteJobResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteJobResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LaunchJob">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jobXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LaunchJobResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LaunchJobResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteJob2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jobXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteJob2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteJob2Result" type="tns:ExecutionStatus" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ExecutionStatus">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:StatusCode" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JobId" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="StatusCode">
+        <s:restriction base="s:string">
+          <s:enumeration value="InProgress" />
+          <s:enumeration value="Finished" />
+          <s:enumeration value="Failed" />
+          <s:enumeration value="Missing" />
+          <s:enumeration value="NotSet" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="LaunchJob2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jobXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LaunchJob2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LaunchJob2Result" type="tns:ExecutionStatus" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jobId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStatusResult" type="tns:ExecutionStatus" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ExecuteJobSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteJob" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteJobSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteJobResponse" />
+  </wsdl:message>
+  <wsdl:message name="LaunchJobSoapIn">
+    <wsdl:part name="parameters" element="tns:LaunchJob" />
+  </wsdl:message>
+  <wsdl:message name="LaunchJobSoapOut">
+    <wsdl:part name="parameters" element="tns:LaunchJobResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteJob2SoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteJob2" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteJob2SoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteJob2Response" />
+  </wsdl:message>
+  <wsdl:message name="LaunchJob2SoapIn">
+    <wsdl:part name="parameters" element="tns:LaunchJob2" />
+  </wsdl:message>
+  <wsdl:message name="LaunchJob2SoapOut">
+    <wsdl:part name="parameters" element="tns:LaunchJob2Response" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStatusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="JobExecutorSoap">
+    <wsdl:operation name="ExecuteJob">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method has been deprecated. Please use ExecuteJob2. Executes a job synchronously and returns the status in a parseable string format</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteJobSoapIn" />
+      <wsdl:output message="tns:ExecuteJobSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LaunchJob">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method has been deprecated. Please use LaunchJob2. Starts executing a job and returns an URL you can use to check the status of the job</wsdl:documentation>
+      <wsdl:input message="tns:LaunchJobSoapIn" />
+      <wsdl:output message="tns:LaunchJobSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteJob2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Executes a job synchronously and returns the status of the job.</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteJob2SoapIn" />
+      <wsdl:output message="tns:ExecuteJob2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LaunchJob2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Starts executing a job and returns the id of the job, use GetStatus to check the status of the job.</wsdl:documentation>
+      <wsdl:input message="tns:LaunchJob2SoapIn" />
+      <wsdl:output message="tns:LaunchJob2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get the status of a job created with LaunchJob2.</wsdl:documentation>
+      <wsdl:input message="tns:GetStatusSoapIn" />
+      <wsdl:output message="tns:GetStatusSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="JobExecutorSoap" type="tns:JobExecutorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExecuteJob">
+      <soap:operation soapAction="urn:tibco:spotfire.dxp.automation/ExecuteJob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LaunchJob">
+      <soap:operation soapAction="urn:tibco:spotfire.dxp.automation/LaunchJob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteJob2">
+      <soap:operation soapAction="urn:tibco:spotfire.dxp.automation/ExecuteJob2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LaunchJob2">
+      <soap:operation soapAction="urn:tibco:spotfire.dxp.automation/LaunchJob2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <soap:operation soapAction="urn:tibco:spotfire.dxp.automation/GetStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="JobExecutorSoap12" type="tns:JobExecutorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExecuteJob">
+      <soap12:operation soapAction="urn:tibco:spotfire.dxp.automation/ExecuteJob" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LaunchJob">
+      <soap12:operation soapAction="urn:tibco:spotfire.dxp.automation/LaunchJob" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteJob2">
+      <soap12:operation soapAction="urn:tibco:spotfire.dxp.automation/ExecuteJob2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LaunchJob2">
+      <soap12:operation soapAction="urn:tibco:spotfire.dxp.automation/LaunchJob2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <soap12:operation soapAction="urn:tibco:spotfire.dxp.automation/GetStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="JobExecutor">
+    <wsdl:port name="JobExecutorSoap" binding="tns:JobExecutorSoap">
+      <soap:address location="http://spotfire-automation01.merck.rxlogix.com:85/SpotFireAutomation/JobExecutor.asmx" />
+    </wsdl:port>
+    <wsdl:port name="JobExecutorSoap12" binding="tns:JobExecutorSoap12">
+      <soap12:address location="http://spotfire-automation01.merck.rxlogix.com:85/SpotFireAutomation/JobExecutor.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

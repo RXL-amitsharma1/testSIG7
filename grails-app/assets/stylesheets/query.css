@@ -1,0 +1,190 @@
+.builderAll {
+    overflow: auto;
+
+    /* Next 4 items allow for proper display of calendar to be outside of container when popped up. */
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+.expressionsNoPadFirst {
+    padding-top: 5px;
+    padding-right: 5px;
+    /*width: 40%;*/
+}
+.expressionsOperator {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 25%;
+}
+.expressionsNoPad {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.toAddContainer {
+    width: 90%;
+}
+.checkBoxDiv{
+    margin-left: 15px;
+    width: 95%;
+}
+/* Prevent the text contents of draggable elements from being selectable. */
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* Required to make elements draggable in old WebKit */
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+.expression {
+    display: table;
+    padding-bottom: 5px;
+    overflow: auto;
+    width: 90%;
+
+    /*border: 1px solid #ffbd00;*/
+    border: 1px solid #bbbbbb;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.11), 0px 1px 2px 0px rgba(0, 0, 0, 0.16), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.05);
+    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.11), 0px 1px 2px 0px rgba(0, 0, 0, 0.16), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.05);
+    -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.11), 0px 1px 2px 0px rgba(0, 0, 0, 0.16), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.05);
+
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+
+    -webkit-transition: 0.1s linear all;
+    -moz-transition: 0.1s linear all;
+    -ms-transition: 0.1s linear all;
+    -o-transition: 0.1s linear all;
+    transition: 0.1s linear all;
+
+    cursor: move;
+}
+.over {
+    border: 2px dashed #0fef20;
+}
+.group {
+    border: 1px solid #d9d9d9;
+
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-transition: 0.1s linear all;
+    -moz-transition: 0.1s linear all;
+    -ms-transition: 0.1s linear all;
+    -o-transition: 0.1s linear all;
+    transition: 0.1s linear all;
+
+    padding: 10px 25px;
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+.group.over {
+    border: 2px dashed #0fef20;
+}
+.selectedGroup {
+    border: 2px dotted #0096ff;
+}
+.removeExpression {
+    margin: 5px;
+    float: right;
+}
+.removeGroup {
+    float: right;
+}
+.keywordExpression {
+    margin: 5px;
+    width: 10%;
+    float: left;
+    min-width: 80px;
+}
+.keywordGroup {
+    margin: 5px;
+    width: 4%;
+    float: left;
+    min-width: 80px;
+}
+.addGroup {
+    float: right;
+}
+.subgroup {
+    border: 2px dashed #000;
+    min-height: 100px;
+    min-width: 300px;
+    float: left;
+}
+.subgroup.over {
+    border: 2px dashed #0fef20;
+}
+
+.loading {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.addContainerTopmost {
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+.tabBorder {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D4D4D4;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 200px;
+}
+
+.tabPadding {
+    padding: 20px;
+}
+
+.tabBorderFirst {
+    border-top-left-radius: 0px;
+}
+
+.noClick {
+    cursor: not-allowed;
+}
+
+.extra-width {
+    width: 14%;
+}
+
+.expressionQueryContainer {
+    width: 65%;
+}
+
+.extraOptions {
+    border-top-style: dashed;
+    border-width: 1px;
+    border-color: #D4D4D4;
+}
+
+#setBuilderAll .expression{
+      display: block!important;
+      padding-bottom: 5px!important;
+      overflow: auto!important;
+      width: 90%!important;
+      max-width: 96%!important;
+  }

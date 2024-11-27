@@ -1,0 +1,29 @@
+{{#if_else_eq value.comparedType 'A'}}
+    <a tabindex="0" class="badge badge-info details-tag bg-added-green">{{value.tagText}} {{value.privateUser}} {{ value.tagType}} </a>
+{{else}}
+    {{#if_else_eq value.comparedType 'D'}}
+        <a tabindex="0" class="badge badge-info details-tag bg-deleted-red">{{value.tagText}} {{value.privateUser}} {{ value.tagType}} </a>
+    {{else}}
+        <a tabindex="0" class="badge badge-info details-tag">{{value.tagText}} {{value.privateUser}} {{ value.tagType}} </a>
+    {{/if_else_eq}}
+{{/if_else_eq}}
+{{#each_subTags_compared_screen value.tagText value.tagType value.privateUser tags}}
+    {{setVar "rowVal" this}}
+    {{#if_notNull this.subTags}}
+        {{#each this.subTags}}
+            {{#if_notNull this}}
+                {{#if_else_eq  ../../../rowVal.comparedType 'A'}}
+                    <a tabindex="0" class="badge details-tag bg-added-green ">{{this}} (S)</a>
+                {{else}}
+                    {{#if_else_eq ../../../rowVal.comparedType 'D'}}
+                        <a tabindex="0" class="badge details-tag bg-deleted-red ">{{this}} (S)</a>
+                    {{else}}
+                        <a tabindex="0" class="badge details-tag bg-grey-3 ">{{this}} (S)</a>
+                    {{/if_else_eq}}
+                {{/if_else_eq}}
+            {{/if_notNull}}
+        {{/each}}
+    {{/if_notNull}}
+{{/each_subTags_compared_screen}}
+
+

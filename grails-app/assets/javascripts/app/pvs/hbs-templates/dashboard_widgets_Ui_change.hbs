@@ -1,0 +1,110 @@
+<div class="pv-dashWidget grid-stack-item" data-type="{{content.type}}" id="{{reportWidgetId}}">
+    <div class="panel panel-default chart-panel grid-stack-item-content rx-widget">
+        <div class="panel-heading panel-title pv-sec-heading">
+            <div class="rxmain-container-header-label">
+                <div class="row">
+                    <div class="col-md-10"><h3 class="panel-title">{{reportWidgetName}}</h3></div>
+                    <div class="col-md-2 form-inline ico-menu">
+                        <div class="form-group pull-right"> <a tabindex="0" href="javascript:void(0);" class="close-widget pull-right" title="Hide Widget"><i
+                            class="md md-close"></i></a></div>
+                        <div class="form-group pull-right"> <a tabindex="0" href="javascript:void(0);" class="refresh-widget pull-right" title="Refresh Widget"><i
+                                class="md md-refresh"></i></a></div>
+                        {{#if_eq content.id "assignedTriggeredAlerts"}}
+                            <span tabindex="0" class="dropdown pull-right form-group m-r-5">
+                                <i style="cursor: pointer" class="dropdown-toggle mdi mdi-format-list-bulleted font-22 lh-1" id="dropdownMenuTriggeredAlert" data-title="" data-toggle="dropdown"></i>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuTriggeredAlert" style="height: 300px; overflow-y:auto; width: 240px;">
+                                    <div class="rxmain-container-dropdown">
+                                        <div>
+                                            <table id="tableColumns" class="table">
+                                                <thead><tr><th>Name</th><th>Show</th>
+                                                </tr></thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                        {{/if_eq}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body pv-sec-bg rx-widget-content">
+            <div class="row inner-shadow-box nicescroll">
+                {{#if_eq content.type "pvDashChart"}}
+                <div id="{{content.id}}" data-type="{{content.type}}" class="chart-container"></div>
+                {{/if_eq}}
+                {{#if_eq content.type "pvDashCalendar"}}
+                <div id="{{content.id}}" data-type="{{content.type}}" class="calendar"></div>
+                {{/if_eq}}
+                {{#if_eq content.type "pvDashReports"}}
+                <div data-id="{{content.id}}" data-type="{{content.type}}">
+                    <table id="{{content.id}}" style="width:100%">
+                        <thead>
+                        <tr>
+                            {{#if_eq content.id "assignedSignalTable"}}
+                            <th>Signal Name</th>
+                            <th>Product Name</th>
+                            <th>Disposition</th>
+                            {{/if_eq}}
+                            {{#if_eq content.id "assignedTopicTable"}}
+                            <th>Topic Name</th>
+                            <th>Product Name</th>
+                            <th>Count of PEC</th>
+                            <th>Count of Cases</th>
+                            <th>Disposition</th>
+                            {{/if_eq}}
+                            {{#if_eq content.id "assignedTriggeredAlerts"}}
+                            <th class="col-md-3">Product</th>
+                            <th class="col-md-2">Type</th>
+                            <th class="col-md-2">Name</th>
+                            <th class="col-md-2">Requires Review</th>
+                            <th class="col-md-2">Due In</th>
+                            <th class="col-md-1"></th>
+                            {{/if_eq}}{{#if_eq content.id "listAction"}}
+                            <th>Id</th>
+                            <th>Action Type</th>
+                            <th>Action</th>
+                            <th>Details</th>
+                            <th>Alert Name</th>
+                            <th>Due Date</th>
+                        {{/if_eq}}
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                {{/if_eq}}
+            </div>
+        </div>
+        {{#if_eq content.type "pvDashCalendar"}}
+        <div class="col-lg-12" style="margin-top: -90px;">
+            <div id="legend" class="fc-view-container">
+                <p style="margin-bottom: 10px"><strong style="font-size: 12px;">Legend</strong></p>
+
+                <div class="legendColorBox"
+                     style="background-color: #3b789e">&nbsp;
+                </div>
+                <span
+                        class="legendLabel text-muted">Individual Case Review Alert</span>
+
+                <div class="legendColorBox"
+                     style="background-color: #acd3e1">&nbsp;
+                </div>
+                <span
+                        class="legendLabel text-muted">Aggregate Review Alert</span>
+
+                <div class="legendColorBox"
+                     style="background-color: #FF99F0">&nbsp;
+                </div>
+                <span
+                        class="legendLabel text-muted">Action Item</span>
+
+                <div class="legendColorBox"
+                     style="background-color: #45b25f">&nbsp;
+                </div>
+                <span
+                        class="legendLabel text-muted">Meeting</span>
+            </div>
+        </div>
+        {{/if_eq}}
+    </div>
+</div>

@@ -1,0 +1,34 @@
+.navbar-default {
+    background-color: #eea320;
+}
+html {
+    background: #e1e2e3;
+}
+body {
+    background: #e1e2e3;
+}
+.topbar .topbar-left {
+    background: #eea320;
+}
+.side-menu.left {
+    background: #5b6474;
+
+}
+#wrapper.enlarged .left.side-menu #sidebar-menu > ul > li > a:hover {
+    background-color: #5b6474 !important;
+}
+#wrapper.enlarged .left.side-menu #sidebar-menu ul > li:hover > a {
+    background-color: #5b6474 !important;
+}
+#wrapper.enlarged .left.side-menu #sidebar-menu ul > li:hover > ul a:hover{
+    background-color: #5b6474 !important;
+}
+#wrapper.enlarged .left.side-menu #sidebar-menu ul > li:hover > a {
+    background-color: #5b6474 !important;
+}
+.navbar-default {
+    background-color: #eea320 !important;
+}
+.pv-fullcase-treeview{
+    background: #7b7f8e;
+}

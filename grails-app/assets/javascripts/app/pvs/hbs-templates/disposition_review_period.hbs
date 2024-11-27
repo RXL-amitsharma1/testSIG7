@@ -1,0 +1,33 @@
+<script>
+    $(function() {
+        $(".dispositionSelect:last option[value='{{dispositionValue}}']").attr("selected","selected");
+        $(".dispositionSelect:last").select2({placeholder:"Select Disposition"}).data('select2').$dropdown.addClass('cell-break');
+        $('.dispositionSelect').on('change', function (e) {
+            makeDispositionList();
+        });
+    });
+</script>
+<div class="row form-group dispositionRow" >
+    <div class="col-lg-1">
+    </div>
+    <div class="col-lg-6">
+        <select  multiple="true" name="displayNameDisposition" class="form-control select2 dispositionSelect">
+        {{#each dispositions}}
+            <option value="{{this.displayName}}">{{this.displayName}}</option>
+        {{/each}}
+        </select>
+    </div>
+    <div class="col-lg-3">
+        <input type="number" name="reviewPeriodDisposition" class="form-control reviewPeriodDisposition" min="1" autocomplete = "off" value="{{reviewPeriod}}"/>
+    </div>
+    <div class="col-lg-1 addDisposition">
+        <div class="pull-right">
+            <span class="glyphicon glyphicon-plus btn btn-primary addExpression" onclick="addDispositionPeriod(this)"></span>
+        </div>
+    </div>
+    <div class="col-lg-1 removeDisposition">
+        <div class="pull-right">
+            <span class="glyphicon glyphicon-minus btn btn-inverse minusExpression" onclick="removeDispositionElement(this)"></span>
+        </div>
+    </div>
+</div>

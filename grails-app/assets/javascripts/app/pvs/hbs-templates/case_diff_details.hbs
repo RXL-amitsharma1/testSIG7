@@ -1,0 +1,184 @@
+<div class="rxmain-container rxmain-container-top">
+    <div class="rxmain-container-inner">
+        <div class="rxmain-container-row rxmain-container-header">
+            <label class="rxmain-container-header-label">
+                New Information
+            </label>
+        </div>
+
+        <div class="rxmain-container-content">
+
+            <label class="rxmain-container-header-label">
+                General Information
+            </label>
+            <table class="table" style="margin-bottom:0px">
+                <thead>
+                <th>Follow Up Date</th>
+                <th>Case Locked Date</th>
+                </thead>
+                <tbody>
+                    {{#each genInfo}}
+                        <tr>
+                            <td>{{followUpDate}}</td>
+                            <td>{{caseLockedDate}}</td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+
+            </table>
+            <br>
+
+            <label class="rxmain-container-header-label">
+                Product Information
+            </label>
+            <table class="table" style="margin-bottom:0px">
+                <thead>
+                <th>Product Name</th>
+                <th>Dosage Information</th>
+                <th>Formulation</th>
+                <th>Concentration</th>
+                <th>Suspect</th>
+                </thead>
+                <tbody>
+                    {{#each prodInfo}}
+                        <tr>
+                            <td>{{prodName}}</td>
+                            <td>{{dossageInfo}}</td>
+                            <td>{{formulation}}</td>
+                            <td>{{concentration}}</td>
+                            <td>{{suspect}}</td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+
+            </table>
+            <br>
+
+            <label class="rxmain-container-header-label">
+                Event Information
+            </label>
+            <table class="table" style="margin-bottom:0px">
+                <thead>
+                <th>Event PT</th>
+                <th>Event SOC</th>
+                <th>Event Seriousness</th>
+                <th>Event Outcome</th>
+                <th>Event Seriousness Criteria</th>
+                </thead>
+                <tbody>
+                {{#each eventInfo}}
+                    <tr>
+                        <td>{{eventPt}}</td>
+                        <td>{{eventSoc}}</td>
+                        <td>{{eventSeriousness}}</td>
+                        <td>{{eventOutcome}}</td>
+                    </tr>
+                {{/each}}
+                </tbody>
+
+            </table>
+            <br>
+
+        </div>
+    </div>
+</div>
+
+<div class="rxmain-container rxmain-container-top">
+    <div class="rxmain-container-inner">
+        <div class="rxmain-container-row rxmain-container-header">
+            <label class="rxmain-container-header-label">
+                Modified Information
+            </label>
+        </div>
+
+        <div class="rxmain-container-content">
+
+            <table class="table" style="margin-bottom:0px">
+                <thead>
+                <th>Field Name</th>
+                <th>Old Value</th>
+                <th>New Value</th>
+
+                </thead>
+                <tbody>
+                {{#each modifiedInfo}}
+                    <tr>
+                        <td>{{fieldName}}</td>
+                        <td>{{oldValue}}</td>
+                        <td>{{newValue}}</td>
+                    </tr>
+                {{/each}}
+                </tbody>
+
+            </table>
+            <br>
+
+        </div>
+    </div>
+</div>
+
+<div class="rxmain-container rxmain-container-top">
+    <div class="rxmain-container-inner">
+        <div class="rxmain-container-row rxmain-container-header">
+            <label class="rxmain-container-header-label">
+                Deleted Information
+            </label>
+        </div>
+
+        <div class="rxmain-container-content">
+
+            <label class="rxmain-container-header-label">
+                Product Information
+            </label>
+            <table class="table" style="margin-bottom:0px">
+                <thead>
+                <th>Product Name</th>
+                <th>Dosage Information</th>
+                <th>Formulation</th>
+                <th>Concentration</th>
+                <th>Suspect</th>
+                </thead>
+                <tbody>
+                {{#each deletedProdInfo}}
+                    <tr>
+                        <td>{{prodName}}</td>
+                        <td>{{dossageInfo}}</td>
+                        <td>{{formulation}}</td>
+                        <td>{{concentration}}</td>
+                        <td>{{suspect}}</td>
+                    </tr>
+                {{/each}}
+                </tbody>
+
+            </table>
+            <br>
+
+            <label class="rxmain-container-header-label">
+                Event Information
+            </label>
+            <table class="table" style="margin-bottom:0px">
+                <thead>
+                <th>Event PT</th>
+                <th>Event SOC</th>
+                <th>Event Seriousness</th>
+                <th>Event Outcome</th>
+                <th>Event Seriousness Criteria</th>
+                </thead>
+                <tbody>
+                {{#each deletedEventInfo}}
+                    <tr>
+                        <td>{{eventPt}}</td>
+                        <td>{{eventSoc}}</td>
+                        <td>{{eventSeriousness}}</td>
+                        <td>{{eventOutcome}}</td>
+                    </tr>
+                {{/each}}
+                </tbody>
+
+            </table>
+            <br>
+
+
+        </div>
+    </div>
+</div>

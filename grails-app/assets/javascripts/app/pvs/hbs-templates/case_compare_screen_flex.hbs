@@ -1,0 +1,290 @@
+<div class="rxmain-container">
+    <div class="rxmain-container-inner">
+        <a data-toggle="collapse" data-target="#case_detail_container">
+            <div class="rxmain-container-header ico-menu">
+                <div class="dropdown">
+                    <label class="rxmain-container-header-label">Case Detail</label>
+                </div>
+            </div>
+        </a>
+        <div id="case_detail_container" class="rxmain-container-content panel-collapse collapse in">
+
+
+            {{#each versionAvailableData}}
+                {{#contains_value this @key ../versionCompareData}}
+                    {{#if_else_not_in @key ../freeTextFieldList}}
+                        <div class="rxmain-container">
+                            <div class="rxmain-container-inner">
+                                <a data-toggle="collapse" data-target="#{{lowerCase @key}}">
+                                    <div class="rxmain-container-header ico-menu">
+                                        <div class="dropdown">
+                                            <label class="rxmain-container-header-label">{{@key}}</label>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div id="{{lowerCase @key}}"
+                                     class="rxmain-container-content panel-collapse collapse in">
+
+                                    <div class="scroll-body">
+                                        {{#if_else_eq @key deviceInformation}}
+                                            <table class="table table-condensed no-border m-t-0 m-b-0 text-left">
+                                                <thead>
+                                                <tr>
+                                                    {{#each this}}
+                                                        {{#if_eq @key 0}}
+                                                            {{#each this}}
+                                                                {{#if_else_neq @key "containsValues"}}
+                                                                    {{#if_else_neq @key "check_seq_num"}}
+                                                                        {{#if_else_neq @key "check_seq_num_two"}}
+                                                                            {{#if_odd_key @index}}
+                                                                            <th class="col-md-1-half">
+                                                                                <div class="stacked-cell-left-top">
+                                                                                    {{@key}}
+                                                                                </div>
+                                                                            {{else}}
+                                                                                <div class="stacked-cell-left-bottom">
+                                                                                    {{@key}}
+                                                                                </div>
+                                                                            </th>
+                                                                            {{/if_odd_key}}
+                                                                        {{/if_else_neq}}
+                                                                    {{/if_else_neq}}
+                                                                {{/if_else_neq}}
+                                                            {{/each}}
+                                                        {{/if_eq}}
+                                                    {{/each}}
+
+                                                </tr>
+                                                </thead>
+                                                <tbody style="border-top: 1px #ccc !important">
+                                                {{#each this}}
+                                                    {{#if_odd_key @key}}
+                                                        <tr class="odd">
+                                                    {{else}}
+                                                        <tr class="even">
+                                                    {{/if_odd_key}}
+                                                    {{setVar "rowVal" this}}
+                                                    {{#each this}}
+                                                        {{#if_else_neq @key "containsValues"}}
+                                                            {{#if_else_neq @key "check_seq_num"}}
+                                                                {{#if_else_neq @key "check_seq_num_two"}}
+                                                                    {{#if_odd_key @index}}
+                                                                        <td class="col-md-1-half">
+
+                                                                            <div class="stacked-cell-left-top">
+                                                                                {{compareCell this @key @root.rowVal
+                                                                                              @../../key
+                                                                                              @root.versionCompareData}}
+                                                                            </div>
+                                                                    {{else}}
+                                                                            <div class="stacked-cell-left-top">
+                                                                                {{compareCell this @key @root.rowVal
+                                                                                              @../../key
+                                                                                              @root.versionCompareData}}
+                                                                            </div>
+                                                                        </td>
+                                                                    {{/if_odd_key}}
+                                                                {{/if_else_neq}}
+                                                            {{/if_else_neq}}
+                                                        {{/if_else_neq}}
+
+                                                    {{/each}}
+                                                    </tr>
+                                                {{/each}}
+                                                {{#left_iteration @key ../ versionCompareData ../versionAvailableData}}
+                                                    {{#if_odd_key @key}}
+                                                        <tr class="odd"
+                                                            style=" color: #de2650 !important;background: #fbE1eb!important;">
+                                                    {{else}}
+                                                        <tr class="even"
+                                                            style=" color: #de2650 !important;background: #fbE1eb!important;">
+                                                    {{/if_odd_key}}
+                                                    {{setVar "rowVal" this}}
+                                                    {{#each this}}
+                                                        {{#if_else_neq @key "containsValues"}}
+                                                            {{#if_else_neq @key "check_seq_num"}}
+                                                                {{#if_else_neq @key "check_seq_num_two"}}
+                                                                    {{#if_odd_key @index}}
+                                                                        <td class="col-md-1-half">
+
+                                                                            <div class="stacked-cell-left-top">
+                                                                                {{print_left_rows this}}
+                                                                            </div>
+                                                                    {{else}}
+                                                                            <div class="stacked-cell-left-top">
+                                                                                {{print_left_rows this}}
+                                                                            </div>
+                                                                        </td>
+                                                                    {{/if_odd_key}}
+                                                            {{/if_else_neq}}{{/if_else_neq}}{{/if_else_neq}}{{/each}}
+                                                {{/left_iteration}}
+                                                </tbody>
+                                            </table>
+                                        {{else}}
+                                            <table class="table no-border m-t-0 m-b-0">
+                                                <thead>
+                                                {{#each this}}
+                                                    {{#if_eq @key 0}}
+                                                        {{#each this}}
+                                                            {{#if_else_neq @key "containsValues"}}
+                                                                {{#if_else_neq @key "check_seq_num"}}
+                                                                    {{#if_else_neq @key "check_seq_num_two"}}
+                                                                        <th>{{@key}}</th>
+                                                                    {{/if_else_neq}}
+                                                                {{/if_else_neq}}
+                                                            {{/if_else_neq}}
+                                                        {{/each}}
+                                                    {{/if_eq}}
+                                                {{/each}}
+                                                </thead>
+                                                <tbody>
+                                                {{#each this}}
+                                                    {{#if_odd_key @key}}
+                                                        <tr class="odd odd1">
+                                                    {{else}}
+                                                        <tr class="even even1">
+                                                    {{/if_odd_key}}
+                                                    {{setVar "rowVal" this}}
+                                                    {{#each this}}
+                                                        {{#if_else_neq @key "containsValues"}}
+                                                            {{#if_else_neq @key "check_seq_num"}}
+                                                                {{#if_else_neq @key "check_seq_num_two"}}
+                                                                    {{#if_else_eq this "Attachment"}}
+                                                                            <td>{{compareCell this @key @root.rowVal
+                                                                                              @../../key
+                                                                                              @root.versionCompareData}}</td>
+                                                                    {{else}}
+                                                                        {{#if_else_eq @key "Reference Number"}}
+                                                                                <td class="referenceNumber">{{compareCell
+                                                                                        this
+                                                                                        @key
+                                                                                        @root.rowVal
+                                                                                        @../../key
+                                                                                        @root.versionCompareData}}</td>
+                                                                        {{else}}
+                                                                            {{#if_else_referenceType @root.rowVal
+                                                                                                     this}}
+                                                                                    <td class="duplicateCases">{{compareCell
+                                                                                            this @key
+                                                                                            @root.rowVal
+                                                                                            @../../key
+                                                                                            @root.versionCompareData}}</td>
+                                                                            {{else}}
+                                                                                    <td>{{compareCell this @key
+                                                                                                      @root.rowVal
+                                                                                                      @../../key
+                                                                                                      @root.versionCompareData}}</td>
+                                                                            {{/if_else_referenceType }}
+                                                                        {{/if_else_eq}}
+                                                                    {{/if_else_eq}}
+                                                                {{/if_else_neq}}
+                                                            {{/if_else_neq}}
+                                                        {{/if_else_neq}}
+                                                    {{/each}}
+                                                {{/each}}
+                                                {{#left_iteration @key ../ versionCompareData ../versionAvailableData}}
+                                                    {{#if_odd_key @key}}
+                                                        <tr class="odd"
+                                                            style=" color: #de2650 !important;background: #fbE1eb!important;">
+                                                    {{else}}
+                                                        <tr class="even"
+                                                            style=" color: #de2650 !important;background: #fbE1eb!important;">
+                                                    {{/if_odd_key}}
+                                                    {{setVar "rowVal" this}}
+                                                    {{#each this}}
+                                                        {{#if_else_neq @key "containsValues"}}
+                                                            {{#if_else_neq @key "check_seq_num"}}
+                                                                {{#if_else_neq @key "check_seq_num_two"}}
+                                                                    {{#if_else_eq this "Attachment"}}
+                                                                            <td>{{print_left_rows this}}</td>
+                                                                    {{else}}
+                                                                        {{#if_else_eq @key "Reference Number"}}
+                                                                                <td class="referenceNumber">{{print_left_rows
+                                                                                        this}}</td>
+                                                                        {{else}}
+                                                                            {{#if_else_referenceType @root.rowVal
+                                                                                                     this}}
+                                                                                    <td class="duplicateCases">{{print_left_rows
+                                                                                            this}}</td>
+                                                                            {{else}}
+                                                                                    <td>{{print_left_rows this}}</td>
+                                                                            {{/if_else_referenceType }}
+                                                                        {{/if_else_eq}}
+                                                                    {{/if_else_eq}}
+                                                                {{/if_else_neq}}
+                                                            {{/if_else_neq}}
+                                                        {{/if_else_neq}}
+                                                    {{/each}}
+                                                {{/left_iteration}}
+                                                </tbody>
+                                            </table>
+                                        {{/if_else_eq}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{else}}
+                        <div class="rxmain-container">
+                            <div class="rxmain-container-inner">
+                                <a>
+                                    <div class="rxmain-container-header ico-menu">
+                                        <div class="dropdown col-md-9 col-xs-9" data-toggle="collapse"
+                                             data-target="#{{lowerCase @key}}">
+                                            <label class="rxmain-container-header-label">{{@key}}</label>
+                                        </div>
+                                        <div class="dropdown col-md-3 col-xs-3">
+                                            <div class="container">
+                                                <div class="col-md-2">
+
+                                                </div>
+                                                <div class="col-md-3 zoom-tab to-center bd-right">
+                                                    <label class="m-t-3">Zoom</label>
+                                                </div>
+                                                <div class="col-md-5 zoom-tab to-center bd-left">
+                                                    <label class="fl-left font-16 zoom-in-element">-</label>
+                                                    <label class="m-t-3 zoom-viewer">100</label>
+                                                    <label>%</label>
+                                                    <label class="fl-right font-16 zoom-out-element">+</label>
+                                                </div>
+                                                <div class="col-md-1 m-l-15 zoom-tab" style="padding:0!important;">
+                                                    <label class="font-20 refresh-zoom"><i
+                                                            class="mdi mdi-refresh"></i></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div id="{{lowerCase @key}}"
+                                     class="row rxmain-container-content panel-collapse collapse in free-text-container">
+                                    {{#each this}}
+                                        {{#if_eq @key 0}}
+                                            {{#each this}}
+                                                {{#if_else_neq @key "containsValues"}}
+                                                    {{#if_else_neq @key "check_seq_num"}}
+                                                        {{#if_else_neq @key "check_seq_num_two"}}
+                                                            <div class="row">
+                                                                <div class="col-xs-2 break-word-hyphen">
+                                                                    <label>{{@key}}</label>
+                                                                </div>
+                                                                <div class="col-xs-10">
+                                                <pre style="background-color: inherit;font-size: 14px!important;border: 0;padding: inherit;font-family: 'Open Sans', sans-serif !important;word-break: normal;">{{compareCell
+                                                        this @key @root.rowVal
+                                                        @../../key
+                                                        @root.versionCompareData}}</pre>
+                                                                </div>
+                                                            </div>
+                                                        {{/if_else_neq}}
+                                                    {{/if_else_neq}}
+                                                {{/if_else_neq}}
+                                            {{/each}}
+                                        {{/if_eq}}
+                                    {{/each}}
+                                </div>
+                            </div>
+                        </div>
+                    {{/if_else_not_in}}
+                {{/contains_value}}
+            {{/each}}
+        </div>
+    </div>
+</div>

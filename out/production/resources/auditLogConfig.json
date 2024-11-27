@@ -1,0 +1,1317 @@
+{
+  "validatedSignal": {
+    "root": "true",
+    "name": "Signal",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "name": "Signal Name",
+          "products": "Product Selection",
+          "initialDataSource": "Signal Source",
+          "signalStatusHistories": "Status Histories",
+          "topicCategories": "Risk/Topic Category",
+          "genericComment": "Additional Information/Comments",
+          "configuration": "Linked Configurations",
+          "ddValue1": "UD_Dropdown1 ",
+          "ddValue2": "UD_Dropdown2 ",
+          "reasonForEvaluation":  "Reason for Evaluation & Summary of Key Data",
+          "events": "Event Selection",
+          "haSignalStatus": "HA-Signal Status",
+          "haDateClosed": "HA-Date Closed",
+          "commentSignalStatus": "Comments on Signal Status",
+          "aggReportStartDate": "Aggregate Report Start Date",
+          "aggReportEndDate": "Aggregate Report End Date",
+          "udText1": "UD_Text1 ",
+          "udText2":"UD_Text2 ",
+          "udDate1": "UD_Date1 ",
+          "udDate2":"UD_Date2 ",
+          "shareWithUser": "Share With User",
+          "shareWithGroup": "Share With Group",
+          "isMultiIngredient": "Is Multi-Ingredient/Substance",
+          "signalOutcomes": "Signal Outcome"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "products": "code:com.rxlogix.util.AuditLogConfigUtil.getProductSelectionValuesForAudit(x)",
+          "events": "code:com.rxlogix.util.AuditLogConfigUtil.getAllEventNameFieldFromJsonForAudit(x)",
+          "productSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getProductSelectionValuesForAudit(x)",
+          "eventSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getAllEventNameFieldFromJsonForAudit(x)",
+          "eventGroupSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getGroupNameFieldFromJsonForAudit(x)",
+          "productGroupSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getGroupNameFieldFromJsonForAudit(x)",
+          "initialDataSource": "code:com.rxlogix.util.AuditLogConfigUtil.getAllowedProductCommaSeperated(x)",
+          "signalStatus": "code:com.rxlogix.util.AuditLogConfigUtil.getValueForDateEnums(x)"
+        }
+      }
+    }
+  },
+  "signalStatusHistory": {
+    "root": "true",
+    "name": "Signal: Signal WorkFlow Log",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "isAutoPopulate" : "Auto Populated",
+          "signalStatus":"To State/Status",
+          "statusComment": "Comment",
+          "dateCreated": "Date",
+          "fromSignalStatus": "From State"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "signalStatus": "code:com.rxlogix.util.AuditLogConfigUtil.changeStatusComments(x)",
+          "statusComment": "code:com.rxlogix.util.AuditLogConfigUtil.changeStatusComments(x)"
+        }
+      }
+    }
+  },
+  "templateQuery": {
+    "root": "false",
+    "name": "Report Section: Template",
+    "rules": {
+      "RULE_HIDE_PROPERTY": {
+        "metadata": [
+          "dateCreated",
+          "dateRangeInformationForTemplateQuery",
+          "blindProtected",
+          "lastUpdated",
+          "privacyProtected",
+          "modifiedBy",
+          "createdBy",
+          "reportField",
+          "operatorValue",
+          "value",
+          "key"
+        ]
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "queryLevel": "code:com.rxlogix.util.AuditLogConfigUtil.getValueForQueryLevel(x)"
+        }
+      },
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "parameterValueAuditString" : "Parameters",
+          "headerDateRange": "Display date range in the header",
+          "headerProductSelection": "Display product selection in the header"
+        }
+      }
+    }
+  },
+  "meeting": {
+    "root": "true",
+    "name": "Signal: Meeting",
+    "rules": {
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "schedularJson": "code:com.rxlogix.util.AuditLogConfigUtil.getScheduleDateResolve(x)",
+          "duration": "code:com.rxlogix.util.AuditLogConfigUtil.getMinuteHourFromMinutes(x)"
+        }
+      },
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "schedularJson": "Recurrence",
+          "guestAttendee": "Meeting Attendees (External User Address)",
+          "attendees": "Meeting Attendees",
+          "meetingAgenda": "Agenda"
+        }
+      }
+    }
+  },
+  "configuration": {
+    "root": "true",
+    "name": "Configuration",
+    "domainOverriden":  ["templateQuery"],
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "isTemplateAlert": "Template Alert",
+          "drugType": "Product Type",
+          "type": "Alert type",
+          "datasheetType":"Show all Datasheet(s)",
+          "isDatasheetChecked":"Datasheet(s) Selection",
+          "isProductMining": "Consider selected product as data mining background",
+          "groupBySmq": "Data Mining based on SMQ/Event group",
+          "scheduleDateJSON": "Schedule",
+          "dateRangeEnum": "Date Range Type",
+          "dataMiningVariableValue.operatorDisplay": "Data Mining Variable Operator",
+          "dataMiningVariableValue.value": "Data Mining Variable Values",
+          "missedCases": "Include Cases Missed in the Previous Reporting Period",
+          "spotfireSettings": "Analysis File Configuration",
+          "selectedDatasource": "Data Source",
+          "drugTypeSelected": "Product Type",
+          "evaluateDateAs": "Evaluate Case Date On",
+          "foregroundSearch": "Consider selected filters as the foreground for data mining run",
+          "alertForegroundQueryValueLists": "Foreground Query",
+          "alertQueryValueLists": "Background Query",
+          "asOfVersionDate": "Version As of Date",
+          "foregroundSearchAttr": "Foreground Search Attributes",
+          "isMultiIngredient": "Is Multi-Ingredient/Substance",
+          "masterConfigId": "Master Configuration",
+          "configurationTemplateId": "Configuration Template",
+          "selectedDataSheet": "Selected Datasheet(s)"
+        }
+      },
+      "RULE_SECTION_PROPERTY": {
+        "metadata": {
+          "Data Source": [
+            "configuration.selectedDatasource"
+          ],
+          "Alert Criteria": [
+            "configuration.datasheetType",
+            "configuration.alertDateRangeInformation",
+            "configuration.productGroupSelection",
+            "configuration.eventGroupSelection",
+            "configuration.productSelection",
+            "configuration.eventSelection",
+            "configuration.isMultiIngredient",
+            "configuration.drugType",
+            "configuration.excludeFollowUp",
+            "configuration.dateRangeType",
+            "configuration.evaluateDateAs",
+            "configuration.adhocRun",
+            "configuration.includeLockedVersion",
+            "configuration.isDatasheetChecked",
+            "configuration.includeMedicallyConfirmedCases",
+            "configuration.type",
+            "configuration.missedCases",
+            "configuration.alertForegroundQueryName",
+            "configuration.alertForegroundQueryValueLists",
+            "configuration.foregroundSearch",
+            "configuration.alertQueryName",
+            "configuration.alertQueryValueLists",
+            "configuration.eventGroupSelection",
+            "configuration.excludeNonValidCases",
+            "configuration.groupBySmq",
+            "configuration.adjustPerScheduleFrequency",
+            "configuration.alertTriggerCases",
+            "configuration.alertTriggerDays",
+            "configuration.asOfVersionDate",
+            "configuration.dateRangeEnum",
+            "configuration.relativeDateRangeValue",
+            "configuration.selectedDataSheet",
+            "configuration.foregroundSearchAttr"
+          ],
+          "Advanced Options": [
+            "configuration.dataMiningVariableValue.operatorDisplay",
+            "configuration.dataMiningVariableValue.value",
+            "configuration.isProductMining",
+            "configuration.dataMiningVariable"
+          ],
+          "Report Section: Template": [
+            "templateQuery.templateName",
+            "templateQuery.queryName",
+            "templateQuery.parameterValueAuditString",
+            "templateQuery.headerDateRange",
+            "templateQuery.headerProductSelection",
+            "templateQuery.title",
+            "templateQuery.header",
+            "templateQuery.footer",
+            "templateQuery.queryLevel"
+          ],
+          "Data Analysis": [
+            "spotfireSettings.type",
+            "spotfireSettings.dataSource"
+          ],
+          "Alert Details": [
+            "configuration.description",
+            "configuration.owner",
+            "configuration.name",
+            "configuration.isAutoAssignedTo",
+            "configuration.priority",
+            "configuration.shareWithUser",
+            "configuration.shareWithGroup",
+            "configuration.autoShareWithUser",
+            "configuration.autoShareWithGroup",
+            "configuration.assignedTo",
+            "configuration.assignedToGroup",
+            "configuration.isTemplateAlert"
+          ],
+          "Template Information": [
+            "configuration.masterConfigId",
+            "configuration.configurationTemplateId"
+          ],
+          "Alert Schedule": [
+            "configuration.numOfExecutions",
+            "configuration.repeatExecution",
+            "configuration.configSelectedTimeZone",
+            "configuration.scheduleDateJSON"
+          ]
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "productSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getProductSelectionValuesForAudit(x)",
+          "productGroupSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getGroupNameFieldFromJsonForAudit(x)",
+          "drugType": "code:com.rxlogix.util.AuditLogConfigUtil.getDrugTypeNamesForAudit(x)",
+          "eventSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getAllEventNameFieldFromJsonForAudit(x)",
+          "foregroundSearchAttr": "code:com.rxlogix.util.MiscUtil.getBean('configurationService').getForegroundSearchAtt(x)",
+          "eventGroupSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getEventGroupFromJsonForAudit(x)",
+          "dateRangeType": "code:com.rxlogix.util.AuditLogConfigUtil.getValueForDateEnums(x)",
+          "dateRangeEnum": "code:com.rxlogix.util.AuditLogConfigUtil.getValueForDateEnums(x)",
+          "evaluateDateAs": "code:com.rxlogix.util.AuditLogConfigUtil.getValueForDateEnums(x)",
+          "datasheetType": "code:com.rxlogix.util.AuditLogConfigUtil.getValueForDateEnums(x)",
+          "scheduleDateJSON": "code:com.rxlogix.util.AuditLogConfigUtil.getScheduleDateResolve(x)",
+          "selectedDatasource": "code:com.rxlogix.util.AuditLogConfigUtil.getDataSourceForAudit(x)",
+          "selectedDataSheet": "code:com.rxlogix.util.AuditLogConfigUtil.getDataSheetNames(x)",
+          "masterConfigId": "code:com.rxlogix.util.AuditLogConfigUtil.getMasterConfigName(x)",
+          "configurationTemplateId": "code:com.rxlogix.util.AuditLogConfigUtil.getConfigTemplateName(x)",
+          "spotfireSettings": "code:com.rxlogix.util.AuditLogConfigUtil.getSpotfireData(x)"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": [
+          "isDeleted"
+        ]
+      }
+    }
+  },
+  "executedConfiguration": {
+    "root": "true",
+    "name": "Executed Alert Configuration",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "isTemplateAlert": "Template Alert",
+          "drugType": "Product Type Selected",
+          "type": "Alert type",
+          "datasheetType":"Show all Datasheet(s)",
+          "isDatasheetChecked":"Datasheet(s) Selection",
+          "isProductMining": "Consider selected product as data mining background",
+          "groupBySmq": "Data Mining based on SMQ/Event group",
+          "dataMiningVariableValue.operatorDisplay": "Data Mining Variable Operator",
+          "dataMiningVariableValue.value": "Data Mining Variable Values",
+          "isMultiIngredient": "Is Multi-Ingredient/Substance"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": [
+          "isLatestMaster",
+          "isPublic",
+          "createdBy",
+          "dateCreated",
+          "isAutoPaused",
+          "isAutoTrigger",
+          "isCaseSeries",
+          "isDeleted",
+          "isManuallyPaused",
+          "isResume",
+          "limitPrimaryPath",
+          "modifiedBy",
+          "reviewPeriod",
+          "suspectProduct",
+          "template",
+          "workflowGroup"
+        ]
+      },
+      "RULE_SECTION_PROPERTY": {
+        "metadata": {
+          "Data Source": [
+            "configuration.selectedDatasource"
+          ],
+          "Alert Criteria": [
+            "configuration.datasheetType",
+            "configuration.alertDateRangeInformation",
+            "configuration.productGroupSelection",
+            "configuration.drugType",
+            "configuration.excludeFollowUp",
+            "configuration.dateRangeType",
+            "configuration.evaluateDateAs",
+            "configuration.adhocRun",
+            "configuration.includeLockedVersion",
+            "configuration.isDatasheetChecked",
+            "configuration.includeMedicallyConfirmedCases",
+            "configuration.type",
+            "configuration.alertForegroundQueryName",
+            "configuration.foregroundSearch",
+            "configuration.alertQueryName",
+            "configuration.eventGroupSelection",
+            "configuration.excludeNonValidCases",
+            "configuration.groupBySmq",
+            "configuration.productSelection",
+            "configuration.adjustPerScheduleFrequency",
+            "configuration.alertTriggerCases",
+            "configuration.alertTriggerDays",
+            "configuration.asOfVersionDate"
+          ],
+          "Advanced Options": [
+            "configuration.dataMiningVariableValue",
+            "configuration.isProductMining"
+          ],
+          "Report Sections": [
+            "configuration.templateQueries",
+            "configuration.templateQueries.templateValueLists.parameterValues.key",
+            "configuration.templateQueries.templateValueLists.parameterValues.value"
+          ],
+          "Alert Details": [
+            "configuration.description",
+            "configuration.owner",
+            "configuration.name",
+            "configuration.isAutoAssignedTo",
+            "configuration.priority",
+            "configuration.shareWithUser",
+            "configuration.shareWithGroup",
+            "configuration.assignedTo",
+            "configuration.assignedToGroup",
+            "configuration.isTemplateAlert"
+          ],
+          "Alert Schedule": [
+            "configuration.numOfExecutions",
+            "configuration.repeatExecution",
+            "configuration.configSelectedTimeZone",
+            "configuration.scheduleDateJSON"
+          ]
+        }
+      }
+    }
+  },
+  "action": {
+    "root": "true",
+    "name": "Action",
+    "rules": {
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "meetingId": "code:com.rxlogix.util.AuditLogConfigUtil.getMeetingNameFromId(x)",
+          "schedularJson": "code:com.rxlogix.util.AuditLogConfigUtil.getScheduleDateResolve(x)",
+          "actionStatus":  "code:com.rxlogix.util.AuditLogConfigUtil.getActionStatusResolve(x)"
+        }
+      },
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "type": "Action Type",
+          "config": "Action",
+          "details": "Action Details",
+          "meetingId": "Meeting Name",
+          "guestAttendeeEmail": "Assigned To(External User address)",
+          "actionStatus": "Status",
+          "alertType": "Module",
+          "completedDate": "Completion Date"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": [
+          "execConfigId",
+          "viewed",
+          "createdDate",
+          "owner"
+        ]
+      }
+    }
+  },
+  "alertDateRangeInformation": {
+    "root": "true",
+    "name": "Alert Date Range",
+    "rules": {}
+  },
+  "evdasConfiguration": {
+    "root": "true",
+    "name": "EVDAS Alert Configuration",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "productSelection": "Substance",
+          "details": "Action Details",
+          "isDatasheetChecked":"Datasheet(s) Selection",
+          "datasheetType":"Show all Datasheet(s)",
+          "scheduleDateJSON": "Schedule"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "productSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getProductSelectionValuesForAudit(x)",
+          "eventSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getAllEventNameFieldFromJsonForAudit(x)",
+          "eventGroupSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getEventGroupFromJsonForAudit(x)",
+          "selectedDatasource": "code:com.rxlogix.util.AuditLogConfigUtil.getDataSourceForAudit(x)",
+          "datasheetType": "code:com.rxlogix.util.AuditLogConfigUtil.getValueForDateEnums(x)",
+          "selectedDataSheet": "code:com.rxlogix.util.AuditLogConfigUtil.getDataSheetNames(x)",
+          "scheduleDateJSON": "code:com.rxlogix.util.AuditLogConfigUtil.getScheduleDateResolve(x)"
+
+        }
+      },
+      "RULE_SECTION_PROPERTY": {
+        "metadata": {
+          "Alert Criteria": [
+            "evdasConfiguration.eventSelection",
+            "evdasConfiguration.productSelection",
+            "evdasConfiguration.productGroupSelection",
+            "evdasConfiguration.eventGroupSelection",
+            "evdasConfiguration.selectedDataSheet",
+            "evdasConfiguration.isDatasheetChecked",
+            "evdasConfiguration.dateRangeInformation",
+            "evdasConfiguration.datasheetType",
+            "evdasConfiguration.eventSelection",
+            "evdasConfiguration.adhocRun"
+          ],
+          "Alert Details": [
+            "evdasConfiguration.assignedTo",
+            "evdasConfiguration.assignedToGroup",
+            "evdasConfiguration.shareWithUser",
+            "evdasConfiguration.name",
+            "evdasConfiguration.priority",
+            "evdasConfiguration.owner",
+            "evdasConfiguration.description"
+          ],
+          "Alert Schedule": [
+            "evdasConfiguration.configSelectedTimeZone",
+            "evdasConfiguration.scheduleDateJSON"
+          ]
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": [
+          "isDeleted"
+        ]
+      }
+    }
+  },
+  "literatureConfiguration": {
+    "root": "true",
+    "name": "Literature Alert Configuration",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "productSelection": "Product",
+          "scheduleDateJSON": "Schedule"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "productSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getProductSelectionValuesForAudit(x)",
+          "productGroupSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getGroupNameFieldFromJsonForAudit(x)",
+          "eventSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getAllEventNameFieldFromJsonForAudit(x)",
+          "eventGroupSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getEventGroupFromJsonForAudit(x)",
+          "selectedDatasource": "code:com.rxlogix.util.AuditLogConfigUtil.getDataSourceForAudit(x)",
+          "scheduleDateJSON": "code:com.rxlogix.util.AuditLogConfigUtil.getScheduleDateResolve(x)"
+        }
+      },
+      "RULE_SECTION_PROPERTY": {
+        "metadata": {
+          "Alert Criteria": [
+            "literatureConfiguration.eventSelection",
+            "literatureConfiguration.productSelection",
+            "literatureConfiguration.productGroupSelection",
+            "literatureConfiguration.eventGroupSelection",
+            "literatureConfiguration.dateRangeInformation",
+            "literatureConfiguration.searchString",
+            "literatureConfiguration.selectedDatasource"
+          ],
+          "Alert Details": [
+            "literatureConfiguration.assignedTo",
+            "literatureConfiguration.assignedToGroup",
+            "literatureConfiguration.shareWithUser",
+            "literatureConfiguration.name",
+            "literatureConfiguration.priority",
+            "literatureConfiguration.owner"
+          ],
+          "Alert Schedule": [
+            "literatureConfiguration.configSelectedTimeZone",
+            "literatureConfiguration.scheduleDateJSON"
+          ]
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": [
+          "isDeleted"
+        ]
+      }
+    }
+  },
+  "aggregateCaseAlert": {
+    "root": "true",
+    "name": "Aggregate Review",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "dispLastChange": "Last Disposition Date",
+          "dispPerformedBy":"Performed By"
+        }
+      }
+    }
+  },
+  "aggregateOnDemandAlert": {
+  "root": "true",
+  "name": "Adhoc Aggregate Review",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "dispLastChange": "Last Disposition Date",
+          "dispPerformedBy":"Performed By"
+        }
+      }
+    }
+},
+  "archivedAggregateCaseAlert": {
+    "root": "true",
+    "name": "Aggregate Review: Archived Alert",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "dispLastChange": "Last Disposition Date",
+          "dispPerformedBy":"Performed By"
+        }
+      }
+    }
+  },
+  "evdasAlert": {
+    "root": "true",
+    "name": "EVDAS Review",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "dispLastChange": "Last Disposition Date",
+          "dispPerformedBy":"Performed By"
+        }
+      }
+    }
+  },
+  "evdasOnDemandAlert": {
+    "root": "true",
+    "name": "Adhoc EVDAS Review",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "dispLastChange": "Last Disposition Date",
+          "dispPerformedBy":"Performed By"
+        }
+      }
+    }
+  },
+  "archivedEvdasAlert": {
+    "root": "true",
+    "name": "EVDAS Review: Archived Alert",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "dispLastChange": "Last Disposition Date",
+          "dispPerformedBy":"Performed By"
+        }
+      }
+    }
+  },
+  "singleCaseAlert": {
+    "root": "true",
+    "name": "Individual Case Review",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "dispLastChange": "Last Disposition Date",
+          "dispPerformedBy":"Performed By"
+        }
+      }
+    }
+  },
+  "singleOnDemandAlert": {
+    "root": "true",
+    "name": "Adhoc Individual Case Review",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "dispLastChange": "Last Disposition Date",
+          "dispPerformedBy":"Performed By"
+        }
+      }
+    }
+  },
+  "archivedSingleCaseAlert": {
+    "root": "true",
+    "name": "Individual Case Review: Archived Alert",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "dispLastChange": "Last Disposition Date",
+          "dispPerformedBy":"Performed By"
+        }
+      }
+    }
+  },
+  "literatureAlert": {
+    "root": "true",
+    "name": "Literature Review",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "dispLastChange": "Last Disposition Date",
+          "dispPerformedBy":"Performed By"
+        }
+      }
+    }
+  },
+  "archivedLiteratureAlert": {
+    "root": "true",
+    "name": "Literature Review: Archived Alert",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "dispLastChange": "Last Disposition Date",
+          "dispPerformedBy":"Performed By"
+        }
+      }
+    }
+  },
+  "user": {
+    "root": "true",
+    "name": "User Management",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "userDepartments": "Departments",
+          "safetyGroups": "Product Safety Lead Configuration",
+          "userRolesString": "User Roles"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "groups": "code:com.rxlogix.util.AuditLogConfigUtil.getGroupNameWithType(x)",
+          "locale": "code:com.rxlogix.util.AuditLogConfigUtil.getLanguageFromLocale(x)"
+        }
+      }
+    }
+  },
+  "userDepartment": {
+    "root": "true",
+    "name": "User Management",
+    "rules": {
+    }
+  },
+  "group": {
+    "root": "true",
+    "name": "Group Management",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "userDepartments": "Departments",
+          "safetyGroups": "Product Safety Lead Configuration",
+          "groupType": "Type",
+          "defaultAdhocDisposition": "Adhoc Review (Default)",
+          "defaultEvdasDisposition": "EVDAS (Default)",
+          "defaultLitDisposition": "Literature (Default)",
+          "defaultQualiDisposition": "Individual Case (Default)",
+          "defaultQuantDisposition": "Aggregate (Default)",
+          "defaultSignalDisposition": "Signal (Default)",
+          "alertDispositions": "Alert Level Disposition",
+          "justificationText":"Auto Route Justification"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "groupType": "code:com.rxlogix.util.AuditLogConfigUtil.getValueForDateEnums(x)"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": ["dateCreated","lastUpdated","modifiedBy","createdBy"]
+      }
+    }
+  },
+  "dispositionRule": {
+    "root": "true",
+    "name": "Workflow Rule",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "allowedUserGroups": "Allowed Groups"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": []
+      }
+    }
+  },
+  "priority": {
+    "root": "true",
+    "name": "Priority",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "iconClass": "Icon"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": []
+      }
+    }
+  },
+  "preference": {
+    "root": "true",
+    "name": "User Preference",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "isEmailEnabled": "Description",
+          "locale": "Language"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "locale": "code:com.rxlogix.util.AuditLogConfigUtil.getLanguageFromLocale(x)",
+          "timeZone": "code:com.rxlogix.util.AuditLogConfigUtil.getTimeZoneWithGmt(x)"
+        }
+      }
+    }
+  },
+  "disposition": {
+    "root": "true",
+    "name": "Disposition",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "reviewPeriod": "Default Review Period(Days)"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": []
+      }
+    }
+  },
+  "signalRMMs": {
+    "root": "false",
+    "name": "RMMs",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "inputName": "File Name",
+          "name": "Attach File Name/Reference Link",
+          "assignedTo": "Resp.(User)",
+          "assignedToGroup": "Resp.(Group)"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "country": "code:com.rxlogix.util.MiscUtil.getBean('validatedSignalService').country(x)",
+          "referenceType": "code:com.rxlogix.util.AuditLogConfigUtil.splitCamelCase(x)"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": [
+          "Attachment",
+          "isDeleted"
+        ]
+      }
+    }
+  },
+  "signalWorkflowRule": {
+    "root": "true",
+    "name": "Signal Workflow",
+    "rules": {
+    }
+  },
+  "justification": {
+    "root": "true",
+    "name": "Justification",
+    "rules": { "RULE_CHANGE_PROPERTY": {
+      "metadata": {
+        "feature.alertPriority": "Priority",
+        "feature.caseAddition": "Case Addition",
+        "feature.signalPriority": "Signal Priority",
+        "feature.signalWorkflow": "Signal Workflow",
+        "feature.alertWorkflow": "Alert Workflow",
+        "feature.topicWorkflow": "Topic Workflow"
+      }
+    },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "feature.alertPriority": "code:com.rxlogix.util.AuditLogConfigUtil.getJustificationChanges(x)",
+          "feature.caseAddition": "code:com.rxlogix.util.AuditLogConfigUtil.getJustificationChanges(x)",
+          "feature.signalPriority": "code:com.rxlogix.util.AuditLogConfigUtil.getJustificationChanges(x)",
+          "feature.signalWorkflow": "code:com.rxlogix.util.AuditLogConfigUtil.getJustificationChanges(x)",
+          "feature.alertWorkflow": "code:com.rxlogix.util.AuditLogConfigUtil.getJustificationChanges(x)",
+          "feature.topicWorkflow": "code:com.rxlogix.util.AuditLogConfigUtil.getJustificationChanges(x)"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": []
+      }
+    }
+  },
+  "businessConfiguration": {
+    "root": "true",
+    "name": "Business Rules",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "isGlobalRule": "Global Rule",
+          "isMultiIngredient": "Is Multi-Ingredient/Substance"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": []
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "productSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getProductSelectionValuesForAudit(x)",
+          "productGroupSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getGroupNameFieldFromJsonForAudit(x)",
+          "dataSource": "code:com.rxlogix.util.AuditLogConfigUtil.getDataSourceForAudit(x)"
+        }
+      }
+    }
+  },
+  "ruleInformation": {
+    "root": "true",
+    "name": "Business Rules",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "ruleJSON": "Rules",
+          "tags": "Categories",
+          "isBreakAfterRule": "Break After Rule"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": ["format"]
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "ruleJSON": "code:com.rxlogix.util.AuditLogConfigUtil.getFilterCriteriaFromRuleJson(x)",
+          "tags": "code:com.rxlogix.util.AuditLogConfigUtil.getTagsFromRule(x)"
+        }
+      }
+    }
+  },
+  "safetyGroup": {
+    "root": "true",
+    "name": "Safety Lead Config",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "allowedProd": "Allowed Products"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "allowedProd": "code:com.rxlogix.util.AuditLogConfigUtil.getAllowedProductCommaSeperated(x)"
+        }
+      }
+    }
+  },
+  "commentTemplate": {
+    "root": "true",
+    "name": "Comment Template",
+    "rules": {}
+  },
+  "actionType": {
+    "root": "true",
+    "name": "Action Type",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "value": "Name"
+        }
+      }
+    }
+  },
+  "actionConfiguration": {
+    "root": "true",
+    "name": "Action Configuration",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "isEmailEnabled": "Notify By Email"
+        }
+      }
+    }
+  },
+  "actionTemplate": {
+    "root": "true",
+    "name": "Action Template",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "actionJson.actionConfig": "Action",
+          "actionJson.actionType": "Action Type",
+          "actionJson.assignedTo": "Assigned To",
+          "actionJson.comments": "Comments",
+          "actionJson.details": "Details",
+          "actionJson.dueIn": "Due In"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": [
+          "actionJson.actionConfigId",
+          "actionJson.actionTypeId",
+          "actionJson.assignedToId",
+          "actionJson.assignedToGroupId"
+        ]
+      }
+    }
+  },
+  "pvsAppConfiguration": {
+    "root": "true",
+    "name": "Control Panel",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "booleanValue": "Enable"
+        }
+      }
+    }
+  },
+  "systemConfig": {
+    "root": "true",
+    "name": "Control Panel",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "dateClosedDispositionWorkflow": "Date Closed Based On Disposition/Workflow",
+          "dateClosedWorkflow": "Date Closed Based On Disposition/Workflow",
+          "isDisposition":"Date Closed Based On Disposition/Workflow"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "isDisposition": "code:com.rxlogix.util.AuditLogConfigUtil.getDateClosedConfigString(x)"
+        }
+      }
+    }
+  },
+  "Stop List": {
+    "root": "true",
+    "name": "Important Events",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "dme": "DME",
+          "ime": "IME"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "productSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getProductSelectionValuesForAudit(x)",
+          "productGroupSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getGroupNameFieldFromJsonForAudit(x)",
+          "eventName": "code:com.rxlogix.util.AuditLogConfigUtil.getAllEventNameFieldFromJsonForAudit(x)",
+          "eventGroupSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getEventGroupFromJsonForAudit(x)"
+        }
+      }
+    }
+  },
+  "signalNotificationMemo": {
+    "root": "true",
+    "name": "Signal Memo Configuration",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "mailUsers": "Email (PVS_USER)",
+          "mailGroups": "Email (PVS_GROUP)",
+          "emailAddress": "Email (External User address)"
+        }
+      }
+    }
+  },
+  "emailNotification": {
+    "root": "true",
+    "name": "Email Configuration",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "isEnabled": "Status"
+        }
+      }
+    }
+  },
+  "viewInstance": {
+    "root": "true",
+    "name": "View",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "JSONQuery": "Filter Criteria",
+          "defaultValue": "Default View",
+          "columnSeq": "Column Sequence"
+        }
+      }
+    }
+  },
+  "advancedFilter": {
+    "root": "true",
+    "name": "Advanced Filter",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "JSONQuery": "Filter Criteria"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "JSONQuery": "code:com.rxlogix.util.AuditLogConfigUtil.getFilterCriteriaFromFilterJson(x)",
+          "alertType" : "code:com.rxlogix.util.AuditLogConfigUtil.getAlertTypeForAdvanceFilter(x)"
+        }
+      }
+    }
+  },
+  "ProductViewAssignment": {
+    "root": "true",
+    "name": "Product Assignment",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "hierarchy": "Product Hierarchy"
+        }
+      },
+
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "product": "code:com.rxlogix.util.AuditLogConfigUtil.getProdAssignName(x)",
+          "usersAssigned": "code:com.rxlogix.util.AuditLogConfigUtil.getUserNameFromIdList(x)",
+          "groupsAssigned": "code:com.rxlogix.util.AuditLogConfigUtil.getGroupNameFromIdList(x)"
+        }
+      }
+    }
+  },
+  "substanceFrequency": {
+    "root": "true",
+    "name": "Substance Frequency",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+      "metadata": {
+        "name":"Product Name"
+      }
+    }
+    }
+  },
+  "priorityDispositionConfig": {
+    "name": "Priority"
+  },
+  "adHocAlert": {
+    "root": "true",
+    "name": "Ad-Hoc Review",
+    "rules": {
+      "RULE_HIDE_PROPERTY": {
+        "metadata": [
+          "attributes.initialDataSource",
+          "attributes.detectedBy"
+        ]
+      },
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "attributes.severity":"Severity",
+          "attributes.deviceRelated":"Device Related",
+          "attributes.initialDataSource":"Initial DataSource",
+          "attributes.topicCategory":"Topic Category",
+          "attributes.increasedFrequency":"Increased Frequency",
+          "attributes.publicHealthImpact":"Public Health Impact",
+          "attributes.populationSpecific":"Population Specific",
+          "attributes.actionStatus":"Action Status",
+          "attributes.signalHistoryStatus":"signal History Status",
+          "attributes.signalOutcome":"Signal Outcome",
+          "attributes.evaluationMethods":"Evaluation Methods",
+          "attributes.actionsTaken":"Actions Taken",
+          "topic": "Topic Information",
+          "notes": "Comments",
+          "detectedDate": "Evaluation Date",
+          "refType" : "Reference Type",
+          "numberOfICSRs" : "Number of ICSRs"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "groupType": "code:com.rxlogix.util.AuditLogConfigUtil.getValueForDateEnums(x)",
+          "products": "code:com.rxlogix.util.AuditLogConfigUtil.getProductSelectionValuesForAudit(x)",
+          "events": "code:com.rxlogix.util.AuditLogConfigUtil.getAllEventNameFieldFromJsonForAudit(x)",
+          "productSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getProductSelectionValuesForAudit(x)",
+          "eventSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getAllEventNameFieldFromJsonForAudit(x)",
+          "eventGroupSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getGroupNameFieldFromJsonForAudit(x)",
+          "productGroupSelection": "code:com.rxlogix.util.AuditLogConfigUtil.getGroupNameFieldFromJsonForAudit(x)",
+          "refType": "code:com.rxlogix.util.AuditLogConfigUtil.getReferenceNameFromId(x)"
+        }
+      },
+      "RULE_SECTION_PROPERTY": {
+        "metadata": {
+          "Alert Criteria": [
+            "adHocAlert.productGroupSelection",
+            "adHocAlert.eventGroupSelection",
+            "adHocAlert.productSelection",
+            "adHocAlert.eventSelection",
+            "adHocAlert.refType",
+            "adHocAlert.numberOfICSRs",
+            "adHocAlert.topic",
+            "adHocAlert.indication",
+            "adHocAlert.attributes.deviceRelated",
+            "adHocAlert.countryOfIncidence",
+            "adHocAlert.reportType",
+            "adHocAlert.formulations"
+          ],
+          "Alert Workflow": [
+            "adHocAlert.attributes.populationSpecific",
+            "adHocAlert.priority",
+            "adHocAlert.disposition"
+          ],
+          "Alert Details": [
+            "adHocAlert.description",
+            "adHocAlert.owner",
+            "adHocAlert.name",
+            "adHocAlert.isAutoAssignedTo",
+            "adHocAlert.shareWithUser",
+            "adHocAlert.shareWithGroup",
+            "adHocAlert.assignedTo",
+            "adHocAlert.assignedToGroup",
+            "adHocAlert.isTemplateAlert",
+            "adHocAlert.issuePreviouslyTracked",
+            "adHocAlert.initialDataSource",
+            "adHocAlert.notes",
+            "adHocAlert.detectedBy",
+            "adHocAlert.detectedDate"
+          ],
+          "Alert Schedule": [
+            "configuration.numOfExecutions",
+            "configuration.repeatExecution",
+            "configuration.configSelectedTimeZone",
+            "configuration.scheduleDateJSON"
+          ]
+        }
+      }
+    }
+  },
+  "reportHistory": {
+    "root": "true",
+    "name": "Reporting",
+    "rules": {
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "dataSource": "code:com.rxlogix.util.AuditLogConfigUtil.getDataSourceForAudit(x)"
+        }
+      }
+    }
+  },
+  "references": {
+    "root": "true",
+    "name": "Dashboard: My Links",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "inputName": "File Name",
+          "auditDescription": "Description",
+          "name": "Attach File Name/Reference Link"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": [
+          "isDeleted"
+        ]
+      }
+    }
+  },
+  "reference": {
+    "root": "true",
+    "name": "Dashboard: My Links",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "inputName": "File Name",
+          "auditDescription": "Description",
+          "name": "Attach File Name/Reference Link"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": [
+          "isDeleted"
+        ]
+      }
+    }
+  },
+  "attachmentDescription": {
+    "root": "true",
+    "name": "Signal"
+  },
+  "attachment": {
+    "root": "true",
+    "name": "Attachment",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "inputName": "File Name",
+          "auditDescription": "Description",
+          "name": "Attach File Name/Reference Link"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "referenceType": "code:com.rxlogix.util.AuditLogConfigUtil.splitCamelCase(x)"
+        }
+      }
+    }
+  },
+  "attachmentReference": {
+    "root": "true",
+    "name": "Dashboard: My Links",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "inputName": "File Name",
+          "auditDescription": "Description",
+          "name": "Attach File Name/Reference Link"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": [
+          "isDeleted"
+        ]
+      }
+    }
+  },
+  "productTypeConfiguration": {
+    "root": "true",
+    "name": "Product Type Configuration"
+  },
+  "signalWorkflowState": {
+    "root": "true",
+    "name": "Signal Workflow State",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "defaultDisplay": "Default",
+          "dueInDisplay": "Calculate Due In"
+        }
+      }
+    }
+  },
+  "caseNarrativeConfiguration": {
+    "root": "true",
+    "name": "Control Panel"
+  },
+  "defaultViewMapping": {
+    "root": "true",
+    "name": "Default View"
+  },
+  "masterConfiguration": {
+    "root": "true",
+    "name": "Master Configuration"
+  },
+  "drugClassification": {
+    "root": "true",
+    "name": "Drug Classification",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "reviewPeriod": "Default Review Period(Days)"
+        }
+      },
+      "RULE_HIDE_PROPERTY": {
+        "metadata": [
+          "productIds",
+          "classification",
+          "classificationType",
+          "productDictionarySelection"
+        ]
+      }
+    }
+  },
+  "alertPreExecutionCheck": {
+    "root": "true",
+    "name": "Alert Pre-Checks",
+    "rules": {
+      "RULE_CHANGE_PROPERTY": {
+        "metadata": {
+          "isPvrCheckEnabled": "Disable Alerts On PVR Inaccessibility",
+          "isVersionAsOfCheckEnabled": "Alerts Configured On Version As Of",
+          "isEtlFailureCheckEnabled": "ETL Failure Check",
+          "isEtlInProgressCheckEnabled": "ETL In Progress Check"
+        }
+      },
+      "RULE_MAP_ID_TO_TEXT": {
+        "metadata": {
+          "Individual Case Alert(Rule)": "code:com.rxlogix.util.AuditLogConfigUtil.getAdjustmentEnumValue(x)",
+          "Aggregate Alert(Rule)": "code:com.rxlogix.util.AuditLogConfigUtil.getAdjustmentEnumValue(x)"
+        }
+      }
+    }
+  }
+}

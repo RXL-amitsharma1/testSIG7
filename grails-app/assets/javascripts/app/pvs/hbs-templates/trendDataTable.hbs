@@ -1,0 +1,18 @@
+<table class="table  bs-example fixHeader-table" >
+    <thead>
+    <tr>
+        <th class="headRow">Retrieve Date</th>
+        <th class="headRow">Probability</th>
+        <th class="headRow">Expected Count</th>
+        <th class="headRow">Actual Count</th>
+    </tr>
+    </thead>
+    {{#each trendData}}
+        <tr>
+            <td>{{retrieveDate}}</td>
+            <td>{{probability}}</td>
+            <td>{{expectedCount}}</td>
+            <td>{{actualCount}}</td>
+        </tr>
+    {{/each}}
+</table>

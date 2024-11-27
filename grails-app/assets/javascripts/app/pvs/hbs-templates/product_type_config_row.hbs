@@ -1,0 +1,36 @@
+<tr role="row" id="addToProductRuleRow" class="odd productRuleRow" >
+    <td>
+        <span>
+            <label>
+                <input type="text"  class="form-control productRoleName" style='font-weight: 400; margin-bottom: 2px' name="productConfigurationName"/>
+            </label>
+        </span>
+    </td>
+    <td>
+        <span>
+            <select id="productTypeSelect" name="productTypeSelect" class="productTypeSelect form-control">
+                 <option value="null" selected>--Select--</option>
+                 {{#each productTypeMap}}
+                    <option value="{{id}}">{{text}}</option>
+                 {{/each}}
+            </select>
+        </span>
+    </td>
+    <td>
+        <span>
+            <select id="roleTypeSelect" name="roleTypeSelect" class="roleTypeSelect form-control">
+                <option value="null" selected>--Select--</option>
+                 {{#each roleMap}}
+                    <option value="{{id}}">{{text}}</option>
+                 {{/each}}
+            </select>
+        </span>
+    </td>
+    <td class="text-right icons-class">
+        <a tabindex="0" title="Save" class="saveProductRule showOk" style="cursor: pointer"><i
+                class="mdi mdi-check font-18 grey-2"></i></a>
+        <a tabindex="0" title="Delete"
+           class="btn-add-row cancelProductRuleCreate showOk" style="cursor: pointer"><i
+                class="mdi mdi-close font-18 grey-1"></i></a>
+    </td>
+</tr>

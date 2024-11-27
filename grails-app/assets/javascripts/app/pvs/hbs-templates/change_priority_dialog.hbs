@@ -1,0 +1,74 @@
+<script>
+
+    $('#priorityModal .priority-mandatory').on("change", function () {
+        var targetPriority = $('#valueSelect').val();
+        if ($(this).attr('id') === 'justificationListPrority') {
+            var text = $($(this)[0].options[$(this)[0].selectedIndex]).attr("data-text");
+            $("#justification").val(text);
+        }
+        var justification = $('#justification').val();
+
+        if ($('#valueSelect').is(":visible") && targetPriority.length > 0 && justification.length > 0) {
+            $('.btn-primary').prop("disabled", false);
+        } else {
+            $('.btn-primary').prop("disabled", true);
+        }
+    });
+
+</script>
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+    </button>
+    <label class="modal-title" id="exampleModalLabel">{{title}}</label>
+</div>
+
+<div class="modal-body" id="priorityModal">
+    <div class="errorNotification hide">
+         <div class="alert alert-danger">
+             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+             <strong>Error! </strong><span id="errorMessage" class="errorMessage"></span>
+         </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <label class="">Current Priority</label>
+                <span id="currentValue" class="form-control">{{values.currentValue}}</span>
+            </div>
+            <div class="col-md-6" >
+                 <label for="valueSelect">Target Priority<span class="required-indicator">*</span></label>
+                 <select id="valueSelect" name="value" class="priority-mandatory form-control">
+                      <option value=""></option>
+                      {{#each values.availableValues}}
+                      <option value="{{value}}">{{displayName}}</option>
+                      {{/each}}
+                 </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="m-l-5 pull-left">
+                <label for="justificationListPrority">Justification<span class="required-indicator">*</span></label>
+            </div>
+            <div class="col-md-4">
+                <select id="justificationListPrority" name="value" class="priority-mandatory form-control">
+                    <option value=""></option>
+                    {{#each values.justification}}
+                        <option data-text="{{justification}}" value="{{name}}">{{name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-12 form-group">
+                <textarea id="justification" class="form-control col-sm-4" style="height: 150px;"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary btn-primary-change">Change</button>
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>

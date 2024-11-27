@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>PVReport Integration</title>
+</head>
+<body>
+<script>
+    var createCookie = function(name,value,days) {
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime()+(days*24*60*60*1000));
+            var expires = "; expires="+date.toGMTString();
+        }
+        else var expires = "";
+        document.cookie = name+"="+value+expires+";path=/SpotfireWeb";
+    }
+
+    var readCookie = function(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+
+    var eraseCookie = function(name) {
+        createCookie(name,"",-1);
+    }
+
+    window.onload = function() {
+        //alert(document.cookie)
+        eraseCookie('ASP.NET_SessionId')
+
+        var spotfire_server = getParameterByName("sr")
+        var version = getParameterByName("v")
+        var path=getParameterByName("p")
+        var domainName = getParameterByName("dn")
+        var fileName = getParameterByName("f")
+        var user = getParameterByName("u")
+
+        var current_file_name = fileName
+        document.domain = domainName
+        document.cookie="ticket=" + user + "; path=/" + path
+
+        var url = composeSpotfireLibUrl(spotfire_server, path, version)
+        loadScript(url, function() {
+            generateReport(spotfire_server, path, version, current_file_name)
+        })
+    }
+
+    function generateReport(spotfire_server, path, version, filename) {
+        var webPlayerCustomization = new spotfire.webPlayer.Customization();
+        webPlayerCustomization.showAbout = true;
+        webPlayerCustomization.showHelp = true;
+        webPlayerCustomization.showAnalysisInformationTool = true;
+        webPlayerCustomization.showUndoRedo = true;
+        webPlayerCustomization.showCustomizableHeader = true;
+        webPlayerCustomization.showTopHeader = true;
+        webPlayerCustomization.showClose = true;
+        webPlayerCustomization.showAnalysisInfo = true;
+        webPlayerCustomization.showToolBar = true;
+        webPlayerCustomization.showExportFile = true;
+        webPlayerCustomization.showExportVisualization = true;
+        webPlayerCustomization.showDodPanel = true;
+        webPlayerCustomization.showFilterPanel = true;
+        webPlayerCustomization.showPageNavigation = true;
+        webPlayerCustomization.showStatusBar = true;
+        webPlayerCustomization.showLogout = true;
+        webPlayerCustomization.showReloadAnalysis = true;
+
+        var app = new spotfire.webPlayer.Application("http://" + spotfire_server + "/" + path + "/",
+                webPlayerCustomization);
+        /*app.open("Reports/API Test Report", "contentpanel",
+         'par1.family_id = {"100000,100003"};par2.start_date={"01-01-1900"};par3.end_date={"31-01-2015"};par4.as_of_date={"31-01-2015"};');*/
+
+        app.open(filename, "contentpanel", null);
+        app.onError(errorCallback);
+    }
+
+    function errorCallback(errorCode, description){
+        // Displays an error message if something goes wrong in the Web Player.
+        alert(errorCode + ": " + description);
+    }
+
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    function loadScript(url, callback) {
+        // Adding the script tag to the head as suggested before
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
+
+        // Then bind the event to the callback function.
+        // There are several events for cross browser compatibility.
+        script.onreadystatechange = callback;
+        script.onload = callback;
+
+        // Fire the loading
+        head.appendChild(script);
+    }
+
+    function composeSpotfireLibUrl(spotfire_server, path, version) {
+        return "http://" + spotfire_server + "/" + path + "/GetJavaScriptApi.ashx?Version=" + version
+    }
+</script>
+<div id="contentpanel"></div>
+</body>
+</html>

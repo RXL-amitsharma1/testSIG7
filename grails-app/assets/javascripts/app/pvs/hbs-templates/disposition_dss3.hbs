@@ -1,0 +1,74 @@
+<script>
+    $(function(){
+        var proposedDisposition = $("#proposedDisposition").val();
+    });
+</script>
+<div class="disposition">
+    <input type="hidden" id="proposedDisposition" value="{{proposedDisposition}}"/>
+
+    {{#if isValidationStateAchieved}}
+        <a data-target="#dispositionSignalPopover" role="button" class="changeDisposition"
+           data-validated-confirmed="true"
+           data-disposition-id="{{id}}" data-disposition-closed="{{dispositionClosedStatus}}" data-toggle="modal-popover"
+           data-placement="bottom" title="{{currentDisposition}}" tabindex="0"><span>Add Signal</span></a>
+    {{else}}
+        <ul class="list-inline icon-list txt-ellipsis {{#if useDropdown}}hidden-element{{/if}}" data-is-reviewed="{{isReviewed}}" data-current-disposition="{{currentDisposition}}">
+            {{#each allowedDisposition}}
+                {{#if validatedConfirmed}}
+                    <li {{#if ../useDropdown}}class="hidden-element"{{/if}}>
+                        {{#if_eq this.displayName ../proposedDisposition}}
+                            <a tabindex="0" id="dispositionButton{{../rowIndex}}-{{id}}" data-target="#dispositionSignalPopover" role="button" class="changeDisposition"
+                               data-validated-confirmed="{{validatedConfirmed}}" data-auth-required="{{isApprovalRequired}}" data-is-reviewed="{{isReviewed}}"
+                               data-disposition-id="{{id}}" data-disposition-closed="{{dispositionClosedStatus}}" data-toggle="modal-popover"
+                               data-placement="bottom" title="{{displayName}}"><i class="ico-circle" style="background:{{colorCode}}">{{abbreviation}}*</i></a>
+                        {{/if_eq}}
+                        {{#if_else_neq this.displayName ../proposedDisposition}}
+                            <a tabindex="0" id="dispositionButton{{../rowIndex}}-{{id}}" data-target="#dispositionSignalPopover" role="button" class="changeDisposition"
+                               data-validated-confirmed="{{validatedConfirmed}}" data-auth-required="{{isApprovalRequired}}" data-is-reviewed="{{isReviewed}}"
+                               data-disposition-id="{{id}}" data-disposition-closed="{{dispositionClosedStatus}}" data-toggle="modal-popover"
+                               data-placement="bottom" title="{{displayName}}"><i class="ico-circle" style="background:{{colorCode}}">{{abbreviation}}</i></a>
+
+                        {{/if_else_neq}}
+
+                    </li>
+                {{else}}
+                    {{#if ../forceJustification}}
+                        <li {{#if ../useDropdown}}class="hidden-element"{{/if}}>
+                            {{#if_eq this.displayName ../proposedDisposition}}
+                                <a tabindex="0" id="dispositionButton{{../rowIndex}}-{{id}}" data-target="#dispositionJustificationPopover" role="button" class="changeDisposition"
+                                   data-validated-confirmed="{{validatedConfirmed}}" data-backdrop="true" data-auth-required="{{isApprovalRequired}}" data-is-reviewed="{{isReviewed}}"
+                                   data-disposition-id="{{id}}" data-disposition-closed="{{dispositionClosedStatus}}" data-toggle="modal-popover"
+                                   data-placement="bottom" title="{{displayName}}"><i class="ico-circle" style="background:{{colorCode}}">{{abbreviation}}*</i></a>
+                            {{/if_eq}}
+                            {{#if_else_neq this.displayName ../proposedDisposition}}
+                                <a tabindex="0" id="dispositionButton{{../rowIndex}}-{{id}}" data-target="#dispositionJustificationPopover" role="button" class="changeDisposition"
+                                   data-validated-confirmed="{{validatedConfirmed}}" data-backdrop="true" data-auth-required="{{isApprovalRequired}}" data-is-reviewed="{{isReviewed}}"
+                                   data-disposition-id="{{id}}" data-disposition-closed="{{dispositionClosedStatus}}" data-toggle="modal-popover"
+                                   data-placement="bottom" title="{{displayName}}"><i class="ico-circle" style="background:{{colorCode}}">{{abbreviation}}</i></a>
+                            {{/if_else_neq}}
+                        </li>
+                    {{else}}
+                        <li {{#if ../useDropdown}}class="hidden-element"{{/if}}>
+                            <a tabindex="0" id="dispositionButton{{../rowIndex}}-{{id}}" href="javascript:void(0);" role="button" class="changeDisposition"
+                               data-validated-confirmed="{{validatedConfirmed}}" data-auth-required="{{isApprovalRequired}}" data-is-reviewed="{{isReviewed}}"
+                               data-disposition-id="{{id}}" data-disposition-closed="{{dispositionClosedStatus}}" title="{{displayName}}"><i class="ico-circle" style="background:{{colorCode}}">{{abbreviation}}</i></a>
+                        </li>
+                    {{/if}}
+                {{/if}}
+            {{/each}}
+        </ul>
+
+        {{#if useDropdown}}
+            <select class="disposition-select2 select2 form-control" style="width: 150px;">
+                <option value="current">{{currentDisposition}}</option>
+                {{#each allowedDisposition}}
+                    <option value="{{id}}"
+                            data-popup-target="#dispositionButton{{../rowIndex}}-{{id}}">
+                        {{displayName}}
+                        {{#if_eq this.displayName ../proposedDisposition}}*{{/if_eq}}
+                    </option>
+                {{/each}}
+            </select>
+        {{/if}}
+    {{/if}}
+</div>

@@ -1,0 +1,7 @@
+#spotfire-configuration .rxmain-container {
+    height: 100%;
+}
+
+#spotfire-configuration #spotfirePanel {
+    height: 80%;
+}

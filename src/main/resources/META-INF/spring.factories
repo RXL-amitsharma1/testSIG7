@@ -1,0 +1,9 @@
+org.springframework.cloud.bootstrap.BootstrapConfiguration=\
+com.rxlogix.crypto.RxEncryptionBootstrapConfiguration
+
+org.springframework.boot.BootstrapRegistryInitializer=\
+com.rxlogix.bootstrap.RxEncryptorConfigBootstrapper
+
+org.springframework.boot.env.EnvironmentPostProcessor=\
+com.rxlogix.bootstrap.RxDecryptEnvironmentPostProcessor,\
+com.rxlogix.bootstrap.LogbackGroovyEnvironmentPostProcessor

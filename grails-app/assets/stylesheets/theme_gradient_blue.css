@@ -1,0 +1,113 @@
+.navbar-default {
+    background-color: transparent;
+    background-image: url(../images/bg2.png);
+    background-size:cover;
+
+}
+html {
+    background: #d4e9ef;
+}
+body {
+    background: #d4e9ef;
+}
+.topbar .topbar-left {
+    background: transparent;
+}
+.side-menu.left {
+    background:  url(../images/left_bg.png) bottom left no-repeat, linear-gradient(to right, #2a6ca3, #2a8fbb) !important;
+}
+
+#wrapper.enlarged .left.side-menu #sidebar-menu > ul > li > a:hover {
+    background-color: #2a8fbb !important;
+}
+#wrapper.enlarged .left.side-menu #sidebar-menu ul > li:hover > a {
+    background-color: #2a8fbb !important;
+}
+#wrapper.enlarged .left.side-menu #sidebar-menu ul > li:hover > ul a:hover{
+background-color: #2a8fbb !important;
+}
+#wrapper.enlarged .left.side-menu #sidebar-menu ul > li:hover > a {
+    background-color: #2a8fbb !important;
+}
+.navbar-default {
+    background-color: #2a8fbb !important;
+}
+.waves-effect.waves-primary .waves-ripple {
+    background-color: rgba(15, 74, 89, 0.4);
+}
+.pv-fullcase-treeview{
+    background: #83bcde;
+}
+
+
+
+/*######## NOT REQUIRED WITH DEV. Application it is just for PVI DEMO########*/
+.pv-bi{
+  background: #FFF;
+}
+.pv-bi .content-page{
+  background: #d4e8ef;
+}
+.pv-bi .navbar-default{
+  /*background: #006fa6 url(../images/bg2.png) no-repeat center -50px;*/
+  background-size: cover;
+}
+.pv-bi .side-menu.left{
+  background-color: #167cad; /* For browsers that do not support gradients */
+  background:  url(../images/left_bg.png) bottom left no-repeat, linear-gradient(to right, #2a6ca3, #2a8fbb) !important;
+  /*background: linear-gradient(left, #2a6da4 , #2b8ebb); /* W3C */
+  /*background: -webkit-linear-gradient(left, #2a6da4 , #2b8ebb); /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(left, #2a6da4 , #2b8ebb); /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(left, #2a6da4 , #2b8ebb); /* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(left, #2a6da4 , #2b8ebb); /* Standard syntax */
+}
+
+.pv-bi .pv-fullcase-treeview{
+  background: #83bcde;
+}
+
+/*----------Theme2-blue bg-------------*/
+.pv-b{
+  background: #FFF;
+}
+.pv-b .content-page{
+  background: #d4e8ef;
+}
+.pv-b .navbar-default{
+  background: #0170a7;
+  background-size: cover;
+}
+.pv-b .side-menu.left{
+  background: #167cad !important;
+}
+.pv-b .pv-fullcase-treeview{
+  background: #83bcde;
+}
+
+/*--------Orange-Grey-theme------------*/
+.pv-og{
+  background: #FFF;
+}
+.pv-og .content-page{
+  background: #e2e2e4;
+}
+.pv-og .navbar-default{
+  background: #e39300 url(../images/header-bg-oi.jpg) no-repeat center -50px;
+  background-size: cover;
+}
+.pv-og .side-menu.left{
+  background: #5a6374 !important;
+}
+
+.pv-og .pv-fullcase-treeview{
+  background: #818e9b;
+}
+.pv-og .pv-fullcase-treeview a{
+  color: #fff;
+}
+.pv-og .pv-fullcase-treeview a:hover{
+  color: #ddbb4f;
+}
+.pv-og .pv-tree .badge-warning {
+    background-color: #efa31f;
+}

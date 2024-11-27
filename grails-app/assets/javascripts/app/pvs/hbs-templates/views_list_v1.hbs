@@ -1,0 +1,42 @@
+<nav class="navbar bookmarkcolor">
+    <ul class="nav navbar-nav boomarknav" id="sortable1">
+        {{#if_eq isTempViewSelected true}}
+            <li class="active-bookmark click" id="temp-view-bookmark">Temporary View&nbsp;X</li>
+        {{/if_eq}}
+        {{#each viewsList}}
+            {{#if_else_eq ../isTempViewSelected true}}
+                {{#if_eq @key 4}}
+                <li class="dropdown">
+                    <div class="dropdown-toggle bookmarks-list-opener" data-toggle="dropdown"> >>
+                    </div>
+                <ul class="dropdown-menu ddm" id="sortable2">
+                {{/if_eq}}
+                {{#if_else_eq this.id ../viewId}}
+                <li class="bookmark" value="{{this.id}}" draggable="true">{{this.name}}
+                {{else}}
+                <li class="bookmark" value="{{this.id}}" draggable="true">{{this.name}}
+                {{/if_else_eq}}
+            {{else}}
+                {{#if_eq @key 5}}
+                <li class="dropdown">
+                    <div class="dropdown-toggle bookmarks-list-opener" data-toggle="dropdown"> >>
+                    </div>
+                <ul class="dropdown-menu ddm" id="sortable2" style="max-height: 250px; Overflow-y: auto;">
+                {{/if_eq}}
+                {{#if_else_eq this.id ../viewId}}
+                <li class="bookmark active-bookmark" value="{{this.id}}" draggable="true">{{this.name}}
+                {{else}}
+                <li class="bookmark" value="{{this.id}}" draggable="true">{{this.name}}
+                {{/if_else_eq}}
+            {{/if_else_eq}}
+            <a tabindex="0" title="View All"
+               class="bookmark-ellipsis ico-dots view-all"
+               more-data="{{this.name}}"><i
+                    class="mdi mdi-dots-horizontal font-20 blue-1"> </i></a></li>
+        {{/each}}
+        {{#if_eq isDropDownRequired true}}
+        </ul>
+        </li>
+        {{/if_eq}}
+    </ul>
+</nav>

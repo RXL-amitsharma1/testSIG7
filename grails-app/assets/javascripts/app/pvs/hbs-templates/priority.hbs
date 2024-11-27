@@ -1,0 +1,10 @@
+{{#if isPriorityChangeAllowed}}
+    <a tabindex="0" data-target="#priorityPopover" class="changePriority font-24" role="button"
+       data-toggle="modal-popover" data-placement="right" title="{{priorityValue}}">
+        <i class="{{priorityClass}}"></i>
+    </a>
+{{else}}
+    <a tabindex="0" class="font-24 priorityChangeNotAllowed" title="{{priorityValue}}">
+        <i class="{{priorityClass}}"></i>
+    </a>
+{{/if}}

@@ -1,0 +1,6 @@
+importsAcceptList= ['ch.qos.logback.core.util.FileSize', 'ch.qos.logback.ext.spring.DelegatingLogbackAppender',
+                    'grails.util.Environment',
+                    'grails.util.BuildSettings','ch.qos.logback.core.FileAppender',
+                    'ch.qos.logback.core.ConsoleAppender',
+'ch.qos.logback.classic.encoder.PatternLayoutEncoder']
+staticStarImportsAcceptList = ['ch.qos.logback.core.util.FileSize.*']

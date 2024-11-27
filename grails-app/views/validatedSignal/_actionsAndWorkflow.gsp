@@ -1,0 +1,1 @@
+<g:render template="includes/signalWorkflow" model="[signal: signal, actionConfigList: actionConfigList, timezone: timezone, userList:userList]"/>

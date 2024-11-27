@@ -1,0 +1,47 @@
+<table class="dataTable notused" >
+{{#if evEnabled}}
+    <thead>
+    <tr>
+        <th class="sortable col-min-100">Date</th>
+        <th class="sortable">EV(EVDAS)</th>
+        <th class="sortable">Serious(EVDAS)</th>
+        <th class="sortable">Fatal(EVDAS)</th>
+        <th class="sortable">Spon</th>
+        <th class="sortable">Serious</th>
+        <th class="sortable">Fatal</th>
+    </tr>
+    </thead>
+
+    {{#each trendData}}
+        <tr>
+            <td>{{xAxisTitle}}</td>
+            <td>{{newEV}}</td>
+            <td>{{evSerious}}</td>
+            <td>{{evFatal}}</td>
+            <td>{{sponCount}}</td>
+            <td>{{seriousCount}}</td>
+            <td>{{fatalCount}}</td>
+
+        </tr>
+    {{/each}}
+
+{{else}}
+    <thead>
+    <tr>
+        <th class="sortable">Date</th>
+        <th class="sortable">Spon</th>
+        <th class="sortable">Serious</th>
+        <th class="sortable">Fatal</th>
+    </tr>
+    </thead>
+
+    {{#each trendData}}
+    <tr>
+           <td>{{xAxisTitle}}</td>
+           <td>{{sponCount}}</td>
+           <td>{{seriousCount}}</td>
+           <td>{{fatalCount}}</td>
+    </tr>
+    {{/each}}
+{{/if}}
+</table>

@@ -1,0 +1,101 @@
+/********************************************************************************************************************/
+/********************************508 Compliance updates and fixes***************************************************/
+/********************************************************************************************************************/
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+a, input, textarea, select, button, i, .btn {
+    transition: all 0.1s ease;
+}
+
+a:focus, input:focus, textarea:focus, select:focus, button:focus, i:focus, .btn:focus, li:focus, span:focus, .form-control:focus{
+    outline: 0;
+}
+
+input[type="checkbox"]:focus + label::before {
+    box-shadow: 0 0 0 1px #4c9aff;
+}
+
+.select2:focus-within, li.link:focus-within, .grid-row-check:focus-within,
+.wrapper:focus-within .showDictionarySelection,td.fc-day.fc-widget-content:focus,
+.fc-time-grid .fc-slats td.fc-widget-content:focus
+{
+    box-shadow: 0 0 0 1px #4c9aff;
+    border-radius: 2px;
+}
+
+.select2:focus-within input.select2-search__field, .wrapper:focus-within a {
+    border: none !important;
+}
+
+table.dataTable thead th:focus, table.dataTable thead th:focus::after{
+ color:#4c9aff;
+}
+
+a#MI-logout:hover div,
+a#MI-logout:focus div{
+    background:#eee !important;
+    box-shadow: 0 0 0 1px #4c9aff;
+}
+
+.help:hover,
+.help:focus{
+    background:#eee !important;
+    box-shadow: 0 0 0 1px #4c9aff;
+}
+
+.validation-tab li a:focus{
+    box-shadow:none !important;
+    background:#708090 !important;
+}
+.validation-tab li a:focus::after{
+    border-left-color:#708090 !important;
+}
+/************************************************Hidden buttons in grid*************************************************/
+
+.hidden-btn.dataTableHideCellContent { display: inline-block; opacity: 0.01}
+.hidden-btn.dataTableHideCellContent:focus-within,
+.hidden-btn.dataTableHideCellContent:hover {opacity: 1.0;}
+/************************************************************* Inbox *************************************************/
+
+.inbox-container .alert-inbox:focus-within{background-color:#337ab7;}
+.inbox-container .alert-inbox:focus-within p,
+.inbox-container .alert-inbox:focus-within .glyphicon{ color:#fff; }
+
+/*************************************************************Scrollbar *************************************************/
+
+::-webkit-scrollbar {
+    height: 8px;
+    width:8px;
+}
+
+::-webkit-scrollbar-track {
+    background-clip: padding-box;
+    background-color:#eee;
+}
+/*horizontal thumb*/
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #bbb;
+    background-clip: padding-box;
+}
+/*Vertical  track*/
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #aeaeae;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track:hover
+{
+    background: #eee;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background: #999;
+}
+/*************************************************************Scrollbar ends*************************************************/
+
+
+
+

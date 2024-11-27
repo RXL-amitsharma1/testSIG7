@@ -1,0 +1,46 @@
+<html>
+<head>
+    <script src="http://localhost/jquery/jquery.js"></script>
+    <script src="http://localhost/highcharts/highcharts.js"></script>
+    <script src="http://localhost/highcharts/highcharts-3d.js"></script>
+    <script src="http://localhost/highcharts/highcharts-more.js"></script>
+    <script src="http://localhost/highcharts/plugins/grouped-categories.js"></script>
+</head>
+
+<body>
+<div id="container" style="width:100%; height:100%;"></div>
+<script>
+    /**
+     * Drop-in compatibility fix for semi-transparent fills for old WebKit
+     * browsers as well as Batik export servers. The fix splits rgba fill colors into
+     * solid colors for fills, and a separate fill-opacity attribute.
+     */
+    Highcharts.SVGElement.prototype.fillSetter = function(value, key, element) {
+        if (typeof value === 'string') {
+            if (value.indexOf('rgba') === 0) {
+                // Split it up
+                colorObject = Highcharts.Color(value);
+                element.setAttribute(key + '-opacity', colorObject.get('a'));
+                element.setAttribute(key, colorObject.get('rgb'));
+            } else {
+                element.setAttribute(key, value);
+            }
+        } else if (value) {
+            this.colorGradient(value, key, element);
+        }
+    };
+    jQuery(function() {
+        var data = JSON.stringify(${chartData});
+        var handler = function(key, value) {
+            if (key === "formatter") {
+                value = eval("(" + value + ")");
+            }
+            return value;
+        };
+        var options = JSON.parse(data, handler);
+        jQuery('#container').highcharts(options);
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+.showDictionarySelection {
+    overflow-x: auto;
+    width: inherit;
+    min-height: 24px;
+    height: auto;
+    max-height: 92px;
+    padding-right: 20px;
+}
+
+.yadcf-filter-wrapper{
+    display: none;
+}
+.yadcf-filter {
+    max-width: 100%;
+    width: 100%;
+}
+
+table .select2-container {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    display: inherit;
+    table-layout: fixed;
+}
+
+
+.inuse {
+    background: #ddd !important;
+}
+
+#productAssignmentRemoveRow {
+    margin-top: 3px;
+}
+.dropdown-menu.menu-large{
+    margin-right: 260px;
+}
+
+/*Commenting this css as this is fixing the size of the select dropdown in product assignment screen which is causing issue while creating EYE icon for blinded user*/
+/*If commenting the css does not impact any major functionality, the code will get removed permanently*/
+/*.productAssignmentTable_foot .fa, #productAssignmentTable .fa {*/
+    /*position: absolute;*/
+    /*margin-top: -15px;*/
+    /*margin-left: -10px;*/
+/*}*/
+#searchProductsAssessment {
+    position: absolute;
+    margin-top: -18px;
+    margin-left: -10px;
+}
+.rxmain-container-inner .ico-menu {
+    width: inherit;
+}
+#reportIconMenu>.dropdown-menu {
+    margin-top: 0px;
+}
+.rxmain-container-header .md-add{
+    margin-top: 3px;
+    font-size: 20px;
+}
+.rxmain-container-header .mdi-close{
+    font-size: 18px;
+}
+.select2-selection__choice .addPrimary{
+    background-color: #f8c62f;
+    padding: 0 5px;
+    /*display: none;*/
+    visibility: hidden;
+    position: inherit;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: -7px;
+    float: right;
+}
+.select2-selection__choice .primary{
+    background-color: #0fef20 !important;
+    visibility: visible;
+}
+.select2-selection__choice:hover>.addPrimary{
+    visibility: visible;
+}
+
+.col-md-half {
+    max-width: 4.166% !important;
+    width: 4.166%;
+}
+.col-ag{
+    max-width: 250px !important;
+    width: 250px;
+}
+
+.col-md-3-half {
+    max-width: 29.166% !important;
+    width: 29.166%;
+}
+
+@media (max-width: 991px) {
+    .col-md-1 {
+        max-width: 8.3333% !important;
+        width: 8.3333%;
+    }
+
+    .col-md-2 {
+        max-width: 20% !important;
+        width: 20%;
+    }
+}
+
+
+#productAssignmentTable_wrapper .dt-scroll-body{
+    max-height: 65vh;
+}
+#import-log-table_wrapper .dt-scroll-body{
+    max-height: 33vh;
+}
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+    border-top: 1px solid #ece5e5;
+}
+
+#importAssignmentFormatTable {
+    border-collapse: collapse;
+}
+#importAssignmentFormatTable td,#importAssignmentFormatTable th {
+    border: 1px solid #dddddd;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    max-width: 130px;
+}
+
+.cell-break {
+    word-break: keep-all !important;
+}

@@ -1,0 +1,42 @@
+<div class="hidden-btn btn-group dropdown dataTableHideCellContent" align="center">
+    {{#if_eq isView true}}
+        <a class="btn btn-success btn-xs" href="{{view_url}}">{{view_display}}</a>
+    {{/if_eq}}
+    {{#if_eq isView false}}
+        <a class="btn btn-success btn-xs disabled" href="{{view_url}}">{{view_display}}</a>
+    {{/if_eq}}
+
+    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right" role="menu" style="min-width: 80px !important; font-size: 12px;">
+
+        {{#if_eq isRun true}}
+            {{#if_eq readOnly true}}
+                <li role="presentation"><a role="menuitem" class="run-button" href="{{run_url}}">{{run_display}}</a></li>
+            {{/if_eq}}
+        {{/if_eq}}
+
+        {{#if_eq isView true}}
+            {{#if_eq isEdit true}}
+                {{#if_eq readOnly true}}
+                    <li role="presentation"><a role="menuitem" href="{{edit_url}}">{{edit_display}}</a></li>
+                {{/if_eq}}
+                <li role="presentation"><a role="menuitem" href="{{copy_url}}">{{copy_display}}</a></li>
+            {{/if_eq}}
+            {{#if_eq isDelete true}}
+                {{#if_eq readOnly true}}
+                    <li role="presentation"><a role="menuitem" href="#" data-toggle="modal"
+                                           data-target="#deleteModal"
+                                           data-instancetype="alert"
+                                           data-instanceid="{{obj_id}}"
+                                           data-instancename=""
+                                           data-isevdas="{{isEvdas}}"
+                                           data-isliterature="{{isLiterature}}">{{delete_display}}</a></li>
+                {{/if_eq}}
+            {{/if_eq}}
+
+        {{/if_eq}}
+    </ul>
+</div>

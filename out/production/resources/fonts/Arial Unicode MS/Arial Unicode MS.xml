@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+    <fontFamily name="Arial Unicode">
+        <normal>fonts/Arial Unicode MS/Arial-Unicode-Regular.ttf</normal>
+        <bold>fonts/Arial Unicode MS/Arial-Unicode-Bold.ttf</bold>
+        <italic>fonts/Arial Unicode MS/Arial-Unicode-Italic.ttf</italic>
+        <boldItalic>fonts/Arial Unicode MS/Arial-Unicode-Bold-Italic.ttf</boldItalic>
+        <pdfEncoding>Identity-H</pdfEncoding>
+        <pdfEmbedded>true</pdfEmbedded>
+        <exportFonts>
+            <export key="net.sf.jasperreports.html">'Arial Unicode', Arial, Helvetica, sans-serif</export>
+            <export key="net.sf.jasperreports.xhtml">'Arial Unicode', Arial, Helvetica, sans-serif</export>
+            <export key="net.sf.jasperreports.rtf">Arial</export>
+        </exportFonts>
+    </fontFamily>
+</fontFamilies>

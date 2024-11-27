@@ -1,0 +1,22 @@
+package com.rxlogix.enums
+
+enum ActionTypeEnum {
+
+    ALERT_DISABLED('ALERT_DISABLED'),
+    ALERT_ENABLED('ALERT_ENABLED'),
+    LATEST_CONFIG_DELETED('LATEST_CONFIG_DELETED'),
+    ALL_CONFIG_DELETED('ALL_CONFIG_DELETED'),
+    LATEST_MASTER_DELETED('LATEST_MASTER_DELETED'),
+    ALL_MASTER_DELETED('ALL_MASTER_DELETED'),
+    SIGNALS_DISASSOCIATED('SIGNALS_DISASSOCIATED'),
+    SIGNAL_DELETED('SIGNAL_DELETED'),
+    PEC_DISASSOCIATED('PEC_DISASSOCIATED')
+
+    private final String val
+
+    ActionTypeEnum(String val) {
+        this.val = val
+    }
+
+    String value() { return val }
+}

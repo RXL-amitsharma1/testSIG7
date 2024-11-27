@@ -1,0 +1,201 @@
+<!--<script src="assets/javascripts/application.js"></script>-->
+<script>
+    $(document).ready(function() {
+        $("#createActionModal .selectBox, #action-edit-modal .selectBox").addClass('select2').select2();
+        bindShareWith($('#assignedToUser'), "{{searchUserGroupListUrl}}", '', {
+            id: '{{assignedToUser}}',
+            name: '{{{assignedToObj.fullName}}}',
+            blinded: '{{{assignedToObj.blinded}}}'
+        }, true);
+
+        $("#action-editor-form").find(".selectBox").change(function() {
+            var selectedActionId = $(this).val();
+            var meetingActionId = $("#actionMeetingId").val();
+            if(meetingActionId == selectedActionId) {
+                $('.action-type-list').addClass('hidden');
+                $('.meeting-list').removeClass('hidden');
+            } else {
+                $('.action-type-list').removeClass('hidden');
+                $('.meeting-list').addClass('hidden');
+            }
+        });
+        addCountBoxToInputField(8000, $('textarea'));
+    });
+</script>
+
+<form id="action-editor-form">
+    <div>
+        <input type="hidden" name="actionId" value="{{id}}"/>
+        <input type="hidden" name="version" value="{{version}}"/>
+        <input type="hidden" name="alertId" value="{{alertId}}"/>
+        <input type="hidden" name="meetingActionId" id="meetingActionId" />
+        <input type="hidden" id="appType" />
+        <input type="hidden" id="executedConfigId" />
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-4 action-type-list">
+                    <label for="type.id">Action Type</label>
+                    <span class="required-indicator">*</span>
+                    {{#selectForAction 'type.id' typeObj action_types 'text' 'id'}}{{/selectForAction}}
+                </div>
+
+                <div class="col-lg-4 action-config-list">
+                    <label for="config.id">Action</label>
+                    <span class="required-indicator">*</span>
+                    {{#selectForAction 'config.id' configObj action_configs 'value' 'id'}}{{/selectForAction}}
+                </div>
+
+                <div class="col-lg-3 hidden meeting-list">
+                    <label for="meeting.id">
+                        Meeting Title
+                        <span class="required-indicator">*</span>
+                    </label>
+                    {{#select 'type.id' '' '' 'value' 'id'}}{{/select}}
+                </div>
+
+                <div class="col-lg-4">
+                    <label for="assignedTo.id">Assigned To</label>
+                    <span class="required-indicator">*</span>
+                    <select id="assignedToUser" name="assignedToValue" class="form-control select2 assignedToUser"></select>
+                </div>
+
+            </div>
+            <br>
+            <div class="row">
+                         <div class="fuelux">
+                                <div class="col-lg-4 datepicker form-group" id="due-date-picker">
+                                        <label>Due Date
+                                             <span class="required-indicator">*</span>
+                                        </label>
+                                        <div class="input-group">
+                                            <input placeholder="Due Date" name="dueDate" id="dueDate"
+                                                           class="form-control input-sm" id="filter-detected-date-from" type="text" value="{{dueDate}}"/>
+                                                    {{> date_picker_template}}
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="fuelux">
+                                <div class="col-lg-4 datepicker form-group" id="completion-date-picker">
+                                      <label>Completion Date
+                                      </label>
+                                      <div class="input-group">
+                                           <input placeholder="Select Completion Date" name="completedDate" id="completedDate"
+                                                                                   class="form-control input-sm" id="filter-detected-date-from" type="text" value="{{completedDate}}"/>
+                                                                            {{> date_picker_template}}
+                                      </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-4 form-group">
+                                <label for="actionStatus">Status</label>
+                                {{#select 'actionStatus' actionStatus all_status 'value' 'name'}}{{/select}}
+                            </div>
+                        </div>
+
+
+            <div class="row">
+                <div class="col-lg-6 form-group">
+                    <label for="details">Action Details
+                        <span class="required-indicator">*</span>
+                    </label>
+                    <textarea class="form-control tarea-200" name="details" maxlength="4000" >{{details}}</textarea>
+                </div>
+
+                <div class="col-lg-6 form-group">
+                    <label for="comments">Comments</label>
+                    <textarea class="form-control tarea-200" name="comments" maxlength="4000">{{comments}}</textarea>
+                </div>
+            </div>
+
+
+            {{#unless configUrl}}
+            {{else}}
+            <div class="row">
+                {{#if_eq alertType "Single Case Alert"}}
+                    <div class="col-lg-3 form-group">
+                        <label>Individual Case Alert</label><br>
+                        <a target="_blank" data-type ="{{alertType}}" class="check-action-access word-wrap-break-word {{#unless hasAccess}}no-access{{/unless}}" href="{{configUrl}}" oncontextmenu="this.click(); return false;">{{configName}}</a>
+                    </div>
+                    <div class="col-lg-3 form-group">
+                        <label>Case Number</label><br>
+                        <a target="_blank" data-type ="{{alertType}}"  class="check-action-access word-wrap-break-word {{#unless hasAccess}}no-access{{/unless}}" href="{{caseNumberUrl}}" oncontextmenu="this.click(); return false;">{{caseNumber}}</a>
+                    </div>
+                {{/if_eq}}
+                {{#if_eq alertType "Aggregate Case Alert"}}
+                    <div class="col-lg-3 form-group">
+
+                        <label>Aggregate Alert</label><br> <a target="_blank" data-type ="{{alertType}}" class="check-action-access word-wrap-break-word {{#unless hasAccess}}no-access{{/unless}}" href="{{configUrl}} oncontextmenu="this.click(); return false;"">{{configName}}</a>
+                    </div>
+                    <div class="col-lg-3 form-group">
+                        <label>Product Name</label><br>{{productName}}
+                    </div>
+                    <div class="col-lg-3 form-group">
+                        <label>SOC</label><br>{{soc}}
+                    </div>
+                        <div class="col-lg-3 form-group">
+                         {{#if_else_eq soc "SMQ"}}
+                            <label>SMQ</label> <br>{{pt}}
+                         {{else}}
+                            <label>PT</label> <br>{{pt}}
+                         {{/if_else_eq}}
+                        </div>
+                {{/if_eq}}
+                {{#if_eq alertType "EVDAS Alert"}}
+                    <div class="col-lg-3 form-group">
+
+                        <label>EVDAS Alert</label><br> <a target="_blank" data-type ="{{alertType}}" class="check-action-access word-wrap-break-word {{#unless hasAccess}}no-access{{/unless}}" href="{{configUrl}}" oncontextmenu="this.click(); return false;">{{configName}}</a>
+                    </div>
+                    <div class="col-lg-3 form-group">
+                        <label>Substance</label><br>{{productName}}
+                    </div>
+                    <div class="col-lg-3 form-group">
+                        <label>SOC</label><br>{{soc}}
+                    </div>
+                    <div class="col-lg-3 form-group">
+                        <label>PT</label> <br>{{pt}}
+                    </div>
+                {{/if_eq}}
+                {{#if_eq alertType "Ad-Hoc Alert"}}
+                    <div class="col-lg-12 form-group">
+
+                        <label>Ad-Hoc Alert</label><br>
+                        <a target="_blank" data-type ="{{alertType}}" class="check-action-access word-wrap-break-word {{#unless hasAccess}}no-access{{/unless}} " href="{{configUrl}}" oncontextmenu="this.click(); return false;">{{configName}}</a>
+
+                    </div>
+                {{/if_eq}}
+                {{#if_eq alertType "Literature Search Alert"}}
+
+                    <div class="col-lg-3 form-group word-wrap-break-word">
+
+                        <label>Literature Search Alert</label><br> <a target="_blank" data-type ="{{alertType}}" class="check-action-access word-wrap-break-word {{#unless hasAccess}}no-access{{/unless}}" href="{{configUrl}}" oncontextmenu="this.click(); return false;">{{configName}}</a>
+                    </div>
+                    <div class="col-lg-9 form-group">
+                        <label>Article</label><br>
+                        <a target="_blank" href="{{articleUrl}}">{{articleTitle}}</a>
+                    </div>
+                {{/if_eq}}
+                {{#if_eq alertType "Signal Management"}}
+
+                    <div class="col-lg-4 form-group">
+
+                        <label>Signal</label><br> <a target="_blank" data-type ="{{alertType}}" class="check-action-access word-wrap-break-word {{#unless hasAccess}}no-access{{/unless}}" href="{{configUrl}}" oncontextmenu="this.click(); return false;">{{configName}}</a>
+                    </div>
+                    <div class="col-lg-4 form-group">
+                        <label>Product Name</label><br>{{productName}}
+                    </div>
+                    <div class="col-lg-4 form-group">
+                        <label>Event Name</label><br>{{eventName}}
+                    </div>
+                {{/if_eq}}
+            </div>
+            {{/unless}}
+            <div class="row">
+                <br/>
+                <span>Created by {{owner.fullName}} on {{createdDate}}</span>
+            </div>
+            <div>
+                <input type="hidden" name="backUrl" value="{{backUrl}}"/>
+
+            </div>
+        </div>
+    </div>
+</form>

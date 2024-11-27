@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-md-12">
+        <div><span style="font-weight: 900">File Directory</span> : {{path}}</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <label>
+            File Type
+        </label>
+
+        <div>
+            <label class="radio-inline"><input type="radio" id="ermr" value="eRMR" checked name="dataType" onclick="triggerOnCheckboxChange()">eRMR
+            </label>
+            <label class="radio-inline"><input type="radio" id="caseListing" value="Case Listing"
+                                               name="dataType" onclick="triggerOnCheckboxChange()">Case Listing</label>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <label>
+            Duplicate Data/File Handling
+        </label>
+
+        <div>
+            <label class="radio-inline"><input type="radio" checked name="optDuplicate">Ignore</label>
+            <label class="radio-inline"><input type="radio" name="optDuplicate">Overwrite</label>
+            <label class="radio-inline"><input type="radio" name="optDuplicate">Create Versions</label>
+
+        </div>
+    </div>
+</div>
+<table class="table">
+    <tr>
+        <td><h5>Files</h5></td>
+    </tr>
+    <tr>
+        <td>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <select id="allowedProductList" name="allowedProductList"
+                              class="allowedProductList"
+                              multiple="true">
+                        {{#each filesDetected}}
+                            <option value="{{files}}">{{files}}</option>
+                            <div>{{files}}</div>
+                        {{/each}}
+                    </select>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+<script>
+    function triggerOnCheckboxChange() {
+        if ($('#caseListing').is(':checked')) {
+            $('input[name=optDuplicate]').attr("disabled", true);
+
+        } else {
+            $('input[name=optDuplicate]').attr("disabled", false);
+        }
+
+    }
+
+</script>

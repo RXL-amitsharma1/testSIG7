@@ -1,0 +1,19 @@
+rootProject.name='grails3-pvsignal'
+//include 'pv-dictionary'
+//project(':pv-dictionary').name = 'pv-dictionary'
+//project(':pv-dictionary').projectDir = new File('../../pv-dictionary')
+//include 'grails-scim'
+//project(':grails-scim').name = 'grails-scim'
+//project(':grails-scim').projectDir = new File('../grails-scim')
+//include 'audit-logging'
+//project(':audit-logging').name = 'audit-logging'
+//project(':audit-logging').projectDir = new File('/home/yogesh/Documents/Rxlogix-Audit-Logging/audit-logging')
+//include 'audit-logging'
+//project(':audit-logging').name = 'audit-logging'
+//project(':audit-logging').projectDir = new File('/home/rxlogix/Documents/Rxlogix-Audit-Logging/audit-logging')
+//include 'rxlogix-export'
+//project(':rxlogix-export').name = 'rxlogix-export'
+//project(':rxlogix-export').projectDir = new File('/home/yogesh/Documents/Rxlogix-Export')
+//include ':pv-ui'
+//project(':pv-ui').name = 'pv-ui'
+//project(':pv-ui').projectDir = new File('../../pv-ui')

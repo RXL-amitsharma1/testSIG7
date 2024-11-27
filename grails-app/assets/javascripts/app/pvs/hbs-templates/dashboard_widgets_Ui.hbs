@@ -1,0 +1,221 @@
+<div class="pv-dashWidget grid-stack-item dashboard-scroll" data-type="{{content.type}}" id="{{reportWidgetId}}">
+    <div class="panel panel-default chart-panel grid-stack-item-content rx-widget">
+        <div class="panel-heading panel-title pv-sec-heading">
+            <div class="rxmain-container-header-label">
+                <div class="row">
+                    <div class="col-md-10"><h3 class="panel-title">{{reportWidgetName}}</h3></div>
+                    <div class="col-md-2 form-inline ico-menu">
+                        <div class="form-group pull-right"> <a tabindex="0" href="javascript:void(0);" class="close-widget pull-right" title="Hide Widget"><i
+                            class="md md-close"></i></a></div>
+                        <div class="form-group pull-right"> <a tabindex="0" href="javascript:void(0);" class="refresh-{{content.id}}-link refresh-widget pull-right" title="Refresh Widget"><i
+                                class="md md-refresh"></i></a></div>
+
+                               {{#if_eq content.id "refrences"}}
+                                     <div class="form-group pull-right"> <a tabindex="0" href="javascript:void(0);" class="add-ref-link-modal" title="Add Link"><i class="md md-add" aria-hidden="true" title="Add Link"></i></a></div>
+                              {{/if_eq}}
+
+
+                        {{#if_eq content.id "assignedTriggeredAlerts"}}
+
+                            <span tabindex="0" class="dropdown pull-right form-group m-r-5">
+                                <i style="cursor: pointer" class="dropdown-toggle mdi mdi-format-list-bulleted font-22 lh-1" id="dropdownMenuTriggeredAlert" data-title="" data-toggle="dropdown"></i>
+
+
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuTriggeredAlert" style="height: 300px; overflow-y:auto; width: 240px;">
+
+                                    <div class="rxmain-container-dropdown">
+                                        <div>
+                                            <table id="tableColumns" class="table">
+                                                <thead><tr><th>Name</th><th>Show</th>
+                                                </tr></thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                        {{/if_eq}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body pv-sec-bg rx-widget-content">
+
+        {{#if_eq content.id "assignedSignalTable"}}
+                   <div class="form-group m-l-3">
+                    <input type="radio" name="optradio"  value="All" class="productRadio" />  <b>All Signals</b>&nbsp&nbsp&nbsp&nbsp
+                    <input type="radio" name="optradio"  value="Assigned"  class="productRadio" checked/>  <b>Assigned Signals</b>
+                    </div>
+         {{/if_eq}}
+            <div class="row inner-shadow-box">
+                {{#if_eq content.type "pvDashChart"}}
+                <div id="{{content.id}}" data-type="{{content.type}}" class="chart-container"></div>
+                {{/if_eq}}
+                {{#if_eq content.type "pvDashCalendar"}}
+                <div id="{{content.id}}" data-type="{{content.type}}" class="calendar"></div>
+                {{/if_eq}}
+                {{#if_eq content.type "pvDashReports"}}
+
+                <div data-id="{{content.id}}" data-type="{{content.type}}">
+
+
+                    {{!-- <table id="{{content.id}}" class="dataTable table table-striped row-border hover no-footer"> --}}
+                      <table id="{{content.id}}" class="">
+                        <thead>
+                        <tr>
+                            {{#if_eq content.id "assignedSignalTable"}}
+                            <th>Signal Name</th>
+                            <th style="max-width:300px">Product Name</th>
+                            <th>Disposition</th>
+                            {{/if_eq}}
+                            {{#if_eq content.id "assignedTopicTable"}}
+                            <th>Topic Name</th>
+                            <th>Product Name</th>
+                            <th>Count of PEC</th>
+                            <th>Count of Cases</th>
+                            <th>Disposition</th>
+                            {{/if_eq}}
+                            {{#if_eq content.id "assignedTriggeredAlerts"}}
+                            <th class="col-md-3">Product</th>
+                            <th class="col-md-1">Type</th>
+                            <th class="col-md-2">Name</th>
+                            <th class="col-md-1 col-min-110">Requires Review</th>
+                            <th class="col-md-1">Due In</th>
+                            <th class="col-md-3">Date Range</th>
+                            <th class="col-md-1"></th>
+                            {{/if_eq}}{{#if_eq content.id "listAction"}}
+                            <th>Id</th>
+                            <th>Action Type</th>
+                            <th>Action</th>
+                            <th>Details</th>
+                            <th>Alert Name</th>
+                            <th>Due Date</th>
+
+
+                        {{/if_eq}}
+                        {{#if_eq content.id "refrences"}}
+                                   <th class="col-md-2">Reference Type<span class="required-indicator">*</span></th>
+                                   <th class="col-md-3">Description</th>
+                                   <th class="col-md-3">Name<span class="required-indicator">*</span></th>
+                                   <th class="col-md-1">Performed By</th>
+                                   <th class="col-md-2">Date</th>
+                                   <th class="col-md-1"></th>
+                        {{/if_eq}}
+                        </tr>
+                        </thead>
+                        {{#if_eq content.id "refrences"}}
+                                <tfoot class="reference-table-foot newRow hide">
+                                 <tr data-id="refrences" class="relative-position">
+                                            <td class="col-md-2">
+                                                <div class="rmm-type row">
+                                                    <div class="col-md-10">
+                                                        <select name="refrenceType" class="form-control refrenceType">
+                                                             <option value="">Select</option>
+                                                             <option value="Reference">Reference</option>
+                                                             <option value="Others">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="col-md-3">
+                                                <div class="textarea-ext">
+                                                    <input type="text" class="form-control description comment" name="description" maxlength="8000" style="width: 100%">
+                                                    <a class="btn-text-ext openStatusComment" href="javascript:void(0);" tabindex="0"
+                                                       title="Open in extended form">
+                                                        <i class="mdi mdi-arrow-expand font-20 blue-1"></i></a>
+                                                </div>
+                                            </td>
+                                            <td class="col-md-3">
+                                                <div class="file-uploader" data-provides="fileupload">
+                                                    <div class="input-group" style="width: 100%">
+                                                        <input type="text" class="form-control " id="attachmentFilePathRmm" placeholder="Attach a file"
+                                                               name="assessment-file" value="" title="">
+                                                        <span class="input-group-btn ">
+                                                            <button class="browse btn btn-primary btn-file-upload allow-rmm-edit" type="button"
+                                                                    data-toggle="modal" data-target="#refAttachmentFileModal">
+                                                                <i class="glyphicon glyphicon-search"></i>
+                                                            </button>
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="col-md-1">
+                                                    {{createdBy}}
+                                            </td>
+                                            <td class="col-md-2">
+                                                    <div class="currentDate">
+                                                     </div>
+                                            </td>
+                                            <td class="col-md-1 text-center">
+                                                <a href="javascript:void(0);" title="Save" class="table-row-saved saveRecord hidden-ic pv-ic">
+                                                    <i class="mdi mdi-check" aria-hidden="true"></i>
+                                                </a>
+                                                <a href='javascript:void(0);' title='Delete' class='table-row-del remove-rmm-row hidden-ic clsBtnEvent'>
+                                                    <i class='mdi mdi-close clsBtnEvent' aria-hidden='true'></i>
+                                                </a>
+                                            </td>
+
+                                        </tr>
+                                        </tfoot>
+                                 {{/if_eq}}
+                    </table>
+                </div>
+                {{/if_eq}}
+                {{#if_eq content.type "pvDashbox"}}
+                    <div class="row form-inline link-box-filter m-b-10">
+                        <div class="col-md-6">
+                            <button data-type="name"><i class="md md-unfold-more"></i>Name</button>
+                            <button data-type="date" class="active"><i class="md md-unfold-more"></i> Date</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="pull-right">
+                                <b>Search:</b> <input type="search" class="form-control" placeholder="" aria-controls="listAction">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pv-loader-bg">
+                        <div class="loader">
+                            <svg class="circular" viewBox="25 25 50 50">
+                                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke="#4f8ef2" stroke-width="2" stroke-miterlimit="10"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="imageListId"></div>
+                {{/if_eq}}
+            </div>
+        </div>
+        {{#if_eq content.type "pvDashCalendar"}}
+        <div class="col-lg-12" style="margin-top: -90px;">
+            <div id="legend" class="fc-view-container">
+                <p style="margin-bottom: 10px"><strong style="font-size: 12px;">Legend</strong></p>
+
+                <div class="legendColorBox"
+                     style="background-color: #3b789e">&nbsp;
+                </div>
+                <span
+                        class="legendLabel text-muted">Individual Case Review Alert</span>
+
+                <div class="legendColorBox"
+                     style="background-color: #acd3e1">&nbsp;
+                </div>
+                <span
+                        class="legendLabel text-muted">Aggregate Review Alert</span>
+
+                <div class="legendColorBox"
+                     style="background-color: #FF99F0">&nbsp;
+                </div>
+                <span
+                        class="legendLabel text-muted">Action Item</span>
+
+                <div class="legendColorBox"
+                     style="background-color: #45b25f">&nbsp;
+                </div>
+                <span
+                        class="legendLabel text-muted">Meeting</span>
+            </div>
+        </div>
+        {{/if_eq}}
+    </div>
+</div>

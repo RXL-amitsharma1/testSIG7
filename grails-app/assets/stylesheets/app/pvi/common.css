@@ -1,0 +1,42 @@
+.notifyjs-metro-info {
+    color: #00529B !important;
+    background-color: #FFFFED !important;
+}
+/*
+Custom Modal css
+*/
+.modal-content {
+    width: 1030px; height: 623px;
+}
+.topHeaderIntakeCase {
+    position: absolute;
+    left: 450px;
+    width: 48%;
+    top: -7px;
+}
+
+.pvi-list-table thead th.col-intake-case label[disabled]{
+    margin-top: 9px;
+}
+
+#pviModalJustification .modal-content {
+    width: 1030px; height: auto;
+}
+#pviModalCasualityAssgnment .modal-content {
+    width: 1030px; height: auto;
+}
+#show-similar-events .modal-content {
+    width: 1030px; height: auto;
+}
+.modal .modal-dialog .modal-content .modal-header {
+    padding-bottom: 0;
+}
+.modal .modal-dialog .modal-content{
+    padding: 0;
+}
+.pvi-list-table thead tr th.col-intake-case{
+    height: auto !important;
+}
+.pvi-list-table thead tr th.pvi-table-action{
+    height: auto !important;
+}

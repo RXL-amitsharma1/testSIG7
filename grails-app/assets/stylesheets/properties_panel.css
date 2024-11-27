@@ -1,0 +1,19 @@
+.prop {
+
+    padding-top: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.prop-label {
+    font-weight: bold;
+    padding: 3px;
+    font-size: 13px;
+}
+
+.prop-value {
+    padding: 5px;
+    font-size: 13px;
+}

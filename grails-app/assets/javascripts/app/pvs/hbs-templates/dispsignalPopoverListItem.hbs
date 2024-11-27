@@ -1,0 +1,50 @@
+{{#each signals}}
+    {{#if this.isClosed}}
+        <li signalName="{{this.name}} {{this.products}}">
+            {{#if this.forceJustification}}
+                <a tabindex="0" data-target="#dispositionJustificationPopover" data-html="true" role="button"
+                   class="selectSignal text grid-menu-tooltip c1" data-container="body"
+                   data-toggle="modal-popover" isClosed="{{this.isClosed}}" sid="{{this.id}}"
+                   data-placement="left"
+                   data-title="Closed Signal<br>Detected Date: {{this.detectedDate}}<br>Current Disposition: {{this.disposition}}"
+                   signalName="{{this.name}}" data-signal-id="{{this.id}}">
+                    <p class=""><span
+                            class='comments-space'>{{this.name}} {{this.products}} {{this.detectedDate}} {{this.disposition}}</span>
+                    </p>
+                </a>
+            {{else}}
+                <a tabindex="0" href="javascript:void(0);" data-html="true"
+                   data-title="Closed Signal<br>Detected Date: {{this.detectedDate}}<br>Current Disposition: {{this.disposition}}"
+                   sid="{{this.id}}" signalName="{{this.name}}" data-signal-id="{{this.id}}"
+                   class="selectSignal text grid-menu-tooltip attach-signal c2">
+                    <p><span
+                            class='comments-space'>{{this.name}} {{this.products}} {{this.detectedDate}} {{this.disposition}}</span>
+                    </p>
+                </a>
+            {{/if}}
+        </li>
+    {{else}}
+        <li signalName="{{this.name}} {{this.products}}">
+            {{#if this.forceJustification}}
+                <a tabindex="0" data-target="#dispositionJustificationPopover" role="button" data-container="body" data-toggle="modal-popover" data-placement="left" data-html="true"  sid="{{this.id}}"
+                   data-title="Detected Date: {{this.detectedDate}}<br>Current Disposition: {{this.disposition}}"
+                   signalName="{{this.name}}" data-signal-id="{{this.id}}"
+                   class="selectSignal text grid-menu-tooltip c3">
+                    <p><span
+                            class='comments-space'>{{this.name}} {{this.products}} {{this.detectedDate}} {{this.disposition}}</span>
+                    </p>
+                </a>
+            {{else}}
+                <a tabindex="0" sid="{{this.id}}" href="javascript:void(0)" data-html="true"
+                   class="selectSignal text grid-menu-tooltip attach-signal c4"
+                   data-placement="left"
+                   data-title="Detected Date: {{this.detectedDate}}<br>Current Disposition: {{this.disposition}}"
+                   signalName="{{this.name}}" data-signal-id="{{this.id}}">
+                    <p><span
+                            class='comments-space'>{{this.name}} {{this.products}} {{this.detectedDate}} {{this.disposition}}</span>
+                    </p>
+                </a>
+            {{/if}}
+        </li>
+    {{/if}}
+{{/each}}

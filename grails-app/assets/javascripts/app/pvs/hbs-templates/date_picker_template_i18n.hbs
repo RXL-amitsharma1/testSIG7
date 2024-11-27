@@ -1,0 +1,84 @@
+<div class="input-group-btn">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <span class="glyphicon glyphicon-calendar"></span>
+        <span class="sr-only">{{i18n 'scheduler.toggleCalendar'}}</span>
+    </button>
+
+    <div class="dropdown-menu dropdown-menu-right datepicker-calendar-wrapper" role="menu">
+        <div class="datepicker-calendar">
+            <div class="datepicker-calendar-header">
+                <button type="button" class="prev"><span class="glyphicon glyphicon-chevron-left"></span><span
+                        class="sr-only">{{i18n 'previous.month'}}h</span></button>
+                <button type="button" class="next"><span class="glyphicon glyphicon-chevron-right"></span><span
+                        class="sr-only">{{i18n 'scheduler.nextMonth'}}</span></button>
+                <button type="button" class="title">
+                    <span class="month">
+                        <span data-month="0">{{i18n 'scheduler.january'}}</span>
+                        <span data-month="1">{{i18n 'scheduler.february'}}</span>
+                        <span data-month="2">{{i18n 'scheduler.march'}}</span>
+                        <span data-month="3">{{i18n 'scheduler.april'}}</span>
+                        <span data-month="4">{{i18n 'scheduler.may'}}</span>
+                        <span data-month="5">{{i18n 'scheduler.june'}}</span>
+                        <span data-month="6">{{i18n 'scheduler.july'}}</span>
+                        <span data-month="7">{{i18n 'scheduler.august'}}</span>
+                        <span data-month="8">{{i18n 'scheduler.september'}}</span>
+                        <span data-month="9">{{i18n 'scheduler.october'}}</span>
+                        <span data-month="10">{{i18n 'scheduler.november'}}</span>
+                        <span data-month="11">{{i18n 'scheduler.december'}}</span>
+                    </span> <span class="year"></span>
+                </button>
+            </div>
+            <table class="datepicker-calendar-days">
+                <thead>
+                <tr>
+                    <th>{{i18n 'scheduler.short.sunday'}}</th>
+                    <th>{{i18n 'scheduler.short.monday'}}</th>
+                    <th>{{i18n 'scheduler.short.tuesday'}}</th>
+                    <th>{{i18n 'scheduler.short.wednesday'}}</th>
+                    <th>{{i18n 'scheduler.short.thursday'}}</th>
+                    <th>{{i18n 'scheduler.short.friday'}}</th>
+                    <th>{{i18n 'scheduler.short.saturday'}}</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div class="datepicker-calendar-footer">
+                <button type="button" class="datepicker-today">{{i18n 'scheduler.today'}}</button>
+            </div>
+        </div>
+
+        <div class="datepicker-wheels" aria-hidden="true">
+            <div class="datepicker-wheels-month">
+                <h2 class="header">{{i18n 'scheduler.month'}}</h2>
+                <ul>
+                    <li data-month="0"><button type="button">{{i18n 'scheduler.short.january'}}</button></li>
+                    <li data-month="1"><button type="button">{{i18n 'scheduler.short.february'}}</button></li>
+                    <li data-month="2"><button type="button">{{i18n 'scheduler.short.march'}}</button></li>
+                    <li data-month="3"><button type="button">{{i18n 'scheduler.short.April'}}</button></li>
+                    <li data-month="4"><button type="button">{{i18n 'scheduler.may'}}</button></li>
+                    <li data-month="5"><button type="button">{{i18n 'scheduler.short.june'}}</button></li>
+                    <li data-month="6"><button type="button">{{i18n 'scheduler.short.july'}}</button></li>
+                    <li data-month="7"><button type="button">{{i18n 'scheduler.short.august'}}</button></li>
+                    <li data-month="8"><button type="button">{{i18n 'schedulere.short.september'}}</button></li>
+                    <li data-month="9"><button type="button">{{i18n 'scheduler.short.octoberr'}}</button></li>
+                    <li data-month="10"><button type="button">{{i18n 'scheduler.short.november'}}</button></li>
+                    <li data-month="11"><button type="button">{{i18n 'scheduler.short.december'}}</button></li>
+                </ul>
+            </div>
+
+            <div class="datepicker-wheels-year">
+                <h2 class="header">{{i18n 'scheduler.year'}}</h2>
+                <ul></ul>
+            </div>
+
+            <div class="datepicker-wheels-footer clearfix">
+                <button type="button" class="btn datepicker-wheels-back"><span
+                        class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">{{i18n 'scheduler.return.to.calendar'}}</span>
+                </button>
+                <button type="button" class="btn datepicker-wheels-select">{{i18n 'scheduler.select'}} <span
+                        class="sr-only">{{i18n 'scheduler.month.and.year'}}</span></button>
+            </div>
+        </div>
+    </div>
+</div>

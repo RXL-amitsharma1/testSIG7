@@ -1,0 +1,29 @@
+{{#if_else_eq tag.comparedType 'A'}}
+    <span class='badge badge-info details-tag m-r-5 m-t-10 bg-added-green'>{{tag.tagText}} {{tag.privateUser}} {{ tag.tagType}} </span>
+{{else}}
+    {{#if_else_eq tag.comparedType 'D'}}
+        <span class='badge badge-info details-tag m-r-5 m-t-10 bg-deleted-red'>{{tag.tagText}} {{tag.privateUser}} {{ tag.tagType}} </span>
+    {{else}}
+        <span class='badge badge-info details-tag m-r-5 m-t-10'>{{tag.tagText}} {{tag.privateUser}} {{ tag.tagType}} </span>
+    {{/if_else_eq}}
+{{/if_else_eq}}
+
+{{#each_subTags_compared_screen tag.tagText tag.tagType tag.privateUser tags}}
+    {{setVar "rowVal" this}}
+    {{#if_notNull this.subTags}}
+        {{#each this.subTags}}
+            {{#if_notNull this}}
+                {{#if_else_eq  ../../../rowVal.comparedType 'A'}}
+                    <span class='badge details-tag bg-added-green m-r-5 m-t-10'>{{this}} (S)</span>
+                {{else}}
+                    {{#if_else_eq ../../../rowVal.comparedType 'D'}}
+                        <span class='badge details-tag bg-deleted-red m-r-5 m-t-10'>{{this}} (S)</span>
+                    {{else}}
+                        <span class='badge details-tag m-r-5 m-t-10 bg-grey-3'>{{this}} (S)</span>
+                    {{/if_else_eq}}
+                {{/if_else_eq}}
+            {{/if_notNull}}
+        {{/each}}
+    {{/if_notNull}}
+{{/each_subTags_compared_screen}}
+

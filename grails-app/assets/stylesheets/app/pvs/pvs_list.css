@@ -1,0 +1,72 @@
+.dataTable thead tr th {
+    vertical-align: bottom;
+}
+
+.yadcf-filter-wrapper {
+}
+
+.th-label {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.col-filter {
+    display: inline;
+}
+
+.fix-len-text-filter-1 {
+    width: 36px;
+    display: inline;
+}
+
+.fix-len-text-filter-2 {
+    width: 72px;
+    display: inline;
+}
+
+.fix-len-text-filter-3 {
+    width: 144px;
+    display: inline;
+}
+
+.column-filter {
+    width: 120px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: normal;
+}
+
+.table-filter-toggle:hover {
+    cursor: pointer;
+}
+
+.pos-ab.attach{ bottom:5px; right:-6px;}
+
+.pos-ab.comment{ bottom:-5px; right:-6px; }
+
+.font-13 {
+    font-size: 13px !important;
+}
+.hyperLinkColor{
+    color: #23527c;
+}
+
+.export-evdas-drill-down {
+    float: right;
+    position: relative;
+    right: 16px;
+}
+
+#cross-icon{
+    position: relative;
+    top: 1px;
+}
+
+.add-case-attachment{
+    float: right;
+    position: relative;
+    bottom: 3px;
+    right: 21px;
+}

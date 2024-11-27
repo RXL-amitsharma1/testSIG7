@@ -1,0 +1,189 @@
+.select2-padding-bottom {
+    padding-bottom: 6px;
+}
+
+.tabBorder {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D4D4D4;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 600px;
+}
+
+.tabPadding {
+    padding: 20px;
+}
+
+.tabBorderFirst {
+    border-top-left-radius: 0px;
+}
+
+.tabTitleBackground {
+    background-color: #EEEEEE;
+}
+
+.rowsAndColumnsContainer {
+    padding-left: 15px;
+}
+
+.rowsAndColumnsContainerBorder {
+    border: dashed 1px #98bede;
+    border-radius: 5px;
+    min-height: 90px;
+    padding: 10px;
+}
+
+.shortBorder {
+    border: dashed 1px #98bede;
+    border-radius: 5px;
+    min-height: 53px;
+    padding: 10px;
+}
+
+.selectedContainerBorder {
+    border: solid 2px #85b2d8;
+    /*box-shadow: 0 0 8px #85b2d8;*/
+}
+
+.columnScroll {
+    overflow-x: auto;
+    overflow-y: auto;
+    /*padding: 0px;*/
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.addColumnHeader {
+    border: solid 1px #D4D4D4;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    /*height: 32px;*/
+}
+
+.defaultHeaderBackground {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1)));
+    background: -ms-linear-gradient(top, rgba(238,238,238,1) 20%,rgba(204,204,204,1) 100%); /* IE10+ */
+}
+
+.overHeaderBackground {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(180,227,145,1)), color-stop(100%,rgba(90,193,11,1)), color-stop(100%,rgba(180,227,145,1)));
+    background: -ms-linear-gradient(top, rgba(180,227,145,1) 0%,rgba(90,193,11,1) 100%); /* IE10+ */
+}
+
+.addHiddenColumnHeader {
+    border: solid 1px #D4D4D4;
+    border-radius: 0px;
+    height: 32px;
+    width: 60px;
+}
+
+.middleColumn {
+    max-width: 300px;
+}
+
+.columnName {
+    /*white-space: nowrap;*/
+    padding-right: 5px;
+    display: inline;
+}
+
+.removeColumn {
+    float: right;
+    line-height: 0.4;
+    opacity: 0.3;
+    padding-top: 0px;
+    padding-right: 0px;
+}
+
+.emptyColumnContent {
+    border: solid 1px #D4D4D4;
+    height: 32px;
+}
+
+.over {
+    border: 1px dashed #000;
+}
+
+.overEmpty {
+    border: 1px dashed #294;
+    background-color: #33CC33;
+}
+
+.sortDisabled {
+    opacity: 0.3;
+}
+
+.sortIcon {
+    display: inline;
+}
+
+.sortOrderSeq {
+    float: right;
+    font-weight: normal;
+    font-size: 10px;
+    padding-top: 8px;
+}
+
+div .has-error {
+    border-color: #a94442;
+}
+
+.measuresContainerBorder {
+    border: solid 1px #D4D4D4;
+    border-radius: 5px;
+    min-height: 90px;
+    /*max-height: 150px;*/
+    padding: 10px;
+}
+
+.fieldOptions {
+    border: solid 1px #D4D4D4;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.measureOptionsBorder {
+    border: solid 1px #D4D4D4;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.measureName {
+    border: solid 1px #D4D4D4;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1)));
+    background: -ms-linear-gradient(top, rgba(238,238,238,1) 20%,rgba(204,204,204,1) 100%); /* IE10+ */
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.measureSelected {
+    border: solid 1px #D4D4D4;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(222,239,255,1)), color-stop(100%,rgba(152,190,222,1)));
+    background: -ms-linear-gradient(top, rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* IE10+ */
+    padding: 5px;
+}
+
+.columnSelected {
+    border: solid 1px #D4D4D4;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(222,239,255,1)), color-stop(100%,rgba(152,190,222,1)));
+    background: -ms-linear-gradient(top, rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* IE10+ */
+    padding: 5px;
+}
+
+.removeMeasure {
+    float: right;
+    line-height: 0.4;
+    opacity: 0.3;
+    padding-top: 7px;
+}

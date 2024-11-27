@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    $(function () {
+        bindShareWith($('#assignedTo'), "{{searchUserGroupListUrl}}");
+    });
+</script>
+<div class="rxmain-container user-assignment">
+    <div class="rxmain-container-inner">
+        <div class="rxmain-container-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <label class="modal-title" id="exampleModalLabel">Change User Assignment</label>
+        </div>
+        <div class="modal-body">
+            <div>
+                <div class="row col-md-12">
+                    <div class="col-md-6">
+                        <label class="">Current user:</label>
+                        <span id="currentValue" class="form-control">{{current_name}}</span>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="assignedToUser">Assigned To:</label><span class="required-indicator">*</span>
+                        <select id="assignedTo" name="assignedToValue" class="form-control select2"></select>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-primary-change">Change</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>

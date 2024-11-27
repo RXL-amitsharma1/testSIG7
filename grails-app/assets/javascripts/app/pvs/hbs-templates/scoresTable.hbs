@@ -1,0 +1,27 @@
+<table class="dataTable notused">
+    <thead>
+    <tr>
+        <th class="sortable">Date</th>
+        <th class="sortable prr-value" >PRR</th>
+        {{#if isRor}}
+        <th class="sortable ror-value">ROR</th>
+        {{else}}
+            <th class="sortable ror-value">iROR</th>
+        {{/if}}
+        <th class="sortable eb05-value" >EB05</th>
+        <th class="sortable eb95-value" >EB95</th>
+        <th class="sortable ebgm-value" >EBGM</th>
+
+    </tr>
+    </thead>
+    {{#each trendData}}
+        <tr>
+            <td> {{xAxisTitle}}</td>
+            <td class="prr-value">{{prrValue}}</td>
+            <td class="ror-value">{{rorValue}}</td>
+            <td class="eb05-value">{{eb05Value}}</td>
+            <td class="eb95-value">{{eb95Value}}</td>
+            <td class="ebgm-value">{{ebgmValue}}</td>
+        </tr>
+    {{/each}}
+</table>

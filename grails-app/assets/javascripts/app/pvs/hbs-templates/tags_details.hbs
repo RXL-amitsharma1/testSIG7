@@ -1,0 +1,10 @@
+<a tabindex="0" class="badge badge-info details-tag">{{value.tagText}} {{value.privateUser}} {{ value.tagType}} </a>
+{{#if_notNull subTags}}
+    {{#each subTags}}
+        {{#if_notNull this}}
+        <a tabindex="0" class="badge details-tag bg-grey-3 ">{{this}} (S)</a>
+        {{/if_notNull}}
+    {{/each}}
+{{/if_notNull}}
+
+

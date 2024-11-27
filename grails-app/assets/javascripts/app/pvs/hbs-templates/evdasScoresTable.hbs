@@ -1,0 +1,14 @@
+<table class="table table-striped table-curved table-hover" >
+    <thead>
+    <tr>
+        <th class="headRow">Date</th>
+        <th class="headRow">ROR</th>
+    </tr>
+    </thead>
+    {{#each trendData}}
+        <tr>
+            <td>{{xAxisTitle}}</td>
+            <td>{{rorValue}}</td>
+        </tr>
+    {{/each}}
+</table>

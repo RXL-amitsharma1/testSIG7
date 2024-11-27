@@ -1,0 +1,93 @@
+<div id="child-record-container">
+    {{#if isAdmin}}
+      <div class="row" style="padding:10px 0 10px 0">
+        <div class="col-md-12">
+            <div class="pull-right">
+                <a href="{{addRuleUrl}}" class="btn btn-primary">Add Rule</a>
+                <a href="#" class="btn btn-primary rank-rule">Rearrange</a>
+            </div>
+        </div>
+      </div>
+    {{/if}}
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-striped table-hover" style="border: 1px solid #ddd;">
+                <thead>
+                <tr>
+                    <th>Rule Name</th>
+                    <th>Last Modified</th>
+                    <th>Last Modified By</th>
+                    <th>Order</th>
+                    <th>Rule Type</th>
+                    <th>Status</th>
+                    <th class="col-min-100">
+                    {{#if isAdmin}}
+                        Action
+                    {{/if}}
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#if payload}}
+                    {{#each payload}}
+                        <tr>
+                            <td>{{ruleName}}</td>
+                            <td>{{lastModified}}</td>
+                            <td>{{modifiedBy}}</td>
+                            <td>{{ruleRank}}</td>
+                            <td>{{ruleType}}</td>
+                            <td>
+                                {{#if enabled}}
+                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                                {{else}}
+                                    <i class="fa fa-ban" aria-hidden="true"></i>
+                                {{/if}}
+                            </td>
+
+                            <td>
+
+                                <div class="btn-group dropdown dataTableHideCellContent hidden-btn" align="center">
+
+                                    <a class="btn btn-success btn-xs" href="{{append ../editRuleUrl id}}">Edit</a>
+                                    <button type="button" class="btn btn-default btn-xs dropdown-toggle"
+                                            data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu"
+                                        style="min-width: 100px !important; font-size: 12px;">
+                                        <li role="presentation"><a role="menuitem"
+                                                                   href="{{append ../cloneRuleUrl id}}">Copy</a>
+                                        </li>
+                                        <li role="presentation">
+                                            {{#if enabled}}
+                                                <a role="menuitem"
+                                                   href="{{append ../toggleEnableRuleUrl id false}}"
+                                                   class="toggle-enable-rule" data-id="{{id}}" data-enabled="false">
+                                                    Disable
+                                                </a>
+                                            {{else}}
+                                                <a role="menuitem"
+                                                   href="{{append ../toggleEnableRuleUrl id true}}"
+                                                   class="toggle-enable-rule" data-id="{{id}}" data-enabled="true">
+                                                    Enable
+                                                </a>
+                                            {{/if}}
+                                        </li>
+                                        <li role="presentation"><a role="menuitem" class="deleteRuleUrl"
+                                                                   href="{{append ../deleteRuleUrl id}}">Delete</a></li>
+                                    </ul>
+                                </div>
+
+                            </td>
+                        </tr>
+                    {{/each}}
+                {{else}}
+                    <td colspan="8" align="center" class="m-l-5">No Rule Exist</td>
+                {{/if}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

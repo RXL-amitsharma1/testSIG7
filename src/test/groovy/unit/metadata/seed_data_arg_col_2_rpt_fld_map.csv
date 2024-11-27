@@ -1,0 +1,2 @@
+masterCaseNum,ReportFieldGroup,CM_CASE_NUM,java.lang.String,,true,true,true,true,dd-MMM-yyyy
+masterDateLocked,CaseRoutingInformation,CM_DATE_LOCKED,java.util.Date,,true,true,true,true,dd-MMM-yyyy

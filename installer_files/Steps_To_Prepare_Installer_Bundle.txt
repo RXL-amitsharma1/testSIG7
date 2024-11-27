@@ -1,0 +1,25 @@
+For PV Signal Installation using PV Suite Installer we need to have following files/directories in the bundle.
+
+1) Installer_XML  - This is directory which we need to have. This directory is going to have following files. 
+
+	a) configPropertiesFieldDetails.xml    - This is the XML file used for mapping config properties meta information/
+	b) configPropertiesFieldDetails.xsd    - This is xsd file used to validate the config properties file xml
+	c) externalized_data.xml               - This is xml file used to mapping externalized config property data. 
+	d) externalized_data.xsd               - This is xsd file used to validate the config properties. 
+
+
+
+2) adHocAlertAttributes.cfg  			- File having some of the default code list properties.
+3) application.properties  			    - Application property file used for pvcc project.
+4) config.groovy  						- cofig file used for signal project
+5) externalized_data.cfg  				- externalized property file used to upload default metadata. 
+6) pvcc.war  							- PVCC archive. 
+7) pvsignalstatistics.tar.xz 			- PV Signal Statistics archive.
+8) signal.war							- PV Signal archive.
+
+
+Once these 7 files and 1 directory with 4 files are prepared and available, put them into folder PV_SIGNAL_APP_RELEASE_NUMBER(For example PV_SIGNAL_APP_5.0) and archive them using following commands:-
+
+1)	tar -zcf PV_SIGNAL_APP_5.0.tar PV_SIGNAL_APP_5.0
+2)	md5sum PV_SIGNAL_APP_5.0.tar ---->  CHECKSUM
+3)	mv PV_SIGNAL_APP_5.0.tar PV_SIGNAL_APP_5.0_CHECKSUM.tar

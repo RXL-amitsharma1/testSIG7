@@ -1,0 +1,1720 @@
+PRODUCT_NAME,PRODUCT_ID,PT_NAME,PT_CODE,SOC_NAME,CUMM_SPONT_COUNT,NEW_SPONT_COUNT,CUMM_STUDY_COUNT,NEW_STUDY_COUNT,CUMM_SERIOUS_COUNT,NEW_SERIOUS_COUNT,CUMM_FATAL_COUNT,NEW_FATAL_COUNT,FLAG_RECHAL,FLAG_DECHAL,FLAG_PREG,FLAG_LABEL,FLAG_CONSERVATIVE_RELATEDNESS
+Harvoni,27593,Cardiac failure congestive,10007559,Card,15,15,0,0,15,15,0,0,No,No,No,No,No
+Harvoni,27593,Tinnitus,10043882,Ear,32,32,0,0,11,11,0,0,No,No,No,No,No
+Harvoni,27593,Blood cholesterol abnormal,10005423,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cerebral ventricle dilatation,10048824,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Tonsil cancer,10044002,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Migraine without aura,10052787,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dyskinesia,10013916,Nerv,6,6,0,0,6,6,6,6,No,No,No,No,No
+Harvoni,27593,Extrapyramidal disorder,10015832,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Movement disorder,10028035,Nerv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Multiple sclerosis,10028245,Nerv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Enzyme level decreased,10072235,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Lymphocyte count increased,10025258,Inv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Nerve root compression,10061866,Nerv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Visual field defect,10047555,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hypothyroidism,10021114,Endo,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Amnesia,10001949,Nerv,18,18,0,0,8,8,1,1,No,No,No,No,No
+Harvoni,27593,Memory impairment,10027175,Nerv,35,35,0,0,15,15,0,0,No,No,No,No,No
+Harvoni,27593,Transient global amnesia,10044380,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Congenital cystic kidney disease,10010428,Cong,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Atrioventricular block complete,10003673,Card,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Arteriovenous malformation,10003193,Cong,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Peritonitis bacterial,10062070,Infec,16,16,0,0,16,16,4,4,No,No,No,No,No
+Harvoni,27593,Toxic skin eruption,10057970,Skin,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Skin exfoliation,10040844,Skin,11,11,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Rosacea,10039218,Skin,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Depression,10012378,Psych,94,94,0,0,38,38,1,1,No,No,No,No,No
+Harvoni,27593,Myositis,10028653,Musc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Enthesopathy,10014910,Musc,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Foetal distress syndrome,10016855,Preg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Rash,10037844,Skin,129,129,0,0,42,42,0,0,No,No,No,No,No
+Harvoni,27593,Pulmonary alveolar haemorrhage,10037313,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Acute interstitial pneumonitis,10066728,Resp,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Aspiration,10003504,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Respiratory tract congestion,10052251,Resp,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Thyroid cancer,10066474,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Henoch-Schonlein purpura,10019617,Skin,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Urine abnormality,10046607,Renal,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Renal infarct,10038470,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Vaginal haemorrhage,10046910,Repro,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Erythema multiforme,10015218,Skin,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Priapism,10036661,Repro,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Negative thoughts,10058672,Psych,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hyperaesthesia,10020568,Nerv,3,3,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Musculoskeletal chest pain,10050819,Musc,4,4,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Flank pain,10016750,Musc,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Physical assault,10034983,SocCi,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Skin irritation,10040880,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Aspartate aminotransferase decreased,10003479,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Blood bilirubin increased,10005364,Inv,48,48,0,0,39,39,5,5,No,No,No,No,No
+Harvoni,27593,Blood bilirubin unconjugated increased,10005370,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Injection site pain,10022086,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Autoimmune hepatitis,10003827,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Blood culture positive,10005488,Inv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Transplant evaluation,10057925,Inv,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Exposure via partner,10071412,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Fluid retention,10016807,Metab,10,10,0,0,9,9,0,0,No,No,No,No,No
+Harvoni,27593,Loose tooth,10065612,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Tooth loss,10044044,Gastr,3,3,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Liver injury,10067125,Hepat,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Liver transplant rejection,10024715,Immun,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,False negative investigation result,10070747,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Impaired healing,10021519,Genrl,5,5,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Bowel movement irregularity,10063541,Gastr,4,4,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Multiple organ dysfunction syndrome,10077361,Genrl,7,7,0,0,7,7,7,7,No,No,No,No,No
+Harvoni,27593,Hepatic failure,10019663,Hepat,55,55,0,0,55,55,23,23,No,No,No,No,No
+Harvoni,27593,Chronic hepatic failure,10057573,Hepat,3,3,0,0,3,3,2,2,No,No,No,No,No
+Harvoni,27593,Drug ineffective for unapproved indication,10051118,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hypertrophic cardiomyopathy,10020871,Cong,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Glucose tolerance impaired,10018429,Metab,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Ileus,10021328,Gastr,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Hypoaesthesia oral,10057371,Gastr,4,4,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Oral hyperaesthesia,10076390,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hypertrophy of tongue papillae,10020893,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Glossodynia,10018388,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Gastrointestinal sounds abnormal,10067715,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Eructation,10015137,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Gastritis,10017853,Gastr,7,7,0,0,6,6,1,1,No,No,No,No,No
+Harvoni,27593,Enterocolitis,10014893,Gastr,4,4,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Inappropriate schedule of drug administration,10021597,Inj&P,14,14,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Drug dose omission,10064294,Inj&P,60,60,0,0,30,30,1,1,No,No,No,No,No
+Harvoni,27593,Limb injury,10061225,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Electrocardiogram QT prolonged,10014387,Inv,6,6,0,0,6,6,1,1,No,No,No,No,No
+Harvoni,27593,Hyperammonaemia,10020575,Metab,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Abnormal sensation in eye,10000173,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Vitreous opacities,10047658,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Vitreous floaters,10047654,Eye,5,5,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Oesophageal varices haemorrhage,10030210,Gastr,20,20,0,0,20,20,5,5,No,No,No,No,No
+Harvoni,27593,Upper gastrointestinal haemorrhage,10046274,Gastr,14,14,0,0,14,14,6,6,No,No,No,No,No
+Harvoni,27593,Rectal haemorrhage,10038063,Gastr,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Eyelid rash,10074620,Eye,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Eye irritation,10015946,Eye,5,5,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Acute myocardial infarction,10000891,Card,18,18,0,0,18,18,4,4,No,No,No,No,No
+Harvoni,27593,Vasodilatation,10047141,Vasc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Vascular rupture,10053649,Vasc,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Glaucoma,10018304,Eye,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Haemoptysis,10018964,Resp,7,7,0,0,5,5,1,1,No,No,No,No,No
+Harvoni,27593,Atelectasis,10003598,Resp,3,3,0,0,3,3,2,2,No,No,No,No,No
+Harvoni,27593,Pneumothorax spontaneous,10035763,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Device failure,10056871,Prod,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Product odour abnormal,10069226,Prod,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Product packaging quantity issue,10069299,Prod,6,6,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Ear swelling,10014025,Ear,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cyst drainage,10011737,Surg,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Photosensitivity reaction,10034972,Skin,9,9,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Surgery,10042609,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Product quality issue,10069327,Prod,13,13,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Analgesic drug level increased,10060942,Inv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Caesarean section,10006924,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hypophosphatasia,10049933,Cong,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pancytopenia,10033661,Blood,12,12,0,0,12,12,4,4,No,No,No,No,No
+Harvoni,27593,Ocular discomfort,10052143,Eye,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Thrombophlebitis,10043570,Vasc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hyperchlorhydria,10020601,Gastr,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Unhealthy diet,10074834,SocCi,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Disability,10013050,SocCi,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Sinus disorder,10062244,Resp,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pruritus,10037087,Skin,66,66,0,0,32,32,1,1,No,No,No,No,No
+Harvoni,27593,Microscopic polyangiitis,10063344,Vasc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,End stage renal disease,10077512,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Impaired driving ability,10049564,SocCi,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Corrective lens user,10050858,SocCi,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Treatment noncompliance,10049414,SocCi,14,14,0,0,9,9,2,2,No,No,No,No,No
+Harvoni,27593,Skin odour abnormal,10040904,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Renal tubular disorder,10038537,Renal,6,6,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Sopor,10058709,Psych,3,3,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Cholangiocarcinoma,10008593,Neopl,5,5,0,0,5,5,1,1,No,No,No,No,No
+Harvoni,27593,Food craving,10056465,Metab,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Weight fluctuation,10049040,Metab,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Coronary artery bypass,10011077,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Scrotal swelling,10039759,Repro,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Liver transplant,10024714,Surg,6,6,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Sensory disturbance,10040026,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Phantom pain,10056238,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Haemorrhage intracranial,10018985,Nerv,7,7,0,0,7,7,6,6,No,No,No,No,No
+Harvoni,27593,Antisocial behaviour,10002820,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pain in jaw,10033433,Musc,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Spinal pain,10072005,Musc,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Osteoporosis,10031282,Musc,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Rhabdomyolysis,10039020,Musc,18,18,0,0,18,18,1,1,No,No,No,No,No
+Harvoni,27593,Scar,10039580,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Tendon rupture,10043248,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Panic disorder,10033666,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Oxygen saturation decreased,10033318,Inv,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Premature baby,10036590,Preg,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Anxiety,10002855,Psych,127,127,0,0,37,37,0,0,No,No,No,No,No
+Harvoni,27593,Fear,10016275,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dehydration,10012174,Metab,16,16,0,0,12,12,2,2,No,No,No,No,No
+Harvoni,27593,Drug screen negative,10050895,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Drug screen false positive,10052016,Inv,3,3,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Feeding disorder,10061148,Metab,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Mean cell volume increased,10027004,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Red blood cell count decreased,10038153,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Weight increased,10047899,Inv,36,36,0,0,15,15,0,0,No,No,No,No,No
+Harvoni,27593,Decubitus ulcer,10011985,Skin,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Device failure,10056871,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Aphonia,10002953,Nerv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Language disorder,10074869,Nerv,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Somnambulism,10041347,Psych,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Social avoidant behaviour,10041243,Psych,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Adenocarcinoma,10001141,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Neoplasm malignant,10028997,Neopl,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Gingival recession,10018290,Gastr,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Hypothermia,10021113,Genrl,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Sinus tachycardia,10040752,Card,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Ventricular tachycardia,10047302,Card,9,9,0,0,9,9,0,0,No,No,No,No,No
+Harvoni,27593,Blood testosterone decreased,10005814,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Appendicitis,10003011,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Tibia fracture,10043827,Inj&P,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Hepatitis C RNA positive,10019750,Inv,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Cerebral hygroma,10052370,Neopl,6,6,0,0,6,6,6,6,No,No,No,No,No
+Harvoni,27593,Drug dispensing error,10064354,Inj&P,3,3,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Product label confusion,10069273,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Tuberculin test positive,10044728,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Carotid artery aneurysm,10007686,Nerv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Extrasystoles,10015856,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Oral disorder,10067621,Gastr,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Disseminated tuberculosis,10013453,Infec,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hepatitis C,10019744,Infec,329,329,0,0,327,327,4,4,No,No,No,No,No
+Harvoni,27593,Abdominal distension,10000060,Gastr,40,40,0,0,15,15,1,1,No,No,No,No,No
+Harvoni,27593,Product coating issue,10069222,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Abdominal rigidity,10000090,Gastr,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Immunosuppression,10062016,Immun,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Kidney infection,10023424,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pyelonephritis,10037596,Infec,6,6,0,0,6,6,1,1,No,No,No,No,No
+Harvoni,27593,Ophthalmic herpes simplex,10073938,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Gastric disorder,10056819,Gastr,5,5,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pregnancy,10036556,Preg,5,5,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Sickle cell anaemia with crisis,10040642,Blood,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Granulocytopenia,10018687,Blood,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Mesenteric vein thrombosis,10027402,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Haemorrhoidal haemorrhage,10054787,Gastr,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Drowning,10013647,Genrl,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Irritability,10022998,Genrl,38,38,0,0,8,8,0,0,No,No,No,No,No
+Harvoni,27593,Potentiating drug interaction,10068072,Genrl,4,4,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hyperhidrosis,10020642,Skin,22,22,0,0,12,12,1,1,No,No,No,No,No
+Harvoni,27593,Liver function test increased,10077692,Inv,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Facial paralysis,10016062,Nerv,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,null,null,null,56,56,0,0,30,30,7,7,No,No,No,No,No
+Harvoni,27593,Cardiac failure acute,10007556,Card,3,3,0,0,3,3,2,2,No,No,No,No,No
+Harvoni,27593,Hypoacusis,10048865,Ear,4,4,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Migraine with aura,10027607,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Neuropathy peripheral,10029331,Nerv,14,14,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Prostate cancer,10060862,Neopl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hemiplegia,10019468,Nerv,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Pyramidal tract syndrome,10063636,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Encephalopathy,10014625,Nerv,30,30,0,0,30,30,7,7,No,No,No,No,No
+Harvoni,27593,Myasthenia gravis,10028417,Nerv,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Myasthenia gravis crisis,10062758,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Polyneuropathy,10036105,Nerv,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Peroneal nerve palsy,10034701,Nerv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Leiomyosarcoma,10024189,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Lymphocyte count decreased,10025256,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Monocyte count decreased,10027878,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,White blood cell count increased,10047943,Inv,9,9,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Eosinophilia,10014950,Blood,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Platelet disorder,10035532,Blood,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hemianopia,10019452,Nerv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Gastrointestinal tube insertion,10053050,Surg,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Retinal haemorrhage,10038867,Eye,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Retinal vasculitis,10038905,Eye,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Pneumonia bacterial,10060946,Infec,4,4,0,0,4,4,2,2,No,No,No,No,No
+Harvoni,27593,Eye infection,10015929,Infec,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Eyelid infection,10015988,Infec,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Infectious mononucleosis,10021914,Infec,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Haematotoxicity,10061188,Blood,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Bone marrow infiltration,10075173,Blood,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Coronary angioplasty,10050329,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Coronary arterial stent insertion,10052086,Surg,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Exfoliative rash,10064579,Skin,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pulmonary arterial hypertension,10064911,Resp,5,5,0,0,5,5,1,1,No,No,No,No,No
+Harvoni,27593,Varicose vein ruptured,10046999,Vasc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hypertensive crisis,10020802,Vasc,9,9,0,0,9,9,0,0,No,No,No,No,No
+Harvoni,27593,Hypertensive emergency,10058179,Vasc,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Abdominal neoplasm,10060925,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Tendonitis,10043255,Musc,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Pancreatic carcinoma,10033609,Neopl,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Interstitial lung disease,10022611,Resp,12,12,0,0,12,12,2,2,No,No,No,No,No
+Harvoni,27593,Respiratory disorder,10038683,Resp,2,2,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Haemarthrosis,10018829,Musc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Ecchymosis,10014080,Skin,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Urine odour abnormal,10057135,Renal,4,4,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Anhedonia,10002511,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Decreased interest,10011971,Psych,5,5,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Blister,10005191,Skin,19,19,0,0,9,9,0,0,No,No,No,No,No
+Harvoni,27593,Alopecia universalis,10001767,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Acute leukaemia,10000830,Neopl,4,4,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Muscle twitching,10028347,Musc,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Muscle fatigue,10049565,Musc,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hypoaesthesia,10020937,Nerv,29,29,0,0,11,11,1,1,No,No,No,No,No
+Harvoni,27593,Neuralgia,10029223,Nerv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Musculoskeletal pain,10028391,Musc,8,8,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Skin depigmentation,10040825,Skin,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pigmentation disorder,10062080,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Ammonia increased,10001946,Inv,14,14,0,0,10,10,2,2,No,No,No,No,No
+Harvoni,27593,Bilirubin conjugated increased,10004685,Inv,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Cholestasis,10008635,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hyperbilirubinaemia,10020578,Hepat,12,12,0,0,11,11,0,0,No,No,No,No,No
+Harvoni,27593,Ocular icterus,10058117,Hepat,4,4,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hypertransaminasaemia,10068237,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Feeling hot,10016334,Genrl,8,8,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hunger,10020466,Genrl,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Thirst,10043458,Genrl,7,7,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hepatitis,10019717,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Gastric antral vascular ectasia,10051585,Gastr,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Platelet count abnormal,10035526,Inv,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Maternal exposure before pregnancy,10071406,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Maternal exposure during pregnancy,10071408,Inj&P,32,32,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Frequent bowel movements,10017367,Gastr,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Oral discomfort,10030973,Gastr,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Duodenal ulcer haemorrhage,10013839,Gastr,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Road traffic accident,10039203,Inj&P,9,9,0,0,7,7,2,2,No,No,No,No,No
+Harvoni,27593,Pregnancy test false positive,10036573,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Diabetes mellitus inadequate control,10012607,Metab,5,5,0,0,5,5,1,1,No,No,No,No,No
+Harvoni,27593,Heart rate irregular,10019304,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Intestinal obstruction,10022687,Gastr,7,7,0,0,7,7,1,1,No,No,No,No,No
+Harvoni,27593,Cholangitis acute,10008605,Hepat,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Oesophageal stenosis,10030194,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Gastrointestinal inflammation,10064147,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Haemoglobin decreased,10018884,Inv,48,48,0,0,39,39,2,2,No,No,No,No,No
+Harvoni,27593,Hepatic enzyme abnormal,10062685,Inv,6,6,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Blood alkaline phosphatase abnormal,10059571,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Thyroiditis,10043778,Endo,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Spinal compression fracture,10041541,Inj&P,6,6,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Intervertebral disc injury,10055040,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Joint injury,10060820,Inj&P,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Alcohol poisoning,10001605,Inj&P,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Photophobia,10034960,Eye,9,9,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Melaena,10027141,Gastr,12,12,0,0,12,12,4,4,No,No,No,No,No
+Harvoni,27593,Infection susceptibility increased,10021866,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Zoonosis,10048282,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pharyngitis streptococcal,10034839,Infec,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Gastrointestinal polyp haemorrhage,10074437,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pulmonary sepsis,10051739,Infec,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Arterial disorder,10060963,Vasc,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Acute coronary syndrome,10051592,Card,4,4,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Anaphylactic shock,10002199,Immun,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pleural effusion,10035598,Resp,11,11,0,0,11,11,2,2,No,No,No,No,No
+Harvoni,27593,Menstruation irregular,10027339,Repro,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Product coating issue,10069222,Prod,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Product shape issue,10069223,Prod,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Arterial rupture,10003173,Vasc,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Amenorrhoea,10001928,Repro,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hydronephrosis,10020524,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Suffocation feeling,10042444,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dry throat,10013789,Resp,4,4,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Rhinorrhoea,10039101,Resp,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Sneezing,10041232,Resp,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Vitreous haemorrhage,10047655,Eye,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Ear haemorrhage,10014009,Ear,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Otorrhoea,10033101,Ear,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Eye swelling,10015967,Eye,8,8,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Constipation,10010774,Gastr,63,63,0,0,24,24,1,1,No,No,No,No,No
+Harvoni,27593,Alveolitis,10001889,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pneumonitis,10035742,Resp,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Chromaturia,10008796,Renal,13,13,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Skin disorder,10040831,Skin,7,7,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Skin reaction,10040914,Skin,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Focal segmental glomerulosclerosis,10067757,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Macular degeneration,10025409,Eye,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Bleeding varicose vein,10005144,Vasc,2,2,0,0,2,2,2,2,No,No,No,No,No
+Harvoni,27593,Sleep disorder,10040984,Psych,31,31,0,0,11,11,0,0,No,No,No,No,No
+Harvoni,27593,Putamen haemorrhage,10058940,Nerv,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Abulia,10050013,Psych,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Abnormal loss of weight,10000159,Metab,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Creatinine renal clearance decreased,10011372,Inv,8,8,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Glomerular filtration rate decreased,10018358,Inv,39,39,0,0,33,33,0,0,No,No,No,No,No
+Harvoni,27593,Abortion missed,10000230,Preg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Seasonal allergy,10048908,Immun,4,4,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Perennial allergy,10069493,Immun,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Restless legs syndrome,10058920,Nerv,4,4,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Basal cell carcinoma,10004146,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cerebrovascular accident,10008190,Nerv,23,23,0,0,23,23,1,1,No,No,No,No,No
+Harvoni,27593,Emotional disorder,10014551,Psych,15,15,0,0,11,11,0,0,No,No,No,No,No
+Harvoni,27593,Euphoric mood,10015535,Psych,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Mood swings,10027951,Psych,14,14,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Glomerulonephritis,10018364,Renal,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Nephrotic syndrome,10029164,Renal,11,11,0,0,11,11,0,0,No,No,No,No,No
+Harvoni,27593,Seizure,10039906,Nerv,27,27,0,0,27,27,5,5,No,No,No,No,No
+Harvoni,27593,Peripheral coldness,10034568,Vasc,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Facial paresis,10051267,Nerv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Anal pruritus,10068172,Gastr,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Coordination abnormal,10010947,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Nystagmus,10029864,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Lactic acidosis,10023676,Metab,9,9,0,0,9,9,3,3,No,No,No,No,No
+Harvoni,27593,Rash papular,10037876,Skin,14,14,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Nervous system disorder,10029202,Nerv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Nerve injury,10052897,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Fear of death,10066392,Psych,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Peripheral nerve paresis,10071663,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Incorrect dosage administered,10073768,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cardiovascular disorder,10007649,Card,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pre-existing condition improved,10036495,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Musculoskeletal stiffness,10052904,Musc,12,12,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Papillary thyroid cancer,10033701,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Altered state of consciousness,10001854,Nerv,5,5,0,0,5,5,4,4,No,No,No,No,No
+Harvoni,27593,Blood magnesium decreased,10005654,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Polydipsia,10036067,Metab,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hyperkalaemia,10020646,Metab,14,14,0,0,10,10,1,1,No,No,No,No,No
+Harvoni,27593,Gastric pH increased,10060040,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,White blood cells urine positive,10047967,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hallucination, visual,10019075,Psych,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Mental status changes,10048294,Psych,8,8,0,0,8,8,1,1,No,No,No,No,No
+Harvoni,27593,Body temperature increased,10005911,Inv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Respiratory rate increased,10038712,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Cytomegalovirus test positive,10051620,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Device issue,10069868,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Coma,10010071,Nerv,7,7,0,0,7,7,2,2,No,No,No,No,No
+Harvoni,27593,Insomnia,10022437,Psych,189,189,0,0,50,50,3,3,No,No,No,No,No
+Harvoni,27593,Middle insomnia,10027590,Psych,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Optic nerve injury,10030938,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Thyroid function test abnormal,10043730,Inv,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Blood thyroid stimulating hormone abnormal,10005830,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Paranoia,10033864,Psych,9,9,0,0,8,8,0,0,No,No,No,No,No
+Harvoni,27593,Supraventricular extrasystoles,10042602,Card,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Blood oestrogen increased,10005688,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Blood testosterone increased,10005815,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hepatomegaly,10019842,Hepat,3,3,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Viral load increased,10062180,Inv,8,8,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Wound infection bacterial,10065240,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dysentery,10051402,Infec,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Acute sinusitis,10001076,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Sinusitis,10040753,Infec,15,15,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Condition aggravated,10010264,Genrl,15,15,0,0,13,13,0,0,No,No,No,No,No
+Harvoni,27593,Multiple allergies,10028164,Immun,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Faecaloma,10056325,Gastr,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Blood urine present,10018870,Inv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hypophosphataemia,10021058,Metab,8,8,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Blood lactic acid increased,10005635,Inv,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Joint swelling,10023232,Musc,18,18,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Dental caries,10012318,Gastr,5,5,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Gingival disorder,10018280,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Foetal growth restriction,10070531,Preg,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Bradycardia,10006093,Card,47,47,0,0,41,41,1,1,No,No,No,No,No
+Harvoni,27593,Cardiac flutter,10052840,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Adverse drug reaction,10061623,Genrl,3,3,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Arthritis bacterial,10053555,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Haemolytic anaemia,10018916,Blood,6,6,0,0,6,6,1,1,No,No,No,No,No
+Harvoni,27593,Helicobacter infection,10054263,Infec,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Staphylococcal sepsis,10056430,Infec,4,4,0,0,4,4,3,3,No,No,No,No,No
+Harvoni,27593,Staphylococcal infection,10058080,Infec,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Bacteraemia,10003997,Infec,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Faeces soft,10074859,Gastr,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Product taste abnormal,10069227,Genrl,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Breath odour,10006326,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Face oedema,10016029,Genrl,7,7,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Gravitational oedema,10018713,Genrl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Oedema,10030095,Genrl,17,17,0,0,9,9,2,2,No,No,No,No,No
+Harvoni,27593,Virologic failure,10065648,Infec,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Viral myositis,10051512,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hepatic lesion,10061998,Hepat,9,9,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Haemorrhagic hepatic cyst,10067796,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Leukocytosis,10024378,Blood,3,3,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Knee operation,10049548,Surg,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Blepharitis,10005148,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Left ventricular hypertrophy,10049773,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Nasal oedema,10028750,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Systemic candida,10042938,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Product label confusion,10069273,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Night sweats,10029410,Skin,7,7,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Cardiac failure,10007554,Card,19,19,0,0,19,19,3,3,No,No,No,No,No
+Harvoni,27593,Bone marrow failure,10065553,Blood,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Vertigo positional,10047348,Ear,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Low density lipoprotein abnormal,10024901,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Low density lipoprotein increased,10024910,Inv,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Lung adenocarcinoma,10025031,Neopl,3,3,0,0,3,3,2,2,No,No,No,No,No
+Harvoni,27593,Posterior reversible encephalopathy syndrome,10071066,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Brain oedema,10048962,Nerv,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Seizure like phenomena,10071048,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Malignant pleural effusion,10026673,Neopl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Multiple sclerosis relapse,10048393,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Granulocyte count increased,10018683,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Immune thrombocytopenic purpura,10074667,Blood,9,9,0,0,9,9,5,5,No,No,No,No,No
+Harvoni,27593,Left ventricular failure,10024119,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Primary hypothyroidism,10036697,Endo,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Blood pressure fluctuation,10005746,Vasc,5,5,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Hypovolaemic shock,10021138,Vasc,4,4,0,0,4,4,4,4,No,No,No,No,No
+Harvoni,27593,Mental impairment,10027374,Nerv,8,8,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Cognitive disorder,10057668,Nerv,19,19,0,0,19,19,0,0,No,No,No,No,No
+Harvoni,27593,Fanconi syndrome,10016219,Cong,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Gastric bypass,10061966,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Nephrectomy,10029116,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Shock,10040560,Vasc,3,3,0,0,3,3,2,2,No,No,No,No,No
+Harvoni,27593,Retinal vein thrombosis,10038908,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Umbilical hernia,10045458,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Meningoencephalitis herpetic,10027285,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pneumothorax,10035759,Resp,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hepatic hydrothorax,10067365,Resp,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Pulmonary thrombosis,10037437,Resp,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Hepatopulmonary syndrome,10052274,Resp,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Eczema,10014184,Skin,9,9,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Eczema asteatotic,10014190,Skin,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hypertension,10020772,Vasc,80,80,0,0,56,56,0,0,No,No,No,No,No
+Harvoni,27593,Neoplasm,10028980,Neopl,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,B-cell lymphoma,10003899,Neopl,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Major depression,10057840,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Rash generalised,10037858,Skin,18,18,0,0,8,8,0,0,No,No,No,No,No
+Harvoni,27593,Organising pneumonia,10067472,Resp,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Pharyngeal haemorrhage,10034827,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Arthritis,10003246,Musc,11,11,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Delusional disorder, unspecified type,10012255,Psych,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pollakiuria,10036018,Renal,6,6,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Urinary hesitation,10046542,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Urinary incontinence,10046543,Renal,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Ovarian mass,10058823,Repro,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cold sweat,10009866,Skin,12,12,0,0,10,10,0,0,No,No,No,No,No
+Harvoni,27593,Restlessness,10038743,Psych,6,6,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Conduct disorder,10064478,Psych,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Distractibility,10013486,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Erectile dysfunction,10061461,Repro,7,7,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Renal failure,10038435,Renal,42,42,0,0,42,42,8,8,No,No,No,No,No
+Harvoni,27593,Chronic lymphocytic leukaemia,10008958,Neopl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Aortic dissection rupture,10068119,Vasc,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Paraesthesia,10033775,Nerv,31,31,0,0,19,19,0,0,No,No,No,No,No
+Harvoni,27593,Pathological fracture,10034156,Musc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Soft tissue necrosis,10065769,Musc,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Psoriasis,10037153,Skin,10,10,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Verbal abuse,10055166,SocCi,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Activated partial thromboplastin time prolonged,10000636,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Alanine aminotransferase decreased,10001549,Inv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Aspartate aminotransferase increased,10003481,Inv,20,20,0,0,14,14,0,0,No,No,No,No,No
+Harvoni,27593,Foaming at mouth,10062654,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Gallbladder polyp,10049704,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hepatic function abnormal,10019670,Hepat,12,12,0,0,11,11,0,0,No,No,No,No,No
+Harvoni,27593,Acute hepatic failure,10000804,Hepat,12,12,0,0,12,12,7,7,No,No,No,No,No
+Harvoni,27593,Vomiting,10047700,Gastr,148,148,0,0,86,86,10,10,No,No,No,No,No
+Harvoni,27593,Regurgitation,10067171,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Injection site urticaria,10022107,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Chills,10008531,Genrl,21,21,0,0,7,7,1,1,No,No,No,No,No
+Harvoni,27593,Hangover,10019133,Genrl,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hepatotoxicity,10019851,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Platelet count increased,10051608,Inv,2,2,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Accident at home,10000370,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Foetal exposure during pregnancy,10071404,Inj&P,5,5,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Exposure during pregnancy,10073513,Inj&P,8,8,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Water intoxication,10047837,Metab,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Complications of transplanted liver,10010186,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Sensitivity of teeth,10040012,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dental pulp disorder,10012328,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Secretion discharge,10053459,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Vulvovaginal mycotic infection,10064899,Infec,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Non-alcoholic steatohepatitis,10053219,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Gastrointestinal motility disorder,10061173,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Paraesthesia oral,10057372,Gastr,6,6,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Oral mucosal blistering,10030995,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Dysplasia,10058314,Genrl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Mass,10026865,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hernia perforation,10075255,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Systemic inflammatory response syndrome,10051379,Genrl,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Acute on chronic liver failure,10077305,Hepat,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Oesophageal ulcer,10030201,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Medication error,10027091,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Antineutrophil cytoplasmic antibody increased,10060138,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Anal squamous cell carcinoma,10073358,Neopl,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Increased insulin requirement,10021664,Metab,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Fractured ischium,10017290,Inj&P,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Rotator cuff syndrome,10039227,Musc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Sluggishness,10041052,Genrl,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Gait disturbance,10017577,Genrl,21,21,0,0,15,15,0,0,No,No,No,No,No
+Harvoni,27593,Biliary colic,10004663,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Drug ineffective,10013709,Genrl,473,473,0,0,456,456,5,5,No,No,No,No,No
+Harvoni,27593,Adverse event,10060933,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Swollen tongue,10042727,Gastr,7,7,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Tongue discolouration,10043949,Gastr,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Faeces discoloured,10016100,Gastr,9,9,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Duodenitis,10013864,Gastr,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Food poisoning,10016952,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Wrong technique in product usage process,10076573,Inj&P,17,17,0,0,5,5,2,2,No,No,No,No,No
+Harvoni,27593,Blood alkaline phosphatase increased,10059570,Inv,9,9,0,0,9,9,0,0,No,No,No,No,No
+Harvoni,27593,Thermal burn,10053615,Inj&P,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Electrocardiogram T wave inversion,10014395,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Rib fracture,10039117,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Blood pressure decreased,10005734,Inv,9,9,0,0,6,6,1,1,No,No,No,No,No
+Harvoni,27593,Hyperuricaemia,10020903,Metab,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Vitamin D deficiency,10047626,Metab,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Oral herpes,10067152,Infec,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Peritonitis,10034674,Infec,2,2,0,0,2,2,2,2,No,No,No,No,No
+Harvoni,27593,Angina pectoris,10002383,Card,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Product packaging quantity issue,10069299,Genrl,6,6,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Viraemia,10058874,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Superficial vein prominence,10068717,Vasc,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Myocardial infarction,10028596,Card,27,27,0,0,27,27,7,7,No,No,No,No,No
+Harvoni,27593,Sputum discoloured,10041807,Resp,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Product taste abnormal,10069227,Prod,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Colitis ischaemic,10009895,Gastr,5,5,0,0,5,5,1,1,No,No,No,No,No
+Harvoni,27593,Colitis ulcerative,10009900,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Capillary disorder,10007189,Vasc,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Inguinal hernia repair,10022020,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Urinary tract disorder,10046566,Renal,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Haemorrhage,10055798,Vasc,9,9,0,0,8,8,3,3,No,No,No,No,No
+Harvoni,27593,Diuretic therapy,10053073,Surg,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Anticoagulation drug level below therapeutic,10060321,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Ear disorder,10014004,Ear,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Ear discomfort,10052137,Ear,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hypochromic anaemia,10020969,Blood,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Aplastic anaemia,10002967,Blood,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Chronic kidney disease,10064848,Renal,10,10,0,0,10,10,1,1,No,No,No,No,No
+Harvoni,27593,Upper respiratory tract inflammation,10049590,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Angioedema,10002424,Skin,12,12,0,0,12,12,0,0,No,No,No,No,No
+Harvoni,27593,Immune system disorder,10021425,Immun,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Mental disability,10027353,SocCi,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Wheelchair user,10047920,SocCi,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Dyspnoea,10013968,Resp,79,79,0,0,60,60,8,8,No,No,No,No,No
+Harvoni,27593,Respiratory distress,10038687,Resp,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Intestinal dilatation,10022642,Gastr,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Endodontic procedure,10051085,Surg,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Skin discolouration,10040829,Skin,4,4,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Skin lesion,10040882,Skin,6,6,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Nephritic syndrome,10065673,Renal,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hepatic cancer,10073069,Neopl,16,16,0,0,16,16,1,1,No,No,No,No,No
+Harvoni,27593,Carotid aneurysm rupture,10051328,Nerv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Increased appetite,10021654,Metab,7,7,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Decreased appetite,10061428,Metab,66,66,0,0,38,38,3,3,No,No,No,No,No
+Harvoni,27593,Skin burning sensation,10054786,Skin,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Refusal of treatment by patient,10056407,SocCi,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Dizziness postural,10013578,Nerv,4,4,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cerebellar haemorrhage,10008030,Nerv,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Cerebellar infarction,10008034,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cerebral artery occlusion,10008089,Nerv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Cerebral infarction,10008118,Nerv,10,10,0,0,10,10,0,0,No,No,No,No,No
+Harvoni,27593,Anger,10002368,Psych,9,9,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Superior vena cava syndrome,10042569,Vasc,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Thinking abnormal,10043431,Psych,5,5,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Tachyphrenia,10064805,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Oesophageal variceal ligation,10030208,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Arterial thrombosis,10003178,Vasc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Muscular weakness,10028372,Musc,19,19,0,0,12,12,1,1,No,No,No,No,No
+Harvoni,27593,Rectal discharge,10049101,Gastr,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Balance disorder,10049848,Nerv,6,6,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Dysstasia,10050256,Nerv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hiccups,10020039,Resp,5,5,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Pleuritic pain,10035623,Resp,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Muscle rupture,10028331,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Gestational hypertension,10070538,Preg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Craniocerebral injury,10070976,Inj&P,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Panic attack,10033664,Psych,5,5,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Back disorder,10003983,Musc,4,4,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Prostatic specific antigen increased,10036975,Inv,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Bladder outlet obstruction,10071445,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Acidosis,10000486,Metab,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Drug level changed,10013717,Inv,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Blood phosphorus decreased,10049471,Inv,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Hyponatraemia,10021036,Metab,16,16,0,0,16,16,4,4,No,No,No,No,No
+Harvoni,27593,Hypoglycaemia,10020993,Metab,10,10,0,0,7,7,1,1,No,No,No,No,No
+Harvoni,27593,Red blood cell count abnormal,10038151,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Weight decreased,10047895,Inv,42,42,0,0,23,23,1,1,No,No,No,No,No
+Harvoni,27593,Skin cancer,10040808,Neopl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Visual perseveration,10073653,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dysarthria,10013887,Nerv,10,10,0,0,9,9,0,0,No,No,No,No,No
+Harvoni,27593,Soliloquy,10041308,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hepatitis C RNA increased,10068377,Inv,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Vulvovaginal pruritus,10056530,Repro,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Viral mutation identified,10063111,Inv,32,32,0,0,32,32,0,0,No,No,No,No,No
+Harvoni,27593,Portal hypertension,10036200,Hepat,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Intestinal perforation,10022694,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Rectal abscess,10048947,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Creutzfeldt-Jakob disease,10011384,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Lower respiratory tract infection,10024968,Infec,6,6,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Nail infection,10061304,Infec,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Tonsillitis,10044008,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Erythema nodosum,10015226,Skin,4,4,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Chest discomfort,10008469,Genrl,15,15,0,0,8,8,0,0,No,No,No,No,No
+Harvoni,27593,Amphetamines positive,10063228,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Blood chloride decreased,10005419,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Brain neoplasm malignant,10006131,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Urine cannabinoids increased,10062228,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Electrocardiogram RR interval prolonged,10067652,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Finger amputation,10016678,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Renal cell carcinoma,10067946,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,C-reactive protein increased,10006825,Inv,6,6,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Tooth discolouration,10044032,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Tachycardia,10043071,Card,15,15,0,0,12,12,1,1,No,No,No,No,No
+Harvoni,27593,Fungal infection,10017533,Infec,7,7,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hepatitis B,10019731,Infec,13,13,0,0,13,13,0,0,No,No,No,No,No
+Harvoni,27593,Influenza,10022000,Infec,19,19,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Extradural abscess,10061846,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Increased tendency to bruise,10021688,Blood,5,5,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Product odour abnormal,10069226,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Gastrointestinal pain,10017999,Gastr,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Discomfort,10013082,Genrl,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Crying,10011469,Genrl,4,4,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Lymphocytosis,10025280,Blood,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Confusional state,10010305,Psych,63,63,0,0,46,46,4,4,No,No,No,No,No
+Harvoni,27593,Eyelid oedema,10015993,Eye,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Ventricular dysfunction,10059056,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pancreatic disorder,10033616,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Intestinal mass,10059017,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Stridor,10042241,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Oral candidiasis,10030963,Infec,4,4,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Febrile neutropenia,10016288,Blood,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Sickle cell anaemia with crisis,10040642,Cong,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Gastric varices,10051012,Gastr,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Hypertrophic cardiomyopathy,10020871,Card,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Subarachnoid haemorrhage,10042316,Inj&P,11,11,0,0,11,11,6,6,No,No,No,No,No
+Harvoni,27593,Subarachnoid haematoma,10076701,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cardiac failure chronic,10007558,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Vitreous detachment,10047650,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Deafness unilateral,10048812,Ear,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Meniere's disease,10027183,Ear,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Sciatica,10039674,Nerv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Uterine leiomyoma,10046798,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hypersomnia,10020765,Nerv,9,9,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Epilepsy,10015037,Nerv,13,13,0,0,13,13,0,0,No,No,No,No,No
+Harvoni,27593,Sensorimotor disorder,10062162,Nerv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Hyperammonaemic encephalopathy,10067327,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Neural tube defect,10052046,Cong,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cardiomyopathy,10007636,Card,4,4,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Basedow's disease,10004161,Endo,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Labile blood pressure,10023533,Vasc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Circulatory collapse,10009192,Vasc,6,6,0,0,6,6,4,4,No,No,No,No,No
+Harvoni,27593,Non-small cell lung cancer stage IV,10029522,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Non-small cell lung cancer,10061873,Neopl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Myelitis transverse,10028527,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Carotid artery stenosis,10007687,Nerv,6,6,0,0,6,6,5,5,No,No,No,No,No
+Harvoni,27593,Trifascicular block,10044644,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Congenital cardiovascular anomaly,10061054,Cong,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Retinal exudates,10038862,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Visual impairment,10047571,Eye,28,28,0,0,19,19,0,0,No,No,No,No,No
+Harvoni,27593,Visual brightness,10049155,Eye,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Retinal oedema,10038886,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Conjunctivitis,10010741,Infec,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Allergic oedema,10060934,Immun,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Breast discomfort,10049872,Repro,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Granuloma annulare,10018692,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Dermatitis,10012431,Skin,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Myalgia,10028411,Musc,71,71,0,0,29,29,0,0,No,No,No,No,No
+Harvoni,27593,Tendon disorder,10043239,Musc,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Tendon pain,10066371,Musc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Burning sensation,10006784,Nerv,8,8,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Renal disorder,10038428,Renal,12,12,0,0,9,9,1,1,No,No,No,No,No
+Harvoni,27593,Metastases to pancreas,10049721,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Acute pulmonary oedema,10001029,Resp,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Nasal congestion,10028735,Resp,7,7,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Pharyngeal oedema,10034829,Resp,5,5,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Alcoholism,10001639,Psych,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Urinary retention,10046555,Renal,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Psychotic disorder,10061920,Psych,11,11,0,0,11,11,0,0,No,No,No,No,No
+Harvoni,27593,Substance-induced psychotic disorder,10072388,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Schizophreniform disorder,10039647,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Renal pain,10038490,Renal,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Suicidal ideation,10042458,Psych,20,20,0,0,18,18,1,1,No,No,No,No,No
+Harvoni,27593,Dermatitis bullous,10012441,Skin,9,9,0,0,9,9,0,0,No,No,No,No,No
+Harvoni,27593,Benign prostatic hyperplasia,10004446,Repro,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Decreased activity,10011953,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Bruxism,10006514,Psych,4,4,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Ejaculation failure,10014328,Repro,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Dissociation,10013457,Psych,3,3,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Persecutory delusion,10034702,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Limb discomfort,10061224,Musc,7,7,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Allergic sinusitis,10049153,Resp,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Alanine aminotransferase increased,10001551,Inv,26,26,0,0,20,20,0,0,No,No,No,No,No
+Harvoni,27593,Ill-defined disorder,10061520,Genrl,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Duodenal ulcer,10013836,Gastr,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Feeling cold,10016326,Genrl,9,9,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Hepatic necrosis,10019692,Hepat,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Hepatic steatosis,10019708,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Vitamin D decreased,10062189,Inv,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Laboratory test abnormal,10023547,Inv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Polymerase chain reaction,10050967,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Intentional product use issue,10076308,Inj&P,4,4,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pyrexia,10037660,Genrl,80,80,0,0,55,55,8,8,No,No,No,No,No
+Harvoni,27593,Kidney transplant rejection,10023439,Immun,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,False positive investigation result,10070748,Inv,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Irritable bowel syndrome,10023003,Gastr,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Osteomyelitis,10031252,Infec,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Ulcer,10045285,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,No adverse event,10067482,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hernia,10019909,Genrl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Gastritis erosive,10017865,Gastr,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Wound,10052428,Inj&P,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Escherichia test positive,10070090,Inv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Haemoglobin abnormal,10018879,Inv,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Heart rate abnormal,10019300,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Fracture,10017076,Inj&P,7,7,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Drug resistance,10059866,Genrl,12,12,0,0,12,12,0,0,No,No,No,No,No
+Harvoni,27593,Ascites,10003445,Gastr,97,97,0,0,97,97,21,21,No,No,No,No,No
+Harvoni,27593,Tongue oedema,10043967,Gastr,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Gastritis haemorrhagic,10017866,Gastr,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Enteritis,10014866,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Blood bilirubin abnormal,10058477,Inv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Hepatic enzyme increased,10060795,Inv,16,16,0,0,9,9,1,1,No,No,No,No,No
+Harvoni,27593,Head injury,10019196,Inj&P,5,5,0,0,5,5,2,2,No,No,No,No,No
+Harvoni,27593,Tooth injury,10044043,Inj&P,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Wrong drug administered,10048055,Inj&P,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Drug administration error,10064295,Inj&P,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Incorrect route of drug administration,10064304,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Mallory-Weiss syndrome,10026712,Gastr,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Gastrointestinal haemorrhage,10017955,Gastr,38,38,0,0,38,38,10,10,No,No,No,No,No
+Harvoni,27593,Lower gastrointestinal haemorrhage,10050953,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Enterocolitis bacterial,10065206,Infec,2,2,0,0,2,2,2,2,No,No,No,No,No
+Harvoni,27593,Localised infection,10024774,Infec,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Tick-borne fever,10043841,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pneumonia pneumococcal,10035728,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Endotracheal intubation,10067450,Surg,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Product size issue,10069249,Genrl,5,5,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Product container seal issue,10069298,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Product measured potency issue,10069325,Genrl,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Product quality issue,10069327,Genrl,13,13,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Septic encephalopathy,10069141,Infec,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Visceral congestion,10066397,Vasc,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Anaphylactic reaction,10002198,Immun,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Anorectal disorder,10002644,Gastr,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Blindness,10005169,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Metrorrhagia,10027514,Repro,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Enterocolitis haemorrhagic,10014896,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Lower respiratory tract congestion,10075565,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dysphonia,10013952,Resp,6,6,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Tooth repair,10044051,Surg,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Eye haemorrhage,10015926,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Blood creatine increased,10005464,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Eye disorder,10015916,Eye,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Swelling face,10042682,Skin,13,13,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Urticaria,10046735,Skin,27,27,0,0,12,12,0,0,No,No,No,No,No
+Harvoni,27593,Alcohol use,10048921,SocCi,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Ischaemic enteritis,10074063,Gastr,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Dyshidrotic eczema,10013913,Skin,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Solar lentigo,10064127,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Glycosuria,10018473,Renal,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Cataract,10007739,Eye,9,9,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Skin fissures,10040849,Skin,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Yellow skin,10048245,Skin,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Calculus urinary,10007027,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Chronic obstructive pulmonary disease,10009033,Resp,9,9,0,0,8,8,1,1,No,No,No,No,No
+Harvoni,27593,Pleurisy,10035618,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Lung neoplasm,10062042,Neopl,3,3,0,0,2,2,2,2,No,No,No,No,No
+Harvoni,27593,Psychiatric decompensation,10067398,Psych,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Ischaemic stroke,10061256,Nerv,6,6,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Aphasia,10002948,Nerv,9,9,0,0,9,9,0,0,No,No,No,No,No
+Harvoni,27593,Blood uric acid increased,10005861,Inv,10,10,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Collagen disorder,10009903,Musc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Blood urea nitrogen/creatinine ratio increased,10050760,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Social problem,10062254,SocCi,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Urethral discharge,10046443,Renal,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Embolic stroke,10014498,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Langerhans' cell histiocytosis,10069698,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Apathy,10002942,Psych,5,5,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Pallor,10033546,Vasc,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Aneurysm ruptured,10048380,Vasc,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Prothrombin time shortened,10037070,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Syncope,10042772,Nerv,31,31,0,0,29,29,0,0,No,No,No,No,No
+Harvoni,27593,Bone pain,10006002,Musc,8,8,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Tremor,10044565,Nerv,21,21,0,0,16,16,0,0,No,No,No,No,No
+Harvoni,27593,Fine motor skill dysfunction,10076288,Nerv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hyperamylasaemia,10062770,Metab,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Diverticulum intestinal,10013559,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pulmonary haemorrhage,10037394,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Contusion,10050584,Inj&P,12,12,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Muscle strain,10050031,Inj&P,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,IVth nerve paralysis,10023110,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Meningeal disorder,10061281,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Viral test positive,10059424,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Alpha 1 foetoprotein decreased,10001780,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Alpha 1 foetoprotein increased,10001781,Inv,4,4,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Protein induced by vitamin K absence or antagonist II increased,10056247,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cardiotoxicity,10048610,Card,7,7,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Stress,10042209,Psych,10,10,0,0,6,6,1,1,No,No,No,No,No
+Harvoni,27593,Bladder cancer,10005003,Neopl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Bladder perforation,10063575,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Depressed level of consciousness,10012373,Nerv,5,5,0,0,5,5,1,1,No,No,No,No,No
+Harvoni,27593,Blood potassium decreased,10005724,Inv,9,9,0,0,8,8,0,0,No,No,No,No,No
+Harvoni,27593,Blood sodium decreased,10005802,Inv,5,5,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Hypocalcaemia,10020947,Metab,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hallucination, auditory,10019070,Psych,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Mean cell volume decreased,10027002,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Loss of libido,10024870,Psych,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Blood count abnormal,10064198,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Protein urine present,10053123,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Dyslalia,10013931,Nerv,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Parasomnia,10061910,Psych,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Blood thyroid stimulating hormone increased,10005833,Inv,3,3,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Small cell carcinoma,10041056,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Metastatic neoplasm,10061289,Neopl,3,3,0,0,3,3,2,2,No,No,No,No,No
+Harvoni,27593,Genotype drug resistance test positive,10066368,Inv,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Incorrect dose administered,10064355,Inj&P,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Torsade de pointes,10044066,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Tricuspid valve incompetence,10044640,Card,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Viral load decreased,10062179,Inv,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Anal infection,10061628,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Lung infection,10061229,Infec,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Pseudomonas infection,10061471,Infec,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Nasopharyngitis,10028810,Infec,40,40,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Femur fracture,10016454,Inj&P,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hip fracture,10020100,Inj&P,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Crepitations,10011376,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Humerus fracture,10020462,Inj&P,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Mucosal inflammation,10028116,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hepatitis C RNA,10019748,Inv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Blood HIV RNA increased,10049827,Inv,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Renal cancer,10038389,Neopl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Thyroid neoplasm,10043744,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Fat redistribution,10048474,Metab,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Chondrocalcinosis pyrophosphate,10008690,Musc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Joint effusion,10023215,Musc,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Nail discolouration,10028692,Skin,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Intracranial aneurysm,10022758,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Candida infection,10074170,Infec,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Clostridium difficile infection,10054236,Infec,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Escherichia sepsis,10015296,Infec,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Klebsiella bacteraemia,10058856,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Onychomycosis,10030338,Infec,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Staphylococcal bacteraemia,10051017,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Haemorrhagic diathesis,10062713,Blood,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Oesophageal pain,10030180,Gastr,3,3,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Dysphagia,10013950,Gastr,33,33,0,0,12,12,0,0,No,No,No,No,No
+Harvoni,27593,Oedema peripheral,10030124,Genrl,37,37,0,0,25,25,2,2,No,No,No,No,No
+Harvoni,27593,Enterocolitis viral,10061841,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Thalassaemia beta,10043391,Cong,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Knee arthroplasty,10023469,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,General physical condition abnormal,10058911,Inv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Lymphangitis,10025226,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pyelonephritis acute,10037597,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Stress cardiomyopathy,10066286,Card,4,4,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Helminthic infection,10061201,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Large intestine perforation,10023804,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Intestinal ischaemia,10022680,Gastr,4,4,0,0,4,4,2,2,No,No,No,No,No
+Harvoni,27593,Mesenteric artery thrombosis,10027397,Gastr,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Incorrect product storage,10069328,Genrl,4,4,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Brain death,10049054,Genrl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Cryoglobulinaemia,10011474,Immun,16,16,0,0,16,16,0,0,No,No,No,No,No
+Harvoni,27593,Off label use,10053762,Surg,45,45,0,0,30,30,2,2,No,No,No,No,No
+Harvoni,27593,Scar,10039580,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Portal shunt,10036204,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Intra-abdominal fluid collection,10078659,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Drug reaction with eosinophilia and systemic symptoms,10073508,Skin,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Myocarditis,10028606,Card,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Sudden hearing loss,10061373,Ear,6,6,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Pachymeningitis,10053658,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Headache,10019211,Nerv,540,540,0,0,133,133,6,6,No,No,No,No,No
+Harvoni,27593,Neuritis,10029240,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Prostate cancer metastatic,10036909,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hypokinesia,10021021,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Psychomotor hyperactivity,10037211,Nerv,7,7,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Petit mal epilepsy,10034759,Nerv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Demyelination,10012305,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Lipase increased,10024574,Inv,6,6,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Plasma cells present,10035232,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dementia,10012267,Nerv,6,6,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Bundle branch block left,10006580,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Sinoatrial block,10040736,Card,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Arrhythmia,10003119,Card,21,21,0,0,20,20,3,3,No,No,No,No,No
+Harvoni,27593,Retinal vein occlusion,10038907,Eye,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Conjunctivitis allergic,10010744,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Macular oedema,10025415,Eye,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hordeolum,10020377,Infec,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Retinitis,10038910,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Herpes simplex,10019948,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Herpes zoster,10019974,Infec,8,8,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Congenital thrombocyte disorder,10058896,Cong,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Porphyria acute,10036182,Cong,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Varicose vein,10046996,Vasc,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Nail bed disorder,10070533,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Neoplasm progression,10061309,Neopl,3,3,0,0,3,3,3,3,No,No,No,No,No
+Harvoni,27593,Osteoarthritis,10031161,Musc,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Flushing,10016825,Vasc,6,6,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Presyncope,10036653,Nerv,11,11,0,0,10,10,1,1,No,No,No,No,No
+Harvoni,27593,Neurological decompensation,10068357,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Metastases to bone,10027452,Neopl,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Pulmonary fibrosis,10037383,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Lung disorder,10025082,Resp,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Pulmonary mass,10056342,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dysuria,10013990,Renal,5,5,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Tearfulness,10043169,Psych,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Acne,10000496,Skin,4,4,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Acne cystic,10000503,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Dermatitis acneiform,10012432,Skin,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Gastrostomy,10048978,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Delusion,10012239,Psych,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Muscle atrophy,10028289,Musc,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Muscle tightness,10049816,Musc,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Breast cancer,10006187,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Breast cancer metastatic,10055113,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Musculoskeletal discomfort,10053156,Musc,3,3,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Lupus-like syndrome,10050551,Musc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Vitiligo,10047642,Skin,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Acute respiratory distress syndrome,10001052,Resp,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Chondrosarcoma,10008734,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Alanine aminotransferase abnormal,10001547,Inv,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Ammonia abnormal,10001942,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hepatitis cholestatic,10019754,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Retching,10038776,Gastr,8,8,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Feeling abnormal,10016322,Genrl,41,41,0,0,15,15,1,1,No,No,No,No,No
+Harvoni,27593,Feeling drunk,10016330,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Gamma-glutamyltransferase increased,10017693,Inv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Exposure during breast feeding,10071402,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Exposure via body fluid,10073300,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Fluid overload,10016803,Metab,5,5,0,0,5,5,2,2,No,No,No,No,No
+Harvoni,27593,Drug prescribing error,10064296,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Intentional overdose,10022523,Inj&P,5,5,0,0,4,4,3,3,No,No,No,No,No
+Harvoni,27593,Tuberculosis,10044755,Infec,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Transplant rejection,10044439,Immun,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Polymerase chain reaction positive,10075628,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Lip swelling,10024570,Gastr,11,11,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Eye infection toxoplasmal,10015939,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cellulitis,10007882,Infec,14,14,0,0,14,14,1,1,No,No,No,No,No
+Harvoni,27593,Gangrene,10017711,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Ulcer haemorrhage,10061577,Genrl,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Glycosylated haemoglobin increased,10018484,Inv,4,4,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Gastrointestinal perforation,10018001,Gastr,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Gastrointestinal ulcer,10061459,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Liver function test abnormal,10024690,Inv,10,10,0,0,8,8,0,0,No,No,No,No,No
+Harvoni,27593,Fall,10016173,Inj&P,49,49,0,0,43,43,10,10,No,No,No,No,No
+Harvoni,27593,Injury,10022116,Inj&P,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Procedural pain,10064882,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Post procedural swelling,10066415,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cryoglobulins present,10011478,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Blood creatine phosphokinase abnormal,10005468,Inv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Blood creatine phosphokinase increased,10005470,Inv,24,24,0,0,18,18,2,2,No,No,No,No,No
+Harvoni,27593,Troponin increased,10058267,Inv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Compression fracture,10010214,Inj&P,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Multiple fractures,10028200,Inj&P,4,4,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Vitamin B12 deficiency,10047609,Metab,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Oral lichen planus,10030983,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Haemoglobin increased,10018888,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Transaminases increased,10054889,Inv,11,11,0,0,10,10,1,1,No,No,No,No,No
+Harvoni,27593,Myocardial necrosis marker increased,10075211,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Blood lactate dehydrogenase increased,10005630,Inv,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Gastrointestinal disorder,10017944,Gastr,4,4,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Excessive eye blinking,10065166,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Thoracic vertebral fracture,10049948,Inj&P,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Hypoalbuminaemia,10020942,Metab,3,3,0,0,3,3,2,2,No,No,No,No,No
+Harvoni,27593,Papilloedema,10033712,Eye,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Haematemesis,10018830,Gastr,16,16,0,0,16,16,6,6,No,No,No,No,No
+Harvoni,27593,Gastroenteritis viral,10017918,Infec,6,6,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Urinary tract infection,10046571,Infec,24,24,0,0,10,10,3,3,No,No,No,No,No
+Harvoni,27593,Erysipelas,10015145,Infec,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Skin infection,10040872,Infec,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Myocardial ischaemia,10028600,Card,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Brain stem haemorrhage,10006145,Nerv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Haemothorax,10019027,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Visual acuity reduced,10047531,Eye,9,9,0,0,6,6,1,1,No,No,No,No,No
+Harvoni,27593,Productive cough,10036790,Resp,4,4,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Product size issue,10069249,Prod,5,5,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Product physical issue,10071134,Prod,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Product label issue,10069289,Prod,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Colectomy,10061778,Surg,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Choking,10008589,Resp,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Abortion induced,10000220,Surg,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Age-related macular degeneration,10064930,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Skin haemorrhage,10064265,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Periorbital oedema,10034545,Eye,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Deep vein thrombosis,10051055,Vasc,6,6,0,0,6,6,1,1,No,No,No,No,No
+Harvoni,27593,Throat irritation,10043521,Resp,4,4,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Paranasal sinus discomfort,10052438,Resp,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Feeding tube user,10076368,SocCi,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Pain of skin,10033474,Skin,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Oesophagitis,10030216,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Diarrhoea,10012735,Gastr,188,188,0,0,66,66,7,7,No,No,No,No,No
+Harvoni,27593,Gastrooesophageal reflux disease,10017885,Gastr,21,21,0,0,5,5,2,2,No,No,No,No,No
+Harvoni,27593,Asthma,10003553,Resp,6,6,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Acute kidney injury,10069339,Renal,67,67,0,0,67,67,6,6,No,No,No,No,No
+Harvoni,27593,Microalbuminuria,10027525,Renal,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Scab,10039509,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Skin necrosis,10040893,Skin,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Fibrillary glomerulonephritis,10068279,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cerebral ventricular rupture,10075249,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Subarachnoid haemorrhage,10042316,Nerv,11,11,0,0,11,11,6,6,No,No,No,No,No
+Harvoni,27593,Hospitalisation,10054112,Surg,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Glossitis,10018386,Gastr,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Carotid artery thrombosis,10007688,Nerv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Cerebral ischaemia,10008120,Nerv,13,13,0,0,13,13,0,0,No,No,No,No,No
+Harvoni,27593,Post transplant lymphoproliferative disorder,10051358,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Mania,10026749,Psych,8,8,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Emotional poverty,10014557,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Affective disorder,10001443,Psych,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Vascular insufficiency,10054880,Vasc,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Ischaemia,10061255,Vasc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Anorexia nervosa,10002649,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Asterixis,10003547,Nerv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Head titubation,10064950,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Iridocyclitis,10022941,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pulmonary function test decreased,10061922,Inv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Foetal heart rate decreased,10051136,Inv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Ligament rupture,10065433,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Influenza like illness,10022004,Genrl,30,30,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Local swelling,10024770,Genrl,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Bone disorder,10005956,Musc,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Drug screen positive,10049177,Inv,6,6,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Occult blood,10061878,Inv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Slow speech,10071299,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Abnormal dreams,10000125,Psych,12,12,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,International normalised ratio abnormal,10022592,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Personality change,10034719,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Impatience,10049976,Psych,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Bile duct cancer,10004593,Neopl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Gingival cyst,10055018,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Supraventricular tachycardia,10042604,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Sinus node dysfunction,10075889,Card,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Pulseless electrical activity,10058151,Card,3,3,0,0,3,3,3,3,No,No,No,No,No
+Harvoni,27593,Autoimmune disorder,10061664,Immun,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Abdominal infection,10056519,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Bronchitis,10006451,Infec,10,10,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Endometrial cancer,10014733,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Epiglottitis,10015030,Infec,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Lower limb fracture,10061599,Inj&P,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Large intestine benign neoplasm,10073394,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Subcutaneous abscess,10042343,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Renal function test abnormal,10061480,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Protein urine,10037018,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,CD8 lymphocytes abnormal,10071543,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Beta 2 microglobulin increased,10004496,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Coma scale abnormal,10069709,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Intraocular pressure increased,10022806,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Bradyarrhythmia,10049765,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Haemolysis,10018910,Blood,6,6,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Scrotal infection,10062156,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pneumonia legionella,10035718,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pneumonia influenzal,10035714,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Drug withdrawal syndrome,10013754,Genrl,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Abdominal pain,10000081,Gastr,69,69,0,0,49,49,11,11,No,No,No,No,No
+Harvoni,27593,Parotid gland enlargement,10034023,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Mitral valve incompetence,10027727,Card,7,7,0,0,7,7,1,1,No,No,No,No,No
+Harvoni,27593,Generalised oedema,10018092,Genrl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Respiratory tract infection,10062352,Infec,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cholecystitis,10008612,Hepat,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Inappropriate antidiuretic hormone secretion,10053198,Endo,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Coagulopathy,10009802,Blood,6,6,0,0,6,6,2,2,No,No,No,No,No
+Harvoni,27593,Coronary artery occlusion,10011086,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Folliculitis,10016936,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Epistaxis,10015090,Resp,13,13,0,0,6,6,1,1,No,No,No,No,No
+Harvoni,27593,Leukopenia,10024384,Blood,8,8,0,0,8,8,3,3,No,No,No,No,No
+Harvoni,27593,Intestinal infarction,10022657,Gastr,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Conjunctivitis,10010741,Eye,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Haemorrhoids,10019022,Gastr,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Gingivitis,10018292,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Sudden cardiac death,10049418,Genrl,4,4,0,0,4,4,4,4,No,No,No,No,No
+Harvoni,27593,Inhibitory drug interaction,10068071,Genrl,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dementia Alzheimer's type,10012271,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Vitreous degeneration,10047649,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Deafness,10011878,Ear,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Deafness neurosensory,10011891,Ear,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Cerebral atrophy,10008096,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hemiparesis,10019465,Nerv,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Status epilepticus,10041962,Nerv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Leukoencephalopathy,10024382,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Guillain-Barre syndrome,10018767,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Goitre,10018498,Endo,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hyperthyroidism,10020850,Endo,9,9,0,0,9,9,0,0,No,No,No,No,No
+Harvoni,27593,Gastrectomy,10061965,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Intestinal resection,10054193,Surg,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Haemodialysis,10018875,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hyperprothrombinaemia,10067920,Blood,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Atrioventricular block first degree,10003674,Card,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Vascular malformation,10074979,Cong,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Metamorphopsia,10063341,Eye,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pancreatitis acute,10033647,Gastr,14,14,0,0,14,14,1,1,No,No,No,No,No
+Harvoni,27593,Epstein-Barr virus infection,10015108,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Genital herpes,10018150,Infec,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Herpes virus infection,10019973,Infec,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Meningomyelocele,10027287,Cong,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Pulmonary embolism,10037377,Resp,13,13,0,0,13,13,3,3,No,No,No,No,No
+Harvoni,27593,Dermatitis atopic,10012438,Skin,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Ureteric obstruction,10046406,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Essential hypertension,10015488,Vasc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Delirium,10012218,Psych,9,9,0,0,9,9,1,1,No,No,No,No,No
+Harvoni,27593,Tonsillar hypertrophy,10044003,Resp,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Arthropathy,10003285,Musc,8,8,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Petechiae,10034754,Skin,4,4,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Alcohol withdrawal syndrome,10053164,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Binge drinking,10071238,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Proteinuria,10037032,Renal,15,15,0,0,15,15,1,1,No,No,No,No,No
+Harvoni,27593,Incontinence,10021639,Renal,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Renal tubular necrosis,10038540,Renal,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Polyuria,10036142,Renal,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Suicide attempt,10042464,Psych,7,7,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Pemphigoid,10034277,Skin,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Madarosis,10051235,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Adnexa uteri pain,10058841,Repro,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Malignant renal hypertension,10026674,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dysgeusia,10013911,Nerv,16,16,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Abnormal labour,10000153,Preg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Disease progression,10061818,Genrl,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Nausea,10028813,Gastr,221,221,0,0,76,76,7,7,No,No,No,No,No
+Harvoni,27593,Injection site erythema,10022061,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hepatitis acute,10019727,Hepat,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Incorrect product storage,10069328,Inj&P,4,4,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Pulmonary tuberculosis,10037440,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Drug-induced liver injury,10072268,Hepat,13,13,0,0,13,13,0,0,No,No,No,No,No
+Harvoni,27593,Cell marker increased,10064095,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Gingival swelling,10018291,Gastr,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Palatal oedema,10056998,Gastr,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hepatic cirrhosis,10019641,Hepat,54,54,0,0,52,52,25,25,No,No,No,No,No
+Harvoni,27593,Gastric ulcer haemorrhage,10017826,Gastr,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Traumatic haemorrhage,10053476,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Peritoneal haemorrhage,10034666,Gastr,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Pelvic fracture,10061161,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Folate deficiency,10016880,Metab,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Fatigue,10016256,Genrl,571,571,0,0,123,123,10,10,No,No,No,No,No
+Harvoni,27593,Abasia,10049460,Genrl,4,4,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Mouth ulceration,10028034,Gastr,3,3,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Tongue ulceration,10043991,Gastr,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Product use issue,10076309,Inj&P,7,7,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Vitamin B12 decreased,10047608,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Electrocardiogram ST segment elevation,10014392,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Decreased activity,10011953,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Haematochezia,10018836,Gastr,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Infection,10021789,Infec,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Injection site infection,10022076,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Mediastinitis,10027082,Infec,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Abscess limb,10050473,Infec,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Furuncle,10017553,Infec,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Eye discharge,10015915,Eye,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Ocular hyperaemia,10030041,Eye,5,5,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Eye pruritus,10052140,Eye,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Urosepsis,10048709,Infec,7,7,0,0,7,7,1,1,No,No,No,No,No
+Harvoni,27593,Bacterial sepsis,10053840,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Blindness unilateral,10005186,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Menstrual disorder,10027327,Repro,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Prostatomegaly,10051482,Repro,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Product container seal issue,10069298,Prod,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Colitis,10009887,Gastr,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Transfusion,10066152,Surg,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Resuscitation,10038749,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pulmonary pain,10074693,Resp,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Product availability issue,10077800,Prod,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Product measured potency issue,10069325,Prod,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Orthostatic hypotension,10031127,Vasc,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Iron deficiency anaemia,10022972,Blood,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Anaemia,10002034,Blood,139,139,0,0,128,128,9,9,No,No,No,No,No
+Harvoni,27593,Anaemia macrocytic,10002064,Blood,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Vascular purpura,10047097,Skin,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Chronic pigmented purpura,10072726,Skin,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Haemorrhage subcutaneous,10018999,Skin,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Ocular icterus,10058117,Eye,4,4,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Thrombophlebitis superficial,10043595,Vasc,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Venous thrombosis limb,10061408,Vasc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Nasal discomfort,10052437,Resp,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Oesophageal disorder,10061318,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Halo vision,10019099,Eye,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Photopsia,10034962,Eye,4,4,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Diarrhoea haemorrhagic,10012741,Gastr,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Dyspnoea exertional,10013971,Resp,8,8,0,0,7,7,1,1,No,No,No,No,No
+Harvoni,27593,Grunting,10018762,Resp,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Pruritus generalised,10052576,Skin,7,7,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Pruritus allergic,10063438,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Vasculitis,10047115,Vasc,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Walking aid user,10050778,SocCi,4,4,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Impaired work ability,10052302,SocCi,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Skin discomfort,10040830,Skin,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Nephropathy,10029151,Renal,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Nephropathy toxic,10029155,Renal,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Fanconi syndrome acquired,10052607,Renal,6,6,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Head and neck cancer,10067821,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Carotid artery occlusion,10048964,Nerv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Cerebral haematoma,10053942,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Staring,10041953,Psych,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Weight gain poor,10047897,Metab,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Haemorrhagic stroke,10019016,Nerv,4,4,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Bipolar disorder,10057667,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Affect lability,10054196,Psych,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Aggression,10001488,Psych,7,7,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Cholecystectomy,10008611,Surg,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Urine albumin/creatinine ratio increased,10053541,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Poor peripheral circulation,10036155,Vasc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Inner ear disorder,10061524,Ear,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Immunosuppressant drug level decreased,10062014,Inv,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,VIth nerve paralysis,10047641,Nerv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Psychomotor skills impaired,10049215,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Subdural haematoma,10042361,Inj&P,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Alpha-2 macroglobulin increased,10001814,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Cardiac disorder,10061024,Card,11,11,0,0,11,11,7,7,No,No,No,No,No
+Harvoni,27593,Cyanosis,10011703,Card,4,4,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Palpitations,10033557,Card,29,29,0,0,19,19,1,1,No,No,No,No,No
+Harvoni,27593,Energy increased,10048779,Genrl,10,10,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,General physical health deterioration,10049438,Genrl,9,9,0,0,8,8,4,4,No,No,No,No,No
+Harvoni,27593,Prothrombin time prolonged,10037063,Inv,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Generalised tonic-clonic seizure,10018100,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Acute stress disorder,10001084,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Tumour marker increased,10048621,Inv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Somnolence,10041349,Nerv,39,39,0,0,16,16,1,1,No,No,No,No,No
+Harvoni,27593,Drug level increased,10013722,Inv,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hypokalaemia,10021015,Metab,7,7,0,0,6,6,1,1,No,No,No,No,No
+Harvoni,27593,Angiomyolipoma,10051810,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Libido disorder,10061221,Psych,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Nightmare,10029412,Psych,10,10,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Homicidal ideation,10049666,Psych,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hepatitis C RNA decreased,10068378,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hepatitis B DNA increased,10068379,Inv,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Sinus bradycardia,10040741,Card,4,4,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Cardio-respiratory arrest,10007617,Card,16,16,0,0,16,16,15,15,No,No,No,No,No
+Harvoni,27593,Vulvovaginal burning sensation,10067641,Repro,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hepatitis C virus test positive,10070218,Inv,72,72,0,0,25,25,1,1,No,No,No,No,No
+Harvoni,27593,Hepatic pain,10019705,Hepat,11,11,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Splenic infarction,10041648,Blood,7,7,0,0,7,7,1,1,No,No,No,No,No
+Harvoni,27593,Splenomegaly,10041660,Blood,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Hepatic infarction,10019680,Hepat,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Hepatic vein thrombosis,10019713,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Enteritis infectious,10058839,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Vestibular neuronitis,10047393,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hypersensitivity,10020751,Immun,22,22,0,0,9,9,5,5,No,No,No,No,No
+Harvoni,27593,Upper limb fracture,10061394,Inj&P,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Shift to the left,10056383,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Dyslipidaemia,10058108,Metab,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Joint range of motion decreased,10048706,Musc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Joint crepitation,10051374,Musc,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Joint warmth,10054106,Musc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Atrial fibrillation,10003658,Card,31,31,0,0,31,31,5,5,No,No,No,No,No
+Harvoni,27593,Urinary tract infection bacterial,10054088,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Skin ulcer,10040943,Skin,12,12,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Localised oedema,10048961,Genrl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Pain,10033371,Genrl,56,56,0,0,15,15,1,1,No,No,No,No,No
+Harvoni,27593,Drug ineffective for unapproved indication,10051118,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hepatic mass,10057110,Hepat,5,5,0,0,5,5,1,1,No,No,No,No,No
+Harvoni,27593,Bed bug infestation,10004194,Infec,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Gastroenteritis norovirus,10068189,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Disseminated intravascular coagulation,10013442,Blood,9,9,0,0,9,9,6,6,No,No,No,No,No
+Harvoni,27593,Visceral congestion,10066397,Gastr,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Coronary artery disease,10011078,Card,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Cystitis,10011781,Infec,5,5,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Gastrointestinal oedema,10058061,Gastr,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Physical examination abnormal,10062078,Inv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Retinitis,10038910,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Sudden death,10042434,Genrl,21,21,0,0,21,21,21,21,No,No,No,No,No
+Harvoni,27593,External hydrocephalus,10076670,Nerv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Anginal equivalent,10076419,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Vertigo,10047340,Ear,24,24,0,0,14,14,4,4,No,No,No,No,No
+Harvoni,27593,Migraine,10027599,Nerv,23,23,0,0,11,11,0,0,No,No,No,No,No
+Harvoni,27593,Hydrocephalus,10020508,Nerv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hepatic encephalopathy,10019660,Nerv,51,51,0,0,51,51,11,11,No,No,No,No,No
+Harvoni,27593,Miller Fisher syndrome,10049567,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Mononeuropathy multiplex,10027918,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Mononeuropathy,10062203,Nerv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Enzyme level increased,10072234,Inv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Amylase increased,10002016,Inv,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Neutrophil count decreased,10029366,Inv,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Neutrophil count increased,10029368,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,White blood cell count decreased,10047942,Inv,12,12,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Thrombocytopenia,10043554,Blood,29,29,0,0,26,26,5,5,No,No,No,No,No
+Harvoni,27593,Thyroid disorder,10043709,Endo,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Amnestic disorder,10061423,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Disturbance in attention,10013496,Nerv,18,18,0,0,9,9,2,2,No,No,No,No,No
+Harvoni,27593,Lacunar infarction,10051078,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Atrioventricular block,10003671,Card,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Atrioventricular block second degree,10003677,Card,6,6,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Bundle branch block right,10006582,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Shock haemorrhagic,10049771,Vasc,2,2,0,0,2,2,2,2,No,No,No,No,No
+Harvoni,27593,Adrenal insufficiency,10001367,Endo,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pancreatitis,10033645,Gastr,17,17,0,0,17,17,0,0,No,No,No,No,No
+Harvoni,27593,Labyrinthitis,10023567,Infec,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Tooth extraction,10062132,Surg,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Microtia,10027555,Cong,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Porphyria,10036181,Cong,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Erythema,10015150,Skin,18,18,0,0,14,14,2,2,No,No,No,No,No
+Harvoni,27593,Rash erythematous,10037855,Skin,11,11,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Dermatitis contact,10012442,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Therapy cessation,10065154,Surg,11,11,0,0,8,8,0,0,No,No,No,No,No
+Harvoni,27593,Trichorrhexis,10044625,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Disorientation,10013395,Psych,23,23,0,0,18,18,7,7,No,No,No,No,No
+Harvoni,27593,Hepatic cancer metastatic,10055110,Neopl,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Hepatic neoplasm,10019695,Neopl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Polymyositis,10036102,Musc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Fibromyalgia,10048439,Musc,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Head discomfort,10019194,Nerv,5,5,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Oesophageal carcinoma,10030155,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Metastases to liver,10027457,Neopl,3,3,0,0,3,3,2,2,No,No,No,No,No
+Harvoni,27593,Metastases to lung,10027458,Neopl,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Rash macular,10037867,Skin,15,15,0,0,12,12,0,0,No,No,No,No,No
+Harvoni,27593,Rash maculo-papular,10037868,Skin,4,4,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Alcohol abuse,10001584,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Withdrawal syndrome,10048010,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Shared psychotic disorder,10040535,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Bladder disorder,10061011,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hallucination,10019063,Psych,17,17,0,0,17,17,6,6,No,No,No,No,No
+Harvoni,27593,Renal impairment,10062237,Renal,68,68,0,0,67,67,1,1,No,No,No,No,No
+Harvoni,27593,Metastases to peritoneum,10051676,Neopl,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Muscle spasms,10028334,Musc,33,33,0,0,11,11,0,0,No,No,No,No,No
+Harvoni,27593,Premature delivery,10036595,Preg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Neck pain,10028836,Musc,5,5,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Back pain,10003988,Musc,37,37,0,0,15,15,0,0,No,No,No,No,No
+Harvoni,27593,Pulmonary oedema,10037423,Resp,9,9,0,0,9,9,6,6,No,No,No,No,No
+Harvoni,27593,Pharyngeal disorder,10067353,Resp,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Sinus congestion,10040742,Resp,3,3,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Blood glucose abnormal,10005554,Inv,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Blood glucose decreased,10005555,Inv,4,4,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Jaundice,10023126,Hepat,20,20,0,0,20,20,7,7,No,No,No,No,No
+Harvoni,27593,Anal incontinence,10077605,Gastr,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Temperature intolerance,10057040,Genrl,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Sensation of foreign body,10061549,Genrl,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hepatocellular injury,10019837,Hepat,4,4,0,0,4,4,2,2,No,No,No,No,No
+Harvoni,27593,Varices oesophageal,10056091,Gastr,8,8,0,0,8,8,3,3,No,No,No,No,No
+Harvoni,27593,Malabsorption,10025476,Gastr,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Pancreatic enzymes abnormal,10061899,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Endoscopy,10014805,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Red blood cell sedimentation rate increased,10049187,Inv,5,5,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Platelet count decreased,10035528,Inv,42,42,0,0,27,27,3,3,No,No,No,No,No
+Harvoni,27593,Stomach scan abnormal,10062145,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Blood test abnormal,10061016,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Electrocardiogram abnormal,10014363,Inv,4,4,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Toothache,10044055,Gastr,10,10,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Compartment syndrome,10010121,Musc,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Myopathy,10028641,Musc,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Peritoneal tuberculosis,10053583,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Liver disorder,10024670,Hepat,13,13,0,0,13,13,4,4,No,No,No,No,No
+Harvoni,27593,Ileus paralytic,10021333,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Oral pain,10031009,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Endocarditis,10014665,Infec,6,6,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Cyst,10011732,Genrl,4,4,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Asthenia,10003549,Genrl,95,95,0,0,75,75,9,9,No,No,No,No,No
+Harvoni,27593,Hepatorenal syndrome,10019846,Hepat,10,10,0,0,10,10,8,8,No,No,No,No,No
+Harvoni,27593,Gastric ulcer,10017822,Gastr,7,7,0,0,7,7,2,2,No,No,No,No,No
+Harvoni,27593,Gastric ulcer perforation,10017835,Gastr,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Accidental exposure to product,10073317,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Haematocrit decreased,10018838,Inv,4,4,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Dry mouth,10013781,Gastr,11,11,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Heat stroke,10019345,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Sunburn,10042496,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Heart rate decreased,10019301,Inv,4,4,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Type 2 diabetes mellitus,10067585,Metab,4,4,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Hyperglycaemia,10020635,Metab,21,21,0,0,18,18,0,0,No,No,No,No,No
+Harvoni,27593,Small intestinal obstruction,10041101,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Malaise,10025482,Genrl,75,75,0,0,57,57,12,12,No,No,No,No,No
+Harvoni,27593,Drug effect decreased,10013678,Genrl,7,7,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Therapeutic response decreased,10043414,Genrl,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Dyspepsia,10013946,Gastr,43,43,0,0,8,8,3,3,No,No,No,No,No
+Harvoni,27593,Epigastric discomfort,10053155,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Faeces hard,10016101,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Haematoma,10018852,Vasc,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Hepatic enzyme decreased,10060794,Inv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Thyroiditis acute,10043780,Endo,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Accidental overdose,10000381,Inj&P,33,33,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Electrocardiogram ST-T segment elevation,10049225,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Meniscus injury,10072970,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Femoral neck fracture,10016450,Inj&P,4,4,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Corneal abrasion,10010984,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Type IIa hyperlipidaemia,10045261,Cong,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Asthenopia,10003552,Eye,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Gastric haemorrhage,10017788,Gastr,7,7,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Portal hypertensive gastropathy,10050897,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Intra-abdominal haemorrhage,10061249,Gastr,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Tracheostomy,10044320,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Angina unstable,10002388,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Product physical issue,10071134,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Rash pustular,10037888,Infec,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Aortic aneurysm,10002882,Vasc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Non-Hodgkin's lymphoma,10029547,Neopl,3,3,0,0,3,3,2,2,No,No,No,No,No
+Harvoni,27593,Blindness transient,10005184,Eye,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hypoxia,10021143,Resp,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Cough,10011224,Resp,36,36,0,0,18,18,1,1,No,No,No,No,No
+Harvoni,27593,Crohn's disease,10011401,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Spleen operation,10053295,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Blood creatine abnormal,10005462,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Blood urea increased,10005851,Inv,6,6,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Antipsychotic drug level below therapeutic,10060145,Inv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Ear pain,10014020,Ear,6,6,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Renal injury,10061481,Renal,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Sexual dysfunction,10040477,Repro,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Eye oedema,10052139,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Lacrimation increased,10023644,Eye,5,5,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Throat tightness,10043528,Resp,6,6,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Postmenopausal haemorrhage,10055870,Repro,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Achlorhydria,10000451,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Spinal fusion surgery,10050505,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cerumen impaction,10050337,Ear,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Immobile,10021417,SocCi,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dry skin,10013786,Skin,10,10,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Gastrointestinal tract irritation,10070840,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Rash pruritic,10037884,Skin,32,32,0,0,12,12,0,0,No,No,No,No,No
+Harvoni,27593,Pneumonia aspiration,10035669,Resp,6,6,0,0,6,6,5,5,No,No,No,No,No
+Harvoni,27593,Lipodystrophy acquired,10049287,Skin,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Ureterolithiasis,10077989,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Tubulointerstitial nephritis,10048302,Renal,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Retinal detachment,10038848,Eye,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Hepatocellular carcinoma,10073071,Neopl,75,75,0,0,75,75,11,11,No,No,No,No,No
+Harvoni,27593,Lung neoplasm malignant,10058467,Neopl,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Abnormal behaviour,10061422,Psych,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Psychiatric symptom,10061472,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dizziness,10013573,Nerv,111,111,0,0,58,58,10,10,No,No,No,No,No
+Harvoni,27593,Abortion spontaneous,10000234,Preg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Body temperature decreased,10005910,Inv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Mood altered,10027940,Psych,11,11,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Infarction,10061216,Vasc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cryoglobulinaemia,10011474,Vasc,16,16,0,0,16,16,0,0,No,No,No,No,No
+Harvoni,27593,Eating disorder,10014062,Psych,4,4,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Basal ganglia haemorrhage,10067057,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dialysis,10061105,Surg,4,4,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Psychogenic seizure,10058895,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Ataxia,10003591,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cerebellar syndrome,10008072,Nerv,4,4,0,0,4,4,4,4,No,No,No,No,No
+Harvoni,27593,Medication residue present,10073956,Inv,3,3,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Metabolic acidosis,10027417,Metab,4,4,0,0,3,3,2,2,No,No,No,No,No
+Harvoni,27593,Laceration,10023572,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Coma hepatic,10010075,Nerv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Diabetic coma,10012650,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Swelling,10042674,Genrl,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Leukaemia,10024288,Neopl,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Dyscalculia,10049669,Nerv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Lethargy,10024264,Nerv,14,14,0,0,9,9,0,0,No,No,No,No,No
+Harvoni,27593,Loss of consciousness,10024855,Nerv,25,25,0,0,25,25,2,2,No,No,No,No,No
+Harvoni,27593,Blood potassium increased,10005725,Inv,10,10,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Blood sodium abnormal,10005800,Inv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Blood sodium increased,10005803,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Osteonecrosis,10031264,Musc,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Vertigo CNS origin,10047343,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,International normalised ratio decreased,10022594,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,International normalised ratio increased,10022595,Inv,6,6,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Squamous cell carcinoma,10041823,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hyperthermia,10020843,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Incorrect drug administration duration,10064307,Inj&P,7,7,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Cardiac arrest,10007515,Card,18,18,0,0,18,18,12,12,No,No,No,No,No
+Harvoni,27593,Ventricular extrasystoles,10047289,Card,5,5,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Hepatitis B virus test positive,10070217,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Viral load,10062178,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Diverticulitis,10013538,Infec,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Gastrointestinal infection,10017964,Infec,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Infective exacerbation of bronchiectasis,10070295,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pharyngitis,10034835,Infec,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Lipids increased,10024592,Inv,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Blood triglycerides increased,10005839,Inv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Toe amputation,10043913,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Arthralgia,10003239,Musc,98,98,0,0,34,34,1,1,No,No,No,No,No
+Harvoni,27593,Joint stiffness,10023230,Musc,4,4,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Parapsoriasis,10033898,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Blood albumin increased,10005288,Inv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Protein total increased,10037016,Inv,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Pneumoconiosis,10035653,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Mycobacterium tuberculosis complex test positive,10070325,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Treatment failure,10066901,Genrl,97,97,0,0,96,96,1,1,No,No,No,No,No
+Harvoni,27593,Oropharyngeal candidiasis,10050346,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Mouth haemorrhage,10028024,Gastr,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Autoimmune haemolytic anaemia,10073785,Blood,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Sepsis,10040047,Infec,36,36,0,0,36,36,17,17,No,No,No,No,No
+Harvoni,27593,Flatulence,10016766,Gastr,18,18,0,0,8,8,0,0,No,No,No,No,No
+Harvoni,27593,Product shape issue,10069223,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Abdominal pain lower,10000084,Gastr,5,5,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Abdominal pain upper,10000087,Gastr,55,55,0,0,22,22,2,2,No,No,No,No,No
+Harvoni,27593,Abdominal discomfort,10000059,Gastr,50,50,0,0,10,10,1,1,No,No,No,No,No
+Harvoni,27593,Abdominal symptom,10060926,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Peripheral swelling,10048959,Genrl,30,30,0,0,14,14,1,1,No,No,No,No,No
+Harvoni,27593,Bile duct stone,10004637,Hepat,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Bile duct obstruction,10056375,Hepat,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Cholecystitis acute,10008614,Hepat,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Campylobacter gastroenteritis,10007048,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Biliary tract infection,10061695,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Acinetobacter infection,10051894,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Lymphadenopathy,10025197,Blood,11,11,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Laryngeal oedema,10023845,Resp,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hypochromasia,10050789,Blood,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Neutrophilia,10029379,Blood,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Agranulocytosis,10001507,Blood,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Neutropenia,10029354,Blood,13,13,0,0,13,13,2,2,No,No,No,No,No
+Harvoni,27593,Spinal pain,10072005,Genrl,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Death,10011906,Genrl,80,80,0,0,80,80,80,80,No,No,No,No,No
+Harvoni,27593,Communication disorder,10061046,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cardiogenic shock,10007625,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pericardial effusion,10034474,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hyperacusis,10020559,Ear,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Blood cholesterol increased,10005425,Inv,6,6,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Laryngeal cancer,10023825,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Sinus headache,10040744,Nerv,3,3,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Paralysis,10033799,Nerv,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Partial seizures,10061334,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Acute disseminated encephalomyelitis,10000709,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Neuroleptic malignant syndrome,10029282,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Metabolic encephalopathy,10062190,Nerv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Hyponatraemic encephalopathy,10066151,Nerv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Carpal tunnel syndrome,10007697,Nerv,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Tunnel vision,10045178,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Retinal vascular occlusion,10038903,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Vision blurred,10047513,Eye,32,32,0,0,9,9,0,0,No,No,No,No,No
+Harvoni,27593,Ear infection,10014011,Infec,7,7,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Blood disorder,10061590,Blood,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Breast pain,10006298,Repro,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Skin wrinkling,10040954,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Cardiac pacemaker insertion,10007598,Surg,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Tongue neoplasm malignant stage unspecified,10043966,Neopl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Drug eruption,10013687,Skin,11,11,0,0,9,9,0,0,No,No,No,No,No
+Harvoni,27593,Dermatitis exfoliative,10012455,Skin,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Granuloma skin,10018698,Skin,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Pulmonary hypertension,10037400,Resp,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Spider vein,10062696,Vasc,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Rheumatoid arthritis,10039073,Musc,6,6,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Hot flush,10060800,Vasc,14,14,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Myoclonus,10028622,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Enchondromatosis,10014642,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Acute respiratory failure,10001053,Resp,4,4,0,0,4,4,2,2,No,No,No,No,No
+Harvoni,27593,Respiratory failure,10038695,Resp,26,26,0,0,26,26,19,19,No,No,No,No,No
+Harvoni,27593,Glioma,10018338,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Brain neoplasm,10061019,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Spinal column stenosis,10041540,Musc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Metastasis,10062194,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Increased tendency to bruise,10021688,Skin,5,5,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Purpura,10037549,Skin,12,12,0,0,11,11,1,1,No,No,No,No,No
+Harvoni,27593,Bladder pain,10005063,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Depressed mood,10012374,Psych,14,14,0,0,6,6,1,1,No,No,No,No,No
+Harvoni,27593,Nocturia,10029446,Renal,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Haemorrhage urinary tract,10055847,Renal,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Alopecia,10001760,Skin,48,48,0,0,8,8,0,0,No,No,No,No,No
+Harvoni,27593,Poor quality sleep,10062519,Nerv,6,6,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Completed suicide,10010144,Psych,8,8,0,0,8,8,8,8,No,No,No,No,No
+Harvoni,27593,Spontaneous penile erection,10049118,Repro,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Prerenal failure,10072370,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Breast cancer recurrent,10006198,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Transient ischaemic attack,10044390,Nerv,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Pain in extremity,10033425,Musc,47,47,0,0,24,24,1,1,No,No,No,No,No
+Harvoni,27593,Erythrodermic psoriasis,10015278,Skin,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Diffuse large B-cell lymphoma,10012818,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Diffuse large B-cell lymphoma stage III,10012825,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Obstructive airways disorder,10061877,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Obstruction,10061876,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Unevaluable event,10062355,Genrl,31,31,0,0,17,17,0,0,No,No,No,No,No
+Harvoni,27593,Jaundice cholestatic,10023129,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Feeling jittery,10016338,Genrl,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Lipase abnormal,10054821,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Platelet morphology abnormal,10035538,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Accident at work,10000372,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Toxicity to various agents,10070863,Inj&P,7,7,0,0,7,7,2,2,No,No,No,No,No
+Harvoni,27593,Maternal exposure during delivery,10071407,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Fluid intake reduced,10056291,Metab,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Off label use,10053762,Inj&P,45,45,0,0,30,30,2,2,No,No,No,No,No
+Harvoni,27593,Intentional product misuse,10074903,Inj&P,4,4,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Complications of transplanted lung,10010187,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Complication associated with device,10077107,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Gingival bleeding,10018276,Gastr,5,5,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Exercise tolerance decreased,10051301,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Mouth swelling,10075203,Gastr,6,6,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Subacute endocarditis,10042276,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Incarcerated hernia,10021610,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Inflammation,10061218,Genrl,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hepatorenal failure,10019845,Hepat,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Hepatic fibrosis,10019668,Hepat,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Blood glucose increased,10005557,Inv,34,34,0,0,13,13,0,0,No,No,No,No,No
+Harvoni,27593,Arthropod bite,10003399,Inj&P,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Colon cancer,10009944,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Diabetes mellitus,10012601,Metab,17,17,0,0,17,17,0,0,No,No,No,No,No
+Harvoni,27593,Transfusion reaction,10044359,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Heart rate increased,10019303,Inv,7,7,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Pubis fracture,10070286,Inj&P,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Overdose,10033295,Inj&P,55,55,0,0,11,11,4,4,No,No,No,No,No
+Harvoni,27593,Prescribed overdose,10051076,Inj&P,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Therapeutic response unexpected,10043417,Genrl,35,35,0,0,6,6,0,0,No,No,No,No,No
+Harvoni,27593,Burning mouth syndrome,10068065,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Aphthous ulcer,10002959,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Stomatitis,10042128,Gastr,17,17,0,0,7,7,0,0,No,No,No,No,No
+Harvoni,27593,Tongue blistering,10043942,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Large intestinal obstruction,10062062,Gastr,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Abnormal faeces,10000133,Gastr,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Cheilitis,10008417,Gastr,3,3,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Ileostomy,10021321,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Autoimmune thyroiditis,10049046,Endo,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Blepharospasm,10005159,Eye,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Blood pressure increased,10005750,Inv,58,58,0,0,32,32,0,0,No,No,No,No,No
+Harvoni,27593,Eye burns,10015911,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Gout,10018627,Metab,9,9,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Oesophageal haemorrhage,10030172,Gastr,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Gastric varices haemorrhage,10057572,Gastr,4,4,0,0,4,4,2,2,No,No,No,No,No
+Harvoni,27593,Gingivitis,10018292,Infec,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Necrotising fasciitis,10028885,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Product label issue,10069289,Genrl,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Pyoderma,10037632,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Prinzmetal angina,10036759,Card,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Renal cyst,10038423,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Aortic dissection,10002895,Vasc,3,3,0,0,3,3,2,2,No,No,No,No,No
+Harvoni,27593,Non-Hodgkin's lymphoma recurrent,10029600,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Device issue,10069868,Prod,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Emphysema,10014561,Resp,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Menorrhagia,10027313,Repro,3,3,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Blood creatinine increased,10005483,Inv,63,63,0,0,52,52,0,0,No,No,No,No,No
+Harvoni,27593,Blood urea decreased,10005850,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Cardioactive drug level increased,10050845,Inv,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Drug clearance increased,10059641,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hypotension,10021097,Vasc,18,18,0,0,15,15,3,3,No,No,No,No,No
+Harvoni,27593,Normochromic normocytic anaemia,10029783,Blood,4,4,0,0,4,4,2,2,No,No,No,No,No
+Harvoni,27593,Haemorrhagic anaemia,10052293,Blood,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Hypersensitivity vasculitis,10020764,Skin,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Eye pain,10015958,Eye,8,8,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Dry eye,10013774,Eye,5,5,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Upper respiratory tract congestion,10052252,Resp,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Oropharyngeal discomfort,10068318,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Oropharyngeal pain,10068319,Resp,23,23,0,0,5,5,1,1,No,No,No,No,No
+Harvoni,27593,Bedridden,10048948,SocCi,5,5,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Diplopia,10013036,Eye,6,6,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Impaired gastric emptying,10021518,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Bronchospasm,10006482,Resp,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Haematuria,10018867,Renal,7,7,0,0,6,6,1,1,No,No,No,No,No
+Harvoni,27593,Orbital oedema,10031051,Eye,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Nephrolithiasis,10029148,Renal,8,8,0,0,8,8,0,0,No,No,No,No,No
+Harvoni,27593,Wheezing,10047924,Resp,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Lupus nephritis,10025140,Renal,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Genital lesion,10061978,Repro,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Sleep disorder due to a general medical condition,10063910,Psych,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Hepatic cancer recurrent,10073070,Neopl,4,4,0,0,4,4,1,1,No,No,No,No,No
+Harvoni,27593,Malignant neoplasm progression,10051398,Neopl,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Appetite disorder,10060961,Metab,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Glomerular filtration rate abnormal,10018356,Inv,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Portal shunt,10036204,Surg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Transplant,10057677,Surg,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Urine protein/creatinine ratio increased,10053538,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Cerebral haemorrhage,10008111,Nerv,28,28,0,0,28,28,7,7,No,No,No,No,No
+Harvoni,27593,Cerebral thrombosis,10008132,Nerv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Lymphoma,10025310,Neopl,9,9,0,0,9,9,1,1,No,No,No,No,No
+Harvoni,27593,Emotional distress,10049119,Psych,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Irritability,10022998,Psych,38,38,0,0,8,8,0,0,No,No,No,No,No
+Harvoni,27593,Glomerulonephritis membranous,10018372,Renal,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Aneurysm,10002329,Vasc,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Metabolic disorder,10058097,Metab,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Proctalgia,10036772,Gastr,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Antipsychotic drug level increased,10063686,Inv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Cortical laminar necrosis,10051990,Nerv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Tooth fracture,10062544,Inj&P,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Obsessive-compulsive disorder,10029898,Psych,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Cystitis haemorrhagic,10011793,Renal,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Parkinson's disease,10061536,Nerv,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Mobility decreased,10048334,Musc,4,4,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Musculoskeletal disorder,10048592,Musc,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Grief reaction,10018724,Psych,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Agitation,10001497,Psych,21,21,0,0,10,10,1,1,No,No,No,No,No
+Harvoni,27593,Nervousness,10029216,Psych,8,8,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Drug specific antibody present,10013745,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Urine output decreased,10059895,Inv,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Electrolyte imbalance,10014418,Metab,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hypercalcaemia,10020583,Metab,8,8,0,0,8,8,1,1,No,No,No,No,No
+Harvoni,27593,Psoriatic arthropathy,10037162,Musc,2,2,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Spinal disorder,10061368,Musc,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Diabetic ketoacidosis,10012671,Metab,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Libido decreased,10024419,Psych,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Mental disorder,10061284,Psych,4,4,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Nitrite urine,10059220,Inv,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Speech disorder,10041466,Nerv,5,5,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Initial insomnia,10022035,Psych,4,4,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Post procedural haemorrhage,10051077,Inj&P,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Ventricular fibrillation,10047290,Card,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Vaginal odour,10046935,Repro,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Gingival pain,10018286,Gastr,4,4,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Perihepatic discomfort,10054125,Hepat,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Portal vein thrombosis,10036206,Hepat,9,9,0,0,9,9,2,2,No,No,No,No,No
+Harvoni,27593,Gastroenteritis,10017888,Infec,6,6,0,0,5,5,1,1,No,No,No,No,No
+Harvoni,27593,Pneumonia,10035664,Infec,61,61,0,0,61,61,18,18,No,No,No,No,No
+Harvoni,27593,Infectious pleural effusion,10071699,Infec,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Ovarian cancer,10033128,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Upper respiratory tract infection,10046306,Infec,2,2,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Foot fracture,10016970,Inj&P,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Plasma cell myeloma,10035226,Neopl,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Myelodysplastic syndrome,10028533,Neopl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Hyperlipidaemia,10062060,Metab,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Lichen planus,10024429,Skin,5,5,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Atrial flutter,10003662,Card,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Blood albumin decreased,10005287,Inv,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Stress at work,10042210,SocCi,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Drug intolerance,10061822,Genrl,4,4,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Clostridium difficile colitis,10009657,Infec,3,3,0,0,3,3,1,1,No,No,No,No,No
+Harvoni,27593,Pneumonia escherichia,10035699,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Escherichia urinary tract infection,10052238,Infec,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Ischaemic cardiomyopathy,10048858,Card,1,1,0,0,1,1,1,1,No,No,No,No,No
+Harvoni,27593,Congestive cardiomyopathy,10056370,Card,5,5,0,0,5,5,0,0,No,No,No,No,No
+Harvoni,27593,Septic shock,10040070,Infec,19,19,0,0,19,19,15,15,No,No,No,No,No
+Harvoni,27593,Meningitis,10027199,Infec,2,2,0,0,2,2,1,1,No,No,No,No,No
+Harvoni,27593,Tooth infection,10048762,Infec,5,5,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Pericarditis,10034484,Card,4,4,0,0,4,4,0,0,No,No,No,No,No
+Harvoni,27593,Chest pain,10008479,Genrl,43,43,0,0,28,28,3,3,No,No,No,No,No
+Harvoni,27593,Tenderness,10043224,Genrl,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Drug hypersensitivity,10013700,Immun,3,3,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Viral infection,10047461,Infec,4,4,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Gastritis viral,10051791,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cholelithiasis,10008629,Hepat,2,2,0,0,2,2,0,0,No,No,No,No,No
+Harvoni,27593,Bacillus infection,10060976,Infec,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Uveitis,10046851,Eye,3,3,0,0,3,3,0,0,No,No,No,No,No
+Harvoni,27593,Hyperkeratosis,10020649,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No
+Harvoni,27593,Abortion spontaneous complete,10061616,Preg,1,1,0,0,1,1,0,0,No,No,No,No,No
+Harvoni,27593,Cardiac death,10049993,Genrl,6,6,0,0,6,6,6,6,No,No,No,No,No
+Harvoni,27593,Drug interaction,10013710,Genrl,134,134,0,0,109,109,7,7,No,No,No,No,No
+Harvoni,27593,Miliaria,10027627,Skin,1,1,0,0,0,0,0,0,No,No,No,No,No

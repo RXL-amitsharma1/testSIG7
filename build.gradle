@@ -1,0 +1,501 @@
+import grails.util.Environment
+plugins {
+    id "eclipse"
+    id "idea"
+    id "war"
+    id "org.grails.grails-web"
+    id "org.grails.grails-gsp"
+    id "com.bertramlabs.asset-pipeline"
+    id "org.grails.plugins.views-json"
+    id "com.gorylenko.gradle-git-properties"
+    id "java-library"
+    id "maven-publish"
+    id "application"
+    id "codenarc"
+
+}
+
+
+version "7.0"
+group "pvsignal"
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "https://repo1.maven.org/maven2" }
+    maven { url "https://repo.grails.org/grails/core" }
+    maven {
+        url "http://10.100.3.6:8080/nexus/content/repositories/common-component-snapshots"
+        allowInsecureProtocol = true
+    }
+    maven {
+        url "http://10.100.3.6:8080/nexus/content/repositories/thirdparty/"
+        allowInsecureProtocol = true
+    }
+    maven { url "https://repo.grails.org/grails/repo" }
+    maven { url "https://build.shibboleth.net/nexus/content/repositories/releases" }
+    maven { url "https://build.shibboleth.net/nexus/content/groups/public/" }
+    maven {
+        url "https://repository.jboss.org/maven2/"
+    }
+    maven { url "https://jaspersoft.jfrog.io/jaspersoft/jaspersoft-repo"  }
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir 'grails-app/migrations'
+        }
+    }
+}
+
+dependencies {
+    implementation group: 'com.sdicons.jsontools', name: 'jsontools-core', version: '1.7'
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
+    implementation group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.4'
+    implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+    implementation group: 'org.mnode.ical4j', name: 'ical4j', version: '2.0.5'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.13.5'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.5'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.13.5'
+
+    implementation group: 'com.fasterxml.woodstox', name: 'woodstox-core', version: '6.4.0'
+
+    implementation group: 'joda-time', name: 'joda-time', version: '2.10.13'
+    implementation group: 'io.fastjson', name: 'boon', version: '0.34'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.16.1'
+    implementation group: 'commons-fileupload', name: 'commons-fileupload', version: '1.5' //vulnerable
+
+    implementation group: 'com.orientechnologies', name: 'orientdb-graphdb', version: '3.2.17'
+    implementation group: 'com.tinkerpop.blueprints', name: 'blueprints-core', version: '2.6.0'
+    implementation group: 'com.orientechnologies', name: 'orientdb-core', version: '3.2.3'
+    implementation group: 'com.orientechnologies', name: 'orientdb-lucene', version: '3.2.10'
+
+    implementation 'org.grails.plugins:database-migration:5.0.0-SNAPSHOT-M1'
+    implementation 'org.liquibase:liquibase-core:4.19.0'
+    implementation 'org.grails.plugins:cxf:3.1.2'
+    // https://mvnrepository.com/artifact/org.apache.cxf/cxf-core
+    implementation group: 'org.apache.cxf', name: 'cxf-core', version: '3.5.8'//cxf-core 3.1.2 is vulnerable
+    // https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-transports-http
+    implementation group: 'org.apache.cxf', name: 'cxf-rt-transports-http', version: '3.5.5' // 3.1.8 which is default is vulnerable
+//// https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-frontend-jaxrs
+    implementation group: 'org.apache.cxf', name: 'cxf-rt-frontend-jaxrs', version: '3.5.5', {
+        exclude group: 'org.ow2.asm', module: "asm"
+    } //3.1.8 which is default is vulnerable
+    implementation group: 'org.apache.cxf', name: 'cxf-rt-frontend-jaxws', version: '3.5.5', {
+        exclude group: 'org.ow2.asm', module: "asm"
+    }
+
+    implementation 'org.grails.plugins:http-builder-helper:1.0.2'
+
+    implementation 'org.grails.plugins:spring-security-core:6.1.1'
+    implementation 'org.grails.plugins:spring-security-ldap:6.0.0.M1'
+    implementation ('io.github.grails-spring-security-saml:spring-security-saml:5.0.0-RC3') {
+        exclude group: "org.grails.plugins", module: 'spring-security-core'
+        exclude group: 'xalan:xalan:2.7.0'
+        exclude group: 'org.springframework.security', module: 'spring-security-saml2-service-provider'
+    }
+    implementation 'io.jsonwebtoken:jjwt:0.9.1'
+    implementation 'org.aspectj:aspectjweaver:1.9.6'
+    implementation ('org.springframework.security:spring-security-saml2-service-provider:5.8.9') {
+        exclude group: 'org.grails.plugins', module: 'spring-security-ldap'
+    }
+    implementation group: 'org.apache.xmlgraphics', name: 'batik-dom', version: '1.15'
+    implementation group: 'org.apache.xmlgraphics', name: 'batik-script', version: '1.17' //1.12 default version is vulnerable
+    implementation group: 'org.apache.xmlgraphics', name: 'batik-bridge', version: '1.17' //1.12 default version is vulnerable
+
+    implementation group: 'xalan', name: 'xalan', version: '2.7.3'
+    implementation group: 'xalan', name: 'serializer', version: '2.7.3'
+    implementation "org.grails.plugins:views-json"
+    implementation "org.grails.plugins:views-json-templates"
+    implementation "org.apache.commons:commons-compress:1.26.0"
+    implementation group: 'org.apache.tika', name: 'tika-core', version: '2.9.0'
+
+    implementation 'org.apache.iceberg:iceberg-spark-runtime-3.3_2.12:1.3.0'
+    implementation 'org.apache.arrow:arrow-vector:9.0.0' // Add Arrow dependency
+
+    implementation('org.apache.spark:spark-core_2.12:3.3.0') {
+        exclude group: 'org.apache.spark', module: 'spark-launcher_2.12'
+        exclude group: 'org.apache.spark', module: 'spark-kvstore_2.12'
+    }
+    implementation('org.apache.spark:spark-sql_2.12:3.3.0') {
+        exclude group: 'org.apache.spark', module: 'spark-tags_2.12'
+    }
+    implementation 'org.apache.hadoop:hadoop-client:3.3.1' // Adjust the version as necessary
+    implementation 'org.apache.hadoop:hadoop-aws:3.3.1' // If you're using S3
+    implementation 'software.amazon.awssdk:s3:2.20.15' // AWS SDK for Java
+    implementation 'software.amazon.awssdk:sts:2.20.145'  // Adjust version if needed
+    implementation 'software.amazon.awssdk:glue:2.20.145' // Adjust version if needed
+    implementation 'software.amazon.awssdk:dynamodb:2.20.33'  // DynamoDB SDK
+    implementation 'software.amazon.awssdk:kms:2.20.33'  // Add KMS dependency
+    implementation 'software.amazon.awssdk:lambda:2.23.4'
+
+    implementation('org.codehaus.janino:commons-compiler'){
+        version {
+            strictly '3.0.16'
+        }
+    }
+    implementation('org.codehaus.janino:janino'){
+        version {
+            strictly '3.0.16'
+        }
+    }
+
+    api "org.springframework.boot:spring-boot-autoconfigure"
+    api "org.springframework.boot:spring-boot-starter-logging"
+    implementation "org.grails:grails-core"
+    implementation "org.springframework.boot:spring-boot-starter-actuator"
+
+    implementation "org.springframework.boot:spring-boot-starter-tomcat"
+
+    implementation "org.grails:grails-dependencies"
+    implementation "org.grails:grails-web-boot"
+    implementation "org.grails:grails-logging"
+    implementation "org.grails:grails-plugin-rest"
+    implementation "org.grails:grails-plugin-databinding"
+    implementation "org.grails:grails-plugin-i18n"
+    implementation "org.grails:grails-plugin-services"
+    implementation "org.grails:grails-plugin-url-mappings"
+    implementation "org.grails:grails-plugin-interceptors"
+    implementation "org.grails.plugins:async"
+    implementation "org.grails.plugins:events"
+    implementation "org.grails.plugins:gsp"
+    implementation "org.grails.plugins:cache"
+    implementation "org.grails.plugins:scaffolding"
+    implementation 'org.grails.plugins:mail:4.0.0'
+    implementation "org.grails.plugins:hibernate5:8.1.0"
+    implementation "org.hibernate:hibernate-core:5.6.15.Final"
+    implementation "org.hibernate:hibernate-ehcache:5.6.15.Final"
+    profile "org.grails.profiles:web"
+    implementation fileTree(dir: 'lib', include: '*.jar')  //this includes all jar in lib directory
+    implementation("net.sourceforge.dynamicreports:dynamicreports-core:6.12.1") {
+        exclude group: 'net.sf.jasperreports'
+    }
+    implementation("net.sourceforge.dynamicreports:dynamicreports-adhoc:6.12.1") {
+        exclude group: 'net.sf.jasperreports'
+    }
+
+    implementation group: 'net.sf.jasperreports', name: 'jasperreports', version: '6.12.2'
+    implementation group: 'ar.com.fdvs', name: 'DynamicJasper', version: '5.3.9'
+
+    implementation group: 'com.itextpdf', name: 'itextpdf', version: '5.5.13.4'
+    implementation group: 'org.olap4j', name: 'olap4j', version: '1.2.0'
+
+    implementation (group: 'org.grails.plugins', name:  'quartz', version:  '3.0.0')
+    implementation(group: 'org.reflections', name: 'reflections', version: '0.10.2') {
+        exclude group: 'javassist'
+        exclude group: 'com.google.collections'
+        exclude group: "com.google.guava"
+
+    }
+    implementation group: 'org.apache.poi', name: 'poi', version: '5.2.5'
+    implementation 'org.apache.poi:poi-ooxml:5.2.5'
+    implementation 'org.apache.poi:poi-ooxml-full:5.2.5'
+    implementation group: 'com.monitorjbl', name: 'xlsx-streamer', version: '2.2.0'
+    implementation group: 'commons-logging', name: 'commons-logging', version: '1.3.3'
+    implementation group: 'org.apache.xmlbeans', name: 'xmlbeans', version: '5.2.0'
+
+    //Plugin to support the external config file.
+    implementation 'dk.glasius:external-config:4.0.0'
+    implementation "com.bertramlabs.plugins:asset-pipeline-gradle:4.3.0"
+    implementation "com.bertramlabs.plugins:asset-pipeline-grails:4.3.0"
+
+    //RxCodec  Encoder Plugin
+    implementation 'com.rxlogix:RxEncoder:2.0.2'
+
+    // https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava
+    implementation group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.2.8'
+
+    //CC Plugin : Text Difference
+    implementation 'com.rxlogix:document-management:6.x-JDK11-M1'
+
+    // https://mvnrepository.com/artifact/org.springframework.session/spring-session
+    implementation group: 'org.springframework.session', name: 'spring-session', version: '1.3.5.RELEASE'
+    implementation group: 'com.hazelcast', name: 'hazelcast-all', version: '3.12.13' //vulnerable
+
+    //CC Plugin : Audit Log
+    implementation ('org.grails.plugins:audit-logging:PVR_PVS_7.0-M8') { //FIXME: update once plugin upgrade branch is merged
+        exclude group: 'xalan:xalan:2.7.0'
+        exclude group: 'org.apache.xmlgraphics:batik-dom:1.8'
+        exclude group: 'net.sourceforge.htmlunit', module: 'htmlunit'
+    }
+    implementation "com.rxlogix:rxlogix-export:6.0-JDK11-M4", { //import com.rxlogix.export.common.FontDto this was failing
+        exclude group: 'org.apache.poi', module: 'poi'
+        exclude group: 'org.apache.poi', module: 'poi-ooxml'
+        exclude group: 'org.apache.poi', module: 'ooxml-schemas'
+    }
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-csv
+    implementation group: 'org.apache.commons', name: 'commons-csv', version: '1.11.0'
+
+    testImplementation group: 'com.h2database', name: 'h2', version: '2.3.230'
+    // https://mvnrepository.com/artifact/org.htmlunit/htmlunit
+    implementation group: 'org.htmlunit', name: 'htmlunit', version: '3.9.0'
+
+    testImplementation("org.grails:grails-gorm-testing-support")
+    testImplementation("org.grails:grails-web-testing-support")
+    testImplementation("org.spockframework:spock-core")
+    testCompileOnly "org.grails.plugins:geb"
+    testCompileOnly 'cglib:cglib-nodep:2.2'
+    testRuntimeOnly ("org.seleniumhq.selenium:htmlunit-driver:4.13.0") {
+        exclude group: 'net.sourceforge.htmlunit', module: 'htmlunit'
+    }
+    runtimeOnly 'org.postgresql:postgresql:42.6.0'
+
+//    testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
+    implementation group: 'com.rxlogix', name: 'ui', version: '6.0-JDK11-M11'
+    implementation('org.grails.plugins:quartz-monitor:6.0-jdk11-M3') {
+        exclude group: 'org.grails.plugins', module: 'asset-pipeline'
+    }
+    implementation('org.grails.plugins:grails-melody-plugin:6.0-JDK11-M2') {
+        // Exclude the undesired version of javamelody-core
+        exclude group: 'net.bull.javamelody', module: 'javamelody-core'
+    }
+    // Include the desired version of javamelody-core separately
+    implementation 'net.bull.javamelody:javamelody-core:1.99.0'
+    implementation "org.seleniumhq.selenium:selenium-firefox-driver:4.1.0"
+    implementation "org.seleniumhq.selenium:selenium-remote-driver:4.1.0"
+    implementation "org.seleniumhq.selenium:selenium-api:4.1.0"
+    implementation "org.seleniumhq.selenium:selenium-support:4.1.0"
+
+
+    implementation "com.rxlogix:pv-dictionary:6.0-JDK11-PVS-M8"  //FIXME: update once plugin upgrade branch is merged
+    implementation "com.google.code.gson:gson:2.11.0"
+    testCompileOnly group: 'junit', name: 'junit', version: '4.13.1'
+
+    implementation group: 'org.testng', name: 'testng', version: '7.10.2'
+
+    //testCompile "org.grails.plugins:code-coverage:2.0.3-3"
+
+    implementation 'org.grails.plugins:grails-spring-websocket:2.4.1' //2.5.0RC1 has vulnerabilities
+    implementation 'com.rxlogix:RxLogix-Debug-Console:7.0-JDK11-M1'
+    runtimeOnly ('org.grails.plugins:x-frame-options:1.1.2')
+
+    implementation 'org.grails.plugins:mail-oauth:6.0-JDK11-M1'
+    implementation group: 'io.projectreactor', name: 'reactor-core', version: '3.4.14'
+
+    implementation 'org.grails.plugins:grails-scim:6.0-jdk11-M1' // FIXME: UPGRADE WHEN NEW VERSION MERGED AND PUBLISHED https://github.com/RxLogix/grails-scim/pull/4#pullrequestreview-2218023938
+
+    implementation "org.grails:grails-datastore-gorm-async"
+    implementation group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
+    implementation "org.grails.plugins:converters"
+
+    testCompileOnly "org.grails:grails-gorm-testing-support"
+    testCompileOnly "org.grails:grails-web-testing-support"
+    implementation 'com.opencsv:opencsv:5.9'
+    implementation 'org.grails.plugins:pv-dynamicConfigUpdater:6.0-JDK11-M3', {
+        exclude group: 'com.monitorjbl', module: 'xlsx-streamer'
+        exclude group: 'com.hazelcast', module: 'hazelcast'
+    }
+    implementation 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.2'
+    implementation("com.github.ua-parser:uap-java:1.6.1") //ua_parser.Parser was not found
+    implementation group: 'javax.jws', name: 'javax.jws-api', version: '1.1'
+    //Below two are required to fix the vulnerabilities in the default imported version 1.2.12
+    implementation 'ch.qos.logback:logback-classic:1.2.13'
+    implementation 'ch.qos.logback:logback-core:1.2.13'
+    //Required for logback groovy format. https://stackoverflow.com/questions/74445304/is-there-a-reason-why-logback-groovy-is-discarded-in-1-2-9
+    // Added LogbackGroovyEnvironmentPostProcessor to fix startup issue of removing init context and overriding with spring default logging.
+    runtimeOnly 'io.github.virtualdogbert:logback-groovy-config:1.12.5'
+    runtimeOnly 'io.methvin:directory-watcher:0.16.1'
+    implementation "org.springframework.cloud:spring-cloud-starter-bootstrap:3.1.8"
+    runtimeOnly group: 'javax.xml.ws', name: 'jaxws-api', version: '2.3.1'
+    implementation group: 'org.springframework', name: 'spring-messaging', version: '5.3.33' //failing in build org/springframework/messaging/simp/SimpMessageSendingOperations
+    implementation group: 'org.codehaus.groovy', name: 'groovy-dateutil', version: '3.0.13'
+    implementation  group: 'com.squareup.okio', name: 'okio', version: '3.4.0'  // default version 2.8.0 is vulnerable
+    implementation group: 'io.netty', name: 'netty-codec-http', version: '4.1.108.Final' // default version 4.1.0.1.Final is vulnerable
+    implementation group: 'org.htmlunit', name: 'neko-htmlunit', version: '3.11.1' // 3.9.0 is vulnerable
+    implementation group: 'org.codehaus.jettison', name: 'jettison', version: '1.5.4' //default version 1.3.3 is vulnerable
+    implementation group: 'xerces', name: 'xercesImpl', version: '2.12.2' //default 2.11.0 is vulnerable
+    implementation group: 'com.google.guava', name: 'guava', version: '32.0.0-jre' //31.1 is vulnerable
+    implementation group: 'org.apache.santuario', name: 'xmlsec', version: '2.3.4'
+    implementation group: 'org.springframework', name: 'spring-websocket', version: '5.3.9'
+    //developmentOnly("org.springframework.boot:spring-boot-devtools")
+    //implementation("org.grails:grails-shell:6.2.1")
+
+
+}
+
+configurations {
+    it."default"
+    compile
+    all.collect { configuration -> //vulnerable dependencies
+        configuration.exclude group: 'org.glassfish', module: 'javax.el'
+        configuration.exclude group: 'org.apache.velocity', module: 'velocity'
+        configuration.exclude group: 'net.sourceforge.nekohtml', module: 'nekohtml'
+    }
+}
+
+application {
+    mainClass.set("pvsignal.Application")
+}
+
+java {
+    sourceCompatibility = targetCompatibility = JavaVersion.VERSION_11
+}
+
+assets {
+    packagePlugin = true
+    minifyJs = true
+    minifyCss = true
+    enableSourceMaps = false
+}
+
+bootRun {
+    ignoreExitValue true
+    jvmArgs(
+            '-Dspring.output.ansi.enabled=always',
+            '-noverify',
+            '-XX:TieredStopAtLevel=1',
+            '-Xmx6000m',
+            '--add-opens', 'java.base/java.nio=ALL-UNNAMED',
+            '--add-opens', 'java.base/sun.nio.ch=ALL-UNNAMED')
+    sourceResources sourceSets.main
+    String springProfilesActive = 'spring.profiles.active'
+    systemProperty springProfilesActive, System.getProperty(springProfilesActive)
+}
+
+tasks.withType(GroovyCompile) {
+    configure(groovyOptions) {
+        forkOptions.jvmArgs = ['-Xmx6000m']
+    }
+}
+
+task sourceJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+task packageJavadoc(type: Jar) {
+    from javadoc
+    classifier = 'javadoc'
+}
+
+task packageGroovydoc(type: Jar) {
+    from groovydoc
+    classifier = 'groovydoc'
+}
+
+bootJar.enabled = false
+
+war {
+    archiveName = 'signal.war'
+}
+
+//Set the value to true to print the values for test cases.
+test {
+    enabled = false // FIXME: to remove after upgrade, added as tests are failing even before upgrade
+//    minHeapSize = "256m"
+//    maxHeapSize = "2G"
+    jvmArgs(['-Dspring.output.ansi.enabled=always', '-Duser.timezone=GMT'])
+    testLogging {
+        showStandardStreams = false
+        exceptionFormat = 'full'
+    }
+    ignoreFailures = true
+    maxParallelForks = 1
+
+    useJUnitPlatform()
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'org.codehaus.janino:commons-compiler:2.7.8'
+    }
+    exclude group: 'com.google.javascript'
+    exclude group: 'org.bouncycastle'
+    exclude group: 'log4j', module: 'log4j'
+    exclude module: 'c3p0'
+    exclude group: 'com.azure', module: 'azure-core'
+    exclude  group: 'com.lowagie', module: 'itext'
+}
+
+// This option is only for windows developers. Comment this off if you develop on Windows
+/*
+grails {
+    pathingJar = true
+}
+*/
+
+gitProperties {
+    dateFormat = "yyyy-MM-dd'T'HH:mmZ"
+    dateFormatTimeZone = "UTC"
+}
+
+// For Inline Plugin
+//grails {
+//  exploded = true
+//    plugins {
+//        compile project(":audit-logging")
+//    }
+//}
+
+// For Inline Plugin
+/*grails {
+    exploded = true
+    plugins {
+        implementation project(":pv-dictionary")
+    }
+}*/
+
+// For Inline Plugin
+//grails {
+//    plugins {
+//        compile project(":grails-scim")
+//    }
+//}
+
+integrationTest { // FIXME: to remove after upgrade, added as tests are failing even before upgrade
+    enabled = false
+}
+
+// For Inline Plugin
+/*grails {
+    exploded = true
+    plugins {
+        implementation project(":pv-ui")
+    }
+}*/
+
+codenarcMain {
+    configFile = file('config/codenarc/codenarc.groovy') // Path to your rules file
+}
+
+compileTestGroovy{
+    doFirst {
+        println "Starting GroovyCompile for ${source}"
+        // Filter files based on criteria, e.g., exclude certain files
+        source.files.findAll { file ->
+            file.name.endsWith('.groovy')
+        }.each { file ->
+            println "Compiling Groovy file: ${file.name}"
+        }
+    }
+    doLast {
+        println "Finished GroovyCompile for ${source}"
+    }
+    options.compilerArgs << '-Xlint:all'
+    options.compilerArgs << '-Xlint:-options'
+    // Optionally capture errors for further analysis
+    try {
+        options.compilerArgs << '-Xlint:all'
+    } catch (Exception e) {
+        println "Error during GroovyCompile: ${e.message}"
+    }
+}
+/*
+tasks.withType(GroovyCompile) {
+    configure(options) {
+        listFiles = true
+        verbose = true
+        debugOptions.debugLevel = "source,vars"
+        incremental = true
+        incrementalAfterFailure = true
+    }
+    configure(groovyOptions) {
+        listFiles = true
+        verbose = true
+        forkOptions.jvmArgs = ['-Xms512m', '-Xmx2048m']
+    }
+}*/

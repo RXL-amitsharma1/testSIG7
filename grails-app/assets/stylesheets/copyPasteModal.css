@@ -1,0 +1,131 @@
+/*Copy and Paste modal*/
+#addContainerWithSubmit .fa-pencil-square-o.copy-n-paste {
+    padding-top: 2px;
+    margin-left: 10px;
+    font-size: 30px;
+    color: hsla(120, 60%, 40%, 1.0);
+    cursor: hand;
+    cursor: pointer;
+}
+
+/* Dictionary modal */
+#productModal .fa-pencil-square-o.copy-n-paste,
+#productModalAssessment .fa-pencil-square-o.copy-n-paste,
+#studyModal .fa-pencil-square-o.copy-n-paste,
+#eventModalAssessment .fa-pencil-square-o.copy-n-paste,
+#eventModal .fa-pencil-square-o.copy-n-paste {
+    padding-top: 2px;
+    margin-left: 25px;
+    font-size: 16px;
+    color: hsla(120, 60%, 40%, 1.0);
+    cursor: hand;
+    cursor: pointer;
+    opacity: 0.01;
+}
+
+.group .fa-pencil-square-o.copy-n-paste {
+    display: none;
+}
+
+.fa-pencil-square-o.copy-n-paste, .searchEventDmv, .searchEventDmv1 {
+    padding-top: 2px;
+    margin-left: 0px;
+    font-size: 1.5em;
+    color: hsla(120, 60%, 40%, 1.0);
+    cursor: hand;
+    cursor: pointer;
+}
+
+.fa-pencil-square-o.help-dmv {
+    padding-top: 2px;
+    margin-left: 0px;
+    font-size: 1.5em;
+    color: hsla(120, 60%, 40%, 1.0);
+    cursor: pointer;
+
+}
+
+.fa-pencil-square-o.copy-n-paste:hover {
+    color: hsla(120, 60%, 30%, 1.0);
+}
+
+.importValueModal.modal .modal-body .row, .copyAndPasteModal.modal .modal-body .row {
+    margin-left: 0px;
+}
+
+.modal .content-row {
+    margin-top: 10px;
+    width: 100%;
+    height: 140px;
+    border: solid grey thin;
+}
+
+.modal div.icon-col {
+    margin-left: 15px;
+    font-style: normal;
+    /*font-weight: bold;*/
+    display: inline;
+    float: left;
+}
+
+.copyAndPasteModal .modal-body div.icon-col span {
+    margin-left: 5px;
+}
+
+.copyAndPasteModal .modal-body div.icon-col input[type="text"] {
+    width: 50px;
+}
+
+.copyPasteContent {
+    width: 100%;
+    height: 100%;
+}
+
+.importValueModal .modal-dialog {
+    max-height: 631px;
+}
+
+.invalidValuesContainer .invalidValues{
+    max-height: 450px;
+    max-width: 99%;
+}
+
+#advance-filter-pencil,.searchEventDmv,.searchEventDmv1 {
+    margin-left: 0px;
+    font-size: 1.5em;
+    color: hsla(120, 60%, 40%, 1.0);
+}
+
+.help-dmv{
+    margin-left: 0px;
+    font-size: 1.5em;
+    color: hsla(120, 60%, 40%, 1.0);
+}
+
+@media(max-height: 799px) {
+    .copy-paste-modal-height-fix {
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 370px;
+    }
+}
+
+@media(min-height: 800px) {
+    .copy-paste-modal-height-fix {
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 570px;
+    }
+}
+
+.icon-col { width: auto !important; margin-bottom: 0 !important;}
+.icon-col input { margin-right: 0;!important;}
+.copy-paste-modal-height-fix {
+    max-height: 10000px!important;
+}
+
+
+#copyPasteContent {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,129 @@
+<table class="child-data-table">
+    {{#if_eq isVaers "false"}}
+    <tr class="">
+        {{#if_notNull columnLabelMap.suspProd}}
+        <td class="col-min-150">{{columnLabelMap.suspProd}}:</td>
+        {{else}}
+            <td>All Suspect Products:</td>
+        {{/if_notNull}}
+        <td>{{productList}}</td>
+    </tr>
+    {{/if_eq}}
+    {{#if_eq customFieldsEnabled false}}
+    {{#if_eq isVaers "false"}}
+    <tr class="">
+        {{#if_notNull columnLabelMap.masterPrefTermAll}}
+            <td>{{columnLabelMap.masterPrefTermAll}}:</td>
+        {{else}}
+            <td>All PTs (SUR):</td>
+        {{/if_notNull}}
+        <td style="word-break: normal !important;">
+        <pre class="pre-detailed-view">{{masterPrefTermAll}}</pre></td>
+    </tr>
+    {{/if_eq}}
+    {{/if_eq}}
+    {{#if_eq customFieldsEnabled true}}
+    <tr class="">
+            {{#if_notNull columnLabelMap.allPt}}
+                <td>{{columnLabelMap.allPt}}:</td>
+            {{else}}
+                <td>All PTs:</td>
+            {{/if_notNull}}
+            <td style="word-break: normal !important;">
+            <pre class="pre-detailed-view">{{allPt}}</pre></td>
+        </tr>
+    {{/if_eq}}
+    <tr class="">
+        {{#if_notNull columnLabelMap.caseNarrative}}
+            <td>{{columnLabelMap.caseNarrative}}:</td>
+        {{else}}
+            <td>Case Narrative:</td>
+        {{/if_notNull}}
+        <td style="word-break: normal !important;">
+        <pre class="pre-detailed-view">{{caseNarrative}}</pre></td>
+    </tr>
+    {{#if_eq isVaers "false"}}
+    <tr class="">
+        <td>All Conmeds:</td>
+        <td>{{conMeds}}</td>
+    </tr>
+    {{/if_eq}}
+    {{#if_eq customFieldsEnabled true}}
+    <tr class="">
+            <td>Medication Error PTs:</td>
+            <td>{{medErrorsPt}}</td>
+        </tr>
+    {{/if_eq}}
+    <tr class="">
+            {{#if_notNull columnLabelMap.causeOfDeath}}
+                <td>{{columnLabelMap.causeOfDeath}}:</td>
+            {{else}}
+                <td>Cause of Death:</td>
+            {{/if_notNull}}
+            <td style="word-break: normal !important;">
+            <pre class="pre-detailed-view">{{causeOfDeath}}</pre></td>
+    </tr>
+    {{#if_eq isVaers "false"}}
+    <tr class="">
+            {{#if_notNull columnLabelMap.patientMedHist}}
+                <td>{{columnLabelMap.patientMedHist}}:</td>
+            {{else}}
+                <td>Patient Med Hist:</td>
+            {{/if_notNull}}
+            <td style="word-break: normal !important;">
+            <pre class="pre-detailed-view"><p>{{{patientMedHist}}}</p></pre></td>
+    </tr>
+    {{/if_eq}}
+    {{#if_eq isVaers "false"}}
+    <tr class="">
+            {{#if_notNull columnLabelMap.patientHistDrugs}}
+                <td>{{columnLabelMap.patientHistDrugs}}:</td>
+            {{else}}
+                <td>Patient Hist Drugs:</td>
+            {{/if_notNull}}
+            <td style="word-break: normal !important;">
+            <pre class="pre-detailed-view">{{patientHistDrugs}}</pre></td>
+    </tr>
+    {{/if_eq}}
+    <tr class="">
+            {{#if_notNull columnLabelMap.batchLotNo}}
+                <td>{{columnLabelMap.batchLotNo}}:</td>
+            {{else}}
+                <td>Batch/Lot#:</td>
+            {{/if_notNull}}
+            <td style="word-break: normal !important;">
+            <pre class="pre-detailed-view">{{batchLotNo}}</pre></td>
+    </tr>
+    {{#if_eq isVaers "false"}}
+    <tr class="">
+            {{#if_notNull columnLabelMap.therapyDates}}
+                <td>{{columnLabelMap.therapyDates}}:</td>
+            {{else}}
+                <td>Therapy Dates:</td>
+            {{/if_notNull}}
+            <td style="word-break: normal !important;">
+            <pre class="pre-detailed-view">{{therapyDates}}</pre></td>
+    </tr>
+    {{/if_eq}}
+    <tr class="">
+            {{#if_notNull columnLabelMap.doseDetails}}
+                <td>{{columnLabelMap.doseDetails}}:</td>
+            {{else}}
+                <td>Dose Details:</td>
+            {{/if_notNull}}
+            <td style="word-break: normal !important;">
+            <pre class="pre-detailed-view">{{doseDetails}}</pre></td>
+    </tr>
+    {{#if_eq customFieldsEnabled true}}
+        <tr class="">
+                {{#if_notNull columnLabelMap.crossReferenceInd}}
+                     <td>{{columnLabelMap.crossReferenceInd}}:</td>
+                 {{else}}
+                    <td>Cross Reference IND:</td>
+                {{/if_notNull}}
+                <td style="word-break: normal !important;">
+                <pre class="pre-detailed-view">{{crossReferenceInd}}</pre></td>
+            </tr>
+        {{/if_eq}}
+
+</table>

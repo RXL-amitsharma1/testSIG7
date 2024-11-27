@@ -1,0 +1,18 @@
+[
+{
+"Product":"IBUPROFEN",
+"Formulation":"Formulation 2",
+"Relevant Indication":"Indication 2",
+"Responsible Physician":"pvs_admin",
+"Topic of Interest":"AdHoc3",
+"Safety Observation Date of Awareness":"11-Jan-2015",
+"Detected by UCB, Health Authority, Other":"Other",
+"Initial Data Source":"Empirica",
+"Issue Previously Tracked":"No",
+"Is associated with the RMP":"No",
+"Number of ICSRs (if applicable)":"4",
+"SOC of Interest":"Blood 2",
+"Priority (H, M, L)":"Medium",
+"Assigned To":"pvs_admin"
+}
+]

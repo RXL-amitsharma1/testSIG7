@@ -1,0 +1,35 @@
+<div class="hidden-btn btn-group dropdown dataTableHideCellContent" align="center">
+    {{!--      <a class="btn btn-success btn-xs" href="{{run_url}}">{{run_display}}</a> --}}
+    {{!--  Change url and data for all the redirects and links--}}
+    {{#if_eq isEnabled true}}
+    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" style="width: 40px;">
+    {{/if_eq}}
+    {{#if_eq isEnabled false}}
+    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" style="width: 40px;"
+            disabled="disabled">
+    {{/if_eq}}
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+</button>
+    <ul class="dropdown-menu dropdown-menu-right" role="menu" style="min-width: 80px !important; font-size: 12px;">
+<!--        <li role="presentation"><a role="menuitem" href="#" class="delete-latest-alert-button"-->
+<!--                                   alert-name="{{obj_name}}" data-instanceid="{{obj_id}}" deleteLatest="true">{{delete_latest_display}}</a></li>-->
+<!--    <li role="presentation"><a role="menuitem" href="#" class="delete-all-alert-button" data-instanceid="{{obj_id}}"-->
+<!--                               alert-name="{{obj_name}}"-->
+<!--                               deleteLatest="false">{{delete_all_display}}</a></li>-->
+        {{#if_eq isScheduled true}}
+        {{#if isManuallyPaused}}
+                <li role="presentation"><a role="menuitem" href="#" class="enable-alert-button"
+                                           alert-name="{{obj_name}}" data-instanceid="{{obj_id}}">{{enable_display}}</a>
+        </li>
+        {{else}}
+            <li role="presentation"><a role="menuitem" href="#" class="disable-alert-button"
+                                       alert-name="{{obj_name}}" data-instanceid="{{obj_id}}">{{disable_display}}</a>
+            </li>
+        {{/if}}
+    {{/if_eq}}
+        <li role="presentation"><a role="menuitem" class="updateAndExecute" href="#" data-instanceid="{{obj_id}}"
+                                   alert-name="{{obj_name}}"
+                                   data-productname="{{evdasProduct}}">{{update_and_execute_display}}</a></li>
+    </ul>
+</div>

@@ -1,0 +1,37 @@
+{
+  "chart": {
+    "type": "column"
+  },
+  "credits" : {
+    "enabled": false
+  },
+  "legend": {},
+  "plotOptions": {
+    "series": {
+      "allowPointSelect": true,
+      "cursor": "pointer",
+      "dataLabels": {},
+      "stacking": "normal"
+    },
+    "bar": {
+      "dataLabels": {
+        "enabled": true
+      }
+    }
+  },
+  "subtitle": {
+    "text": ""
+  },
+  "title": {
+    "text": "Chart Example"
+  },
+  "xAxis": [{}],
+  "yAxis": [
+    {
+      "stackLabels": {
+        "enabled": true
+      }
+    }
+  ]
+}
+

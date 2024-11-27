@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class>
+	<pageHeading>PV Signal Application Parameters</pageHeading>
+	<pageSubHeading>Entered parameters will get updated in externalized_data.cfg</pageSubHeading>
+	<fields id="DEV_USERNAME">
+		<fieldType>text</fieldType>
+		<label>Enter Dev Username</label>
+		<defaultValue>signaldev</defaultValue>
+		<tooltip>Enter Dev Username</tooltip>
+		<required>true</required> 
+		<requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+		<regexPattern>^.*$</regexPattern>
+		<regexInvalidErrorMsg>Please enter the valid dev username</regexInvalidErrorMsg>
+		<advanceRequired>true</advanceRequired>
+		<labelForPdf>Dev Username</labelForPdf>
+		<needIpPortValidation>false</needIpPortValidation>
+	</fields>
+	<fields id="ADMIN_USERNAME">
+		<fieldType>text</fieldType>
+		<label>Enter Admin Username</label>
+		<defaultValue>pvs_admin</defaultValue>
+		<tooltip>Enter Admin Username</tooltip>
+		<required>true</required> 
+		<requiredErrorMsg>This is a mandatory field</requiredErrorMsg>
+		<regexPattern>^.*$</regexPattern>
+		<regexInvalidErrorMsg>Please enter the admin username</regexInvalidErrorMsg>
+		<advanceRequired>true</advanceRequired>
+		<labelForPdf>Admin Username</labelForPdf>
+		<needIpPortValidation>false</needIpPortValidation>
+	</fields>
+</class>

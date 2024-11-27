@@ -1,0 +1,15 @@
+<li class="checkbox checkbox-blue space-nowrap">
+    <input type="checkbox" id="selectAllDispositions" class="select-all-checkbox"/>
+    <label for="selectAllDispositions" class="dispositionValue"><strong>Select All</strong></label>
+</li>
+{{#each filtersData}}
+    <li data-url="addWidgetUrl" class="checkbox checkbox-primary space-nowrap" data-id="pv-dash-searchCase" data-params="{&quot;widgetType&quot;: &quot;SEARCH_CASE&quot;}" data-widgetid="3298">
+            {{#if_isClosed this.isClosed this.closed}}
+                <input type="checkbox" name="relatedResults" data-closed="{{this.isClosed}}" id="filter{{@key}}" name="filter{{@key}}" value="{{this.value}}" class="dynamic-filters">
+                <label for="filter{{@key}}" class = "dispositionValue">{{this.value}}</label>
+            {{else}}
+                <input type="checkbox" name="relatedResults" checked data-closed="{{this.isClosed}}" id="filter{{@key}}" name="filter{{@key}}" value="{{this.value}}" class="dynamic-filters">
+                <label for="filter{{@key}}" class = "dispositionValue">{{this.value}}</label>
+            {{/if_isClosed}}
+    </li>
+{{/each}}

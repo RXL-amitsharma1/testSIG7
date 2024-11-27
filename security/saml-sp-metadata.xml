@@ -1,0 +1,18 @@
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" entityID="pvsignal">
+    <SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="false"
+            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol http://schemas.xmlsoap.org/ws/2003/07/secext">
+        <KeyDescriptor use="signing">
+          <dsig:KeyInfo xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+            <dsig:X509Data>
+              <dsig:X509Certificate>MIICnzCCAYcCBgFozCZN8TANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAhwdnNpZ25hbDAeFw0xOTAyMDgwODA2MjhaFw0yOTAyMDgwODA4MDhaMBMxETAPBgNVBAMMCHB2c2lnbmFsMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArklzqTDv8OHgIcrPcsc80XCtCCsQ+lbcOA7ixCXNwrOiwL5DE3wSKX+Q9yhhahDdcYAhkEqIdec15yDaOHhW2BvQwuQdddjCm8ObrS8fBijvFgVQje5D6XsYa+GE7bEdgkGXi+cofZ7ojoYAAJcdL/vpmax2fsuayVzXlZgjirNnOBlzPM3GVai9+ytGYsLWhUne5ZYA0eLeBNVFPvj96AoJ5WTPgf/oXehQjR7U3cOr5SRkbCJ1Do+1sHvnvRb4uCj5qCun/EwnNFQExftOncwTrziSke8MxOAAEXvPctMJpa+Lr8lDJRFyZqakrE0v8KSFwI941Kg7s55yrCQo7QIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAFqXIaJGpc7bP2cKazg4SVbg9GQtjm/GL6VRwkMvGdMfgi3+Ujsk9SnG9sIGuTkYgkzCgVlPizAOuoFvh6QlJ9rB0k6NvRvN14MXi3SGgUfOscS43b1FanttZZf7bW2mBjGDs+3l2krK/oYPbyckkI3vNWhtJSKq9t2NFfDyAEpqElf9S/C/POuEcQKmZTi60h+7DruOW+fpyAQ0WUljXm8/yMzCGZNecZBwBs79T5zL+R6IdEwBjFv1GGHv/e7kchPkmnrGt++1mpkch/16Un0l94f7sr5Y1GFBZ8cOIpWvmh/oDAMmoiL5VTLZIrBznNS9fB48gRL06QMuurmxaT</dsig:X509Certificate>
+            </dsig:X509Data>
+          </dsig:KeyInfo>
+        </KeyDescriptor>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8090/signal/saml/SingleLogout"/>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified
+        </NameIDFormat>
+        <AssertionConsumerService
+                Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8090/signal/saml/SSO"
+                index="1" isDefault="true" />
+    </SPSSODescriptor>
+</EntityDescriptor>

@@ -1,0 +1,31 @@
+<table class="child-data-table">
+    <tr>
+        <td>Exploded Terms:</td>
+        <td>
+            {{#each explosionGroups}}
+                <div>
+                    <strong>Main Term:</strong> {{mainTerm}}<br>
+                    <strong>Ancestors:</strong> {{ancestors}}<br>
+                    <strong>Weight:</strong> {{weight}}<br>
+                    <strong>Drug Term:</strong> {{drugTerm}}<br>
+                    <strong>Disease Term:</strong> {{diseaseTerm}}<br>
+                    <strong>Device Term:</strong> {{deviceTerm}}<br>
+
+                    <!-- Link Terms -->
+                    {{#if explosionLinkTerms}}
+                        {{#each explosionLinkTerms}}
+                            <strong>Link Term {{increment @index}}:</strong> {{linkTerm}}<br>
+                            <strong>Sub-Link Term {{increment @index}}:</strong> {{subLinkTerms}}<br>
+                        {{/each}}
+                    {{else}}
+                        <strong>Link Terms:</strong> -<br>
+                    {{/if}}
+                </div>
+
+                {{#unless @last}}
+                    <hr style="border: none; height: 1px; background-color: #ddd; margin: 10px 0;">
+                {{/unless}}
+            {{/each}}
+        </td>
+    </tr>
+</table>

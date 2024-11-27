@@ -1,0 +1,9 @@
+<span class='badge badge-info details-tag m-r-5 m-t-10'>{{tag.tagText}} {{tag.privateUser}} {{ tag.tagType}} </span>
+{{#if_notNull subTags}}
+    {{#each subTags}}
+        {{#if_notNull this}}
+            <span class='badge details-tag bg-grey-3 m-r-5 m-t-10'>{{this}} (S)</span>
+        {{/if_notNull}}
+    {{/each}}
+{{/if_notNull}}
+

@@ -1,0 +1,275 @@
+<script>
+    $(function() {
+
+        $('.attach-signal').click(function () {
+            if ($('.signalParentRow').hasClass('hide')) {
+                $('.signalParentRow').removeClass('hide');
+                $('.justification-container').removeClass('hide');
+                $('.signals').change(function () {
+                    $('#justification').change(function () {
+                        $('.btn-primary').removeAttr("disabled");
+                    });
+                });
+            } else {
+                $('.signalParentRow').addClass('hide');
+                $('.justification-container').addClass('hide');
+                $('.btn-primary').attr("disabled","disabled");
+            }
+        });
+
+        var signalJson = $(".signalsList").val();
+        $(".add-signal").click(function() {
+            var signalParentRow = $(".signalParentRow .panel-body");
+            var signalRows = signalParentRow.find('.signalRow:first');
+            var cloneRow = signalRows[0]
+            var clonedRow = $(cloneRow).clone(true);
+            var signalListObject = clonedRow.find(".signalsToBeCopied");
+            signalListObject.addClass("signals");
+            clonedRow.removeClass("hide");
+            signalParentRow.append(clonedRow);
+        });
+
+        $(".delete-signal").click(function() {
+            var parentRowToRemove = $(this).closest('.signalRow');
+            parentRowToRemove.remove();
+        });
+
+        $(".signalSelect").on("change", function() {
+            var signalsObj = $(this);
+            var selectedSignal = signalsObj.val();
+            var signalObjs = JSON.parse(signalJson);
+            _.each(signalObjs, function(obj) {
+                if (obj.signalName == selectedSignal) {
+                    var strategy = obj.strategy.name
+                    var signalRow = signalsObj.parent().parent();
+                    signalRow.find("#signalStrategy").html(obj.strategy.name);
+                    signalRow.find("#product").html(obj.strategy.products);
+                }
+            });
+        });
+
+        $(".workflow-mandatory").on("change", function() {
+            var  targetWorkflowState = $('#valueSelect').val()
+            var  disposition = $('#extra-value-select').val()
+            if($(this).attr('id') === 'justificationList'){
+               var text = $($(this)[0].options[$(this)[0].selectedIndex]).attr("data-text");
+               $("#justification").val(text);
+            }
+            var  justification = $('#justification').val()
+
+            if($('#valueSelect').is(":visible") && targetWorkflowState.length > 0 && disposition.length && justification.length > 0){
+                $('.btn-primary').prop("disabled", false);
+            }else if($('#valueSelect').is(":hidden") && justification.length > 0) {
+                $('.btn-primary').prop("disabled", false);
+            }else{
+                $('.btn-primary').prop("disabled", true);
+            }
+        })
+
+        try {
+            var selectTwoSignal = function(element, placeholder) {
+                var isAdmin = true; //TODO: Need to do integration of admin here.
+                element.select2({
+                    tags: true,
+                    placeholder: placeholder,
+                    allowClear: true,
+                    width: "100%",
+                    createTag: function (params) {
+                        var term = $.trim(params.term);
+                        if (term != "" && isAdmin) {
+                            return {
+                                id: term,
+                                text: term,
+                            }
+                        }
+
+                        return null
+                    }
+                })
+            };
+            selectTwoSignal($(".signals"), "Select Signal");
+            selectTwoSignal($(".medicalConceptstoSelect"), "Select Medical Concepts");
+
+        } catch (err) {
+            console.log("Error occured while making signal box select2");
+            console.log(err);
+        }
+    })
+
+</script>
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <label class="modal-title" id="exampleModalLabel">{{title}}</label>
+</div>
+
+<div class="modal-body" id="workflowModal">
+    <div class="errorNotification hide">
+        <div class="alert alert-danger">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Error! </strong><span id="errorMessage" class="errorMessage"></span>
+        </div>
+    </div>
+    <div class="row hide" id="attach-signal-container">
+        <div class="col-md-12">
+            <div class="pull-right">
+                <button class="btn btn-primary attach-signal" id="attach-signal">Add Signal</button>
+            </div>
+        </div>
+    </div>
+    <div class="workflow-grp">
+        <div class="row" id="workflow-state-container">
+            <div class="col-md-4 form-group">
+                <label class="">Current Workflow State</label>
+                <span id="currentValue" class="form-control">{{values.currentValue}}</span>
+            </div>
+            <div class="col-md-4">
+                <label for="valueSelect">Target Workflow State<span class="required-indicator">*</span></label>
+                <select id="valueSelect" name="value" class="workflow-mandatory form-control">
+                    <option value=""></option>
+                    {{#each values.availableValues}}
+                        <option value="{{value}}">{{displayName}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="extra-value-select">Disposition<span class="required-indicator">*</span></label>
+                <select id="extra-value-select" extra-data-field="{{extra_field}}" name="value" class="workflow-mandatory form-control">
+                    <option value=""></option>
+                    {{#each extra_values}}
+                        <option value="{{value}}">{{displayName}}</option>
+                    {{/each}}
+                </select>
+            </div>
+        </div>
+
+        <div class="signalParentRow signalElement hide p-b-10">
+            <div class="panel-group m-b-10">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-no-uppercase">Attach Signals</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row signalRow hide">
+                            <div class="col-md-3">
+                                <label for="signals">Signal <span class="required-indicator">*</span></label>
+                                <select name="signalsValue" class="form-control select2 signalsToBeCopied signalSelect">
+                                    <option value=""></option>
+                                    {{#each values.signals}}
+                                        <option value="{{signalName}}">{{signalName}}</option>
+                                    {{/each}}
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="medicalConcepts">Medical Concepts</label>
+                                <select multiple="true" name="medicalConcepts"
+                                        class="form-control select2 select2-drop medicalConceptstoSelect">
+                                    <option multiple="true" value=""></option>
+                                    {{#each values.medicalConcepts}}
+                                        <option class='conceptVal' multiple="true" value="{{name}}">{{name}}</option>
+                                    {{/each}}
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="actionTemplateSelect">Action Template</label>
+                                <select name="actionTemplate" class="form-control actionTemplateSelect">
+                                    {{#each values.actionTemplates}}
+                                        <option class='conceptVal' value="{{id}}">{{name}}</option>
+                                    {{/each}}
+                                </select>
+                            </div>
+                            <div class="col-md-1 pull-right p-0 m-t-20 hide">
+                                <span class="click delete-signal m-t-5 md md-close"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="row signalRow m-b-5">
+                            <div class="col-md-4">
+                                <label for="signals">Signal <span class="required-indicator">*</span></label>
+                                <select name="signalsValue" class="form-control signals signalSelect">
+                                    <option value=""></option>
+                                    {{#each values.signals}}
+                                        <option value="{{signalName}}">{{signalName}}</option>
+                                    {{/each}}
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="medicalConcepts">Medical Concepts <span class="required-indicator">*</span></label>
+                                <select multiple="true" id ="medicalConceptstoSelect" name="medicalConcepts" class="form-control select2-drop medicalConceptstoSelect">
+                                    <option multiple="true" value=""></option>
+                                    {{#each values.medicalConcepts}}
+                                        <option class='conceptVal' multiple="true" value="{{name}}">{{name}}</option>
+                                    {{/each}}
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="actionTemplate">Action Template</label>
+                                <select name="actionTemplate" class="form-control actionTemplateSelect">
+                                    <option class='templateVal' value=''>--Select One--</option>
+                                    {{#each values.actionTemplates}}
+                                        <option class='templateVal' value="{{id}}">{{name}}</option>
+                                    {{/each}}
+                                </select>
+                            </div>
+                            <div class="col-md-1 pull-right p-0 m-t-20 hide">
+                                <span class="click delete-signal m-t-5 md md-close"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <input type="hidden" id="signals" value="{{signals}}" class="signalsList"/>
+
+        <div class="row existingSignalSection existingSignal hide"></div>
+        <div class="existingSignal hide">&nbsp;</div>
+
+        <div class="row justification-container">
+            <div class="m-l-5 pull-left" >
+                <label for="justificationList">Justification <span class="required-indicator">*</span></label>
+            </div>
+            <div class="col-md-4" >
+                <select id="justificationList" name="value" class="workflow-mandatory form-control">
+                    <option value=""></option>
+                    {{#each values.justification}}
+                        <option data-text="{{justification}}" value="{{name}}">{{name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+
+        </div>
+
+        <br/>
+        <div class="row justification-container">
+            <div class="col-md-12 form-group">
+                <textarea id="justification" class="form-control col-sm-4" style="height:80px;"/>
+            </div>
+        </div>
+
+        <div id="reviewDateDiv" class="row hide">
+            <div class="col-md-12">
+                <label>Review Date for current state : </label>&nbsp;<i><div style="display:inline-block" id="reviewDate"></div></i>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div id="passwordDiv" class="col-md-6 hide">
+                <label for="passwordAuthentication">Requires authentication</label>
+                <input type="password" id="passwordAuthentication" placeholder="Enter Password" class="form-control"/>
+                <input type="hidden" id="isPasswordEnabled" />
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary btn-primary-change">Change</button>
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>

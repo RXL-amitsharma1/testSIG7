@@ -1,0 +1,15 @@
+<div>
+    {{#each commentList}}
+        <div class="comment m-t-10">
+            {{#if editable}}
+                <input type="hidden" class="commentId" value="{{id}}"/>
+                <div class="glyphicon glyphicon-trash delete-comment pull-right m-t-3 m-r-5"></div>
+                <div class="glyphicon glyphicon-pencil edit-comment pull-right m-t-3 m-r-10"></div>
+                <button class="update-comment hidden btn btn-primary">Update</button>
+            {{/if}}
+            <div class="createdBy form-control">{{createdBy}}@ {{dateUpdated}} </div>
+            <textarea disabled class="form-control comment-area">{{comments}}</textarea>
+        </div>
+    {{/each}}
+</div>
+

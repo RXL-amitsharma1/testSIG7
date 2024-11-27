@@ -1,0 +1,21 @@
+repositories {
+    mavenLocal()
+    maven { url "https://repo1.maven.org/maven2" }
+    maven { url "https://repo.grails.org/grails/core" }
+    maven { url "http://10.100.3.6:8080/nexus/content/repositories/thirdparty"
+        allowInsecureProtocol = true
+    }
+    maven { url "http://10.100.3.6:8080/nexus/content/repositories/common-component-snapshots"
+        allowInsecureProtocol = true
+    }
+    maven { url "https://plugins.gradle.org/m2/" }
+}
+dependencies {
+    implementation "org.grails:grails-gradle-plugin:6.1.2"
+    implementation "com.bertramlabs.plugins:asset-pipeline-gradle:4.3.0"
+    implementation "org.grails.plugins:hibernate5:8.1.0"
+    implementation "org.grails.plugins:database-migration:5.0.0-SNAPSHOT-M1"
+    implementation "org.grails.plugins:views-gradle:3.2.3"
+    implementation "com.gorylenko.gradle-git-properties:gradle-git-properties:2.4.2"
+//    implementation group: 'commons-codec', name: 'commons-codec', version: '1.2'
+}

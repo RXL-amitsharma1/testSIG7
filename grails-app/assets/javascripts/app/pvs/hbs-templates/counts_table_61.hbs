@@ -1,0 +1,42 @@
+<table class="dataTable notused">
+{{#ifVaersOnly isVaersEnabled isEvdasEnabled isPvaEnabled isVigibaseEnabled isFaersEnabled}}
+
+    <thead>
+    <tr>
+        <th class="sortable">Date</th>
+        <th id='newCount' class="sortable">New Count</th>
+        <th class="sortable">New Serious</th>
+        <th class="sortable">New Fatal</th>
+    </tr>
+    </thead>
+    {{#each trendData}}
+        <tr>
+            <td>{{xAxisTitle}}</td>
+            <td>{{newCount}}</td>
+            <td>{{seriousCount}}</td>
+            <td>{{fatalCount}}</td>
+        </tr>
+    {{/each}}
+
+{{else}}
+    <thead>
+    <tr>
+        <th class="sortable">Date</th>
+        <th id='study' class="sortable">New Study</th>
+        <th id='newCount' class="sortable">New Count</th>
+        <th class="sortable">New Serious</th>
+        <th class="sortable">New Fatal</th>
+    </tr>
+    </thead>
+    {{#each trendData}}
+        <tr>
+            <td>{{xAxisTitle}}</td>
+            <td>{{studyCount}}</td>
+            <td>{{newCount}}</td>
+            <td>{{seriousCount}}</td>
+            <td>{{fatalCount}}</td>
+        </tr>
+    {{/each}}
+    {{/ifVaersOnly}}
+
+</table>

@@ -1,0 +1,388 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*= require common-application
+*= require vendorUi/select2/select2
+*= require vendorUi/fuelux/css/fuelux-3.17.1.min
+*= require vendorUi/perfect-scrollbar/perfect-scrollbar
+*= require main
+*= require responsive
+*= require list/list
+*= require vendorUi/datatable/datatables.min
+*= require vendorUi/datatable/extn/dataTable-yadcf
+*= require_self
+*/
+
+
+.form-elements-left .control-label{
+    text-align: right;
+}
+a.policy-link {
+    color: rgba(255,255,255,.6);
+}
+
+a.policy-link:hover {
+    color: white;
+}
+.bs-callout {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #E2E2E2;
+    border-image: none;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px 1px 1px 5px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.bs-callout-info {
+    border-left-color: #1b809e;
+}
+
+.bs-callout-info h5 {
+    color: #1b809e;
+}
+
+.bs-callout h5 {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.comment {
+    position: relative;
+}
+.edit-comment {
+    position:absolute;
+    z-index:9999;
+    top: 5px !important;
+    cursor:pointer;
+    right:3px;
+}
+.delete-comment {
+    position:absolute;
+    right: 6px;
+    top: 5px !important;
+    cursor:pointer;
+}
+.update-comment {
+    position:absolute;
+    bottom:25px;
+    right:10px;
+}
+
+.height-150 {
+    height: 150px !important;
+}
+.pickList_list {
+    width: 250px !important;
+    height: 280px !important;
+}
+.pickList_listLabel {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+}
+.pickList_sourceListContainer, .pickList_controlsContainer, .pickList_targetListContainer {
+    float: left;
+    margin: 0.25em;
+}
+.pickList_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 150px;
+    height: 75px;
+    border: 1px inset #eee;
+    overflow-y: auto;
+    cursor: default;
+}
+
+#wrapper, .content-page, body{
+    overflow: visible !important;
+}
+.text-no-uppercase{
+    text-transform: none !important;
+}
+.nav .dropdown-menu .divider{
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+/* PVS Custom Pagination */
+
+.paginateButtons {
+    color: #666;
+    overflow: hidden;
+    padding: 10px 3px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.paginateButtons a {
+    background: linear-gradient(to bottom, #dae6ec, #98a1a6);
+    box-shadow: 0px 2px 3px #aaa;
+    border: 0;
+    padding: 6px 12px;
+    color: #777;
+}
+
+.paginateButtons a:first-child, .paginateButtons span:first-child{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.paginateButtons a:last-child, .paginateButtons span:last-child{
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.paginateButtons span {
+    padding: 6px 12px;
+    box-shadow: 0px 2px 3px #aaa;
+}
+.paginateButtons .currentStep{
+    background: linear-gradient(to bottom, #81c341, #447631);
+    border: 0;
+    color: #fff;
+}
+
+.dataTable-top-inlineBtn {
+    position: absolute;
+    left: 175px;
+    width: auto;
+}
+
+/*Todo remove this - start*/
+div.dt-paging ul.pagination {
+    position: inherit !important;
+}
+
+.select2-container--open {
+    z-index: 9999 !important;
+}
+
+.pvs-col-xs {
+    width: 75px !important;
+    min-width: 75px !important;
+}
+
+.pvs-col-xss {
+    width: 50px !important;
+    min-width: 50px !important;
+}
+
+.pvs-col-xxs {
+    width: 50px !important;
+    min-width: 50px !important;
+}
+
+.nowrap-text {
+    white-space: nowrap;
+    width: 1px;
+}
+
+table tbody tr.odd:hover, table tbody tr.even:hover {
+    background-color: #f0f9fd !important;
+}
+
+.pt-8 #import-log-table_length{padding-top: 8px !important; min-width: max-content}
+
+.word-break {
+    word-break: break-word;
+}
+.break-all{
+    word-break: break-all;
+}
+
+.pre-detailed-view{
+    background-color: inherit;
+    font-size: 14px !important;
+    border: 0;
+    padding: initial;
+    font-family: 'Open Sans', sans-serif !important;
+    word-break: normal;
+    white-space: break-spaces;
+}
+
+#listAction_filter {
+    display: none;
+}
+
+#simpleCaseAlerts_filter {
+    display: none;
+}
+
+#alertsDetailsTable_filter {
+    display: none;
+}
+
+#evdasAlerts_filter {
+    display: none;
+}
+
+#validatedSignalsTable_filter {
+    display: none;
+}
+#assignedTriggeredAlerts_filter {
+    display: none;
+}
+#assignedSignalTable_filter {
+    display: none;
+}
+#alertsFilter + span {
+    max-width: 211px !important;
+    max-height: 22px !important;
+}
+
+#alertsFilterDashboard + span > span > span {
+    overflow-x: hidden;
+    max-height: 22px;
+}
+#alertsFilterDashboard + span {
+    box-shadow: none;
+}
+
+#signalsFilter + span > span > span {
+    overflow-x: hidden;
+    max-height: 22px;
+}
+#signalsFilter + span {
+    box-shadow: none;
+}
+
+#dropdownUsersAlertWidget1 .select2-selection__rendered {
+    padding: 0;
+}
+#dropdownUsersSignalWidget1 .select2-selection__rendered {
+    padding: 0;
+}
+
+@media screen and (max-width: 1400px) {
+    #signalsFilter + span {
+        max-width: 144px !important;
+    }
+    #alertsFilterDashboard + span {
+        max-width: 144px !important;
+    }
+    #dropdownUsersSignalWidget1 > span {
+        width: 450px;
+    }
+    #dropdownUsersAlertWidget1 > span {
+        width: 450px;
+    }
+    #dropdownUsersSignalWidget1 > span > label:nth-child(1) {
+        margin-right: 15px;
+        white-space: nowrap;
+    }
+    #dropdownUsersAlertWidget1 > span > label:nth-child(1) {
+        margin-right: 15px;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #signalsFilter + span {
+        max-width: 152px !important;
+    }
+    #alertsFilterDashboard + span {
+        max-width: 152px !important;
+    }
+    #dropdownUsersSignalWidget1 > span {
+        width: 475px;
+    }
+    #dropdownUsersAlertWidget1 > span {
+        width: 475px;
+    }
+    #dropdownUsersSignalWidget1 > span > label {
+        margin-right: 10px;
+        white-space: nowrap;
+    }
+    #dropdownUsersAlertWidget1 > span > label {
+        margin-right: 10px;
+        white-space: nowrap;
+    }
+}
+
+#dropdownUsers > .select2-container .select2-selection--multiple {
+    max-height:  20px !important;
+}
+.pickList_targetList {
+    height: 305px !important;
+}
+#productAssignmentTable_wrapper .pt-8{padding-top:8px!important}
+
+#dropdownUsersAlertWidget1 label{
+    margin-bottom: 0px; !important;
+}
+
+.font-21 {
+    font-size: 21px;
+}
+
+#dropdownUsersSignalWidget1 label{
+    margin-bottom: 0px; !important;
+}
+
+#dropdownUsersAlertWidget1 ul li {
+    font-weight: normal;
+}
+
+#dropdownUsersSignalWidget1 ul li {
+    font-weight: normal;
+}
+
+.custom-search-links-wd-label {
+    margin-bottom: 0px; !important;
+}
+
+.noteCSS{
+    float: right;
+    font-style: italic;
+    font-size: medium;
+}
+
+.valueCell{
+    word-break: break-word !important;
+}
+
+.to-center {
+    text-align: center;
+}
+
+.dropDown.dropdown-zindex {
+    z-index: 1000 !important;
+}
+
+#wrapper.enlarged .left.side-menu #sidebar-menu > ul > li > a {
+    padding: 12px 2px !important;
+}
+
+thead tr th.dt-orderable-none span.dt-column-order {
+    display: none;
+}
+
+.text-red-important{
+    color: #f11924 !important;
+}
+
+.navbar.navbar-default {
+    z-index: -1;
+}
+
+.page-title-box .fixed-page-head {
+    min-height: 40px !important;
+}
+
+.page-title-box .fixed-page-head h5 {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}

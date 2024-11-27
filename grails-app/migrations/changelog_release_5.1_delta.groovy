@@ -1,0 +1,17 @@
+databaseChangeLog = {
+    include file: '2021-02-03-import-alert-configuration.groovy'
+    include file: '2021-01-12-single-alert-add-new-columns.groovy'
+    include file: '2021-01-22-Updated-the-on-demand-domain.groovy'
+    include file: '2021-01-20-add-clipboard-case-domain.groovy'
+    include file: '2021-02-17-Top-50-alerts-widget-enhancement.groovy'
+    include file: '2021-02-22_update_alert_comment_domain.groovy'
+    include file: '2021-22-02-add-CaseForm-domain.groovy'
+    include file: '2021-03-06-read-only-role-for-module.groovy'
+    include file: '2021-01-29-base-configuration-limit-to-case-series.groovy'
+    include file: '2020-10-21-signal-release-4.8-4.8.0.1.groovy'
+    include file: '2020-12-28-Link-text-column-added.groovy'
+    include file: '2021-01-13-evdas-config-updated.groovy'
+    include file: 'changelog_release_5.0.0.1_delta.groovy'
+    include file: '2021-01-19-report_name_data_type_modified.groovy'
+    include file: '2021-03-22-archived-alert-deadlock-constraints.groovy'
+}

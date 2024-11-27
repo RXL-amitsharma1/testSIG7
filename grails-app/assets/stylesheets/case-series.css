@@ -1,0 +1,12 @@
+.es-completed {
+    color: #5cb85c;
+}
+.es-scheduled {
+    color: #337ab7;
+}
+.es-error {
+    color: #d9534f;
+}
+.es-delivering {
+    color: #337ab7;
+}

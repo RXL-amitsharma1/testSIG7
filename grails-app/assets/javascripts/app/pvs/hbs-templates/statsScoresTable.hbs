@@ -1,0 +1,40 @@
+<table class="dataTable notused">
+{{#if evEnabled}}
+    <thead>
+    <tr>
+        <th class="sortable">Date</th>
+        <th class="sortable">PRR</th>
+        <th class="sortable">ROR</th>
+        <th class="sortable">ROR(EVDAS)</th>
+
+    </tr>
+    </thead>
+    {{#each trendData}}
+        <tr>
+        <td>{{xAxisTitle}}</td>
+        <td>{{prrValue}}</td>
+        <td>{{rorValue}}</td>
+        <td>{{rorEv}}</td>
+        </tr>
+    {{/each}}
+
+{{else}}
+    <thead>
+    <tr>
+         <th class="sortable">Date</th>
+         <th class="sortable">PRR</th>
+         <th class="sortable">ROR</th>
+    </tr>
+    </thead>
+
+    {{#each trendData}}
+        <tr>
+            <td>{{xAxisTitle}}</td>
+            <td>{{prrValue}}</td>
+            <td>{{rorValue}}</td>
+
+        </tr>
+    {{/each}}
+{{/if}}
+
+</table>

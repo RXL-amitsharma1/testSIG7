@@ -1,0 +1,426 @@
+<div class="pv-dashWidget grid-stack-item dashboard-scroll" data-type="{{content.type}}" id="{{reportWidgetId}}">
+    <div class="panel panel-default chart-panel grid-stack-item-content rx-widget">
+        <div class="panel-heading panel-title pv-sec-heading" style="max-height: none">
+            <div class="rxmain-container-header-label">
+                <div class="row">
+                    <div class="pull-left m-l-5"><h3 class="panel-title">{{reportWidgetName}}</h3></div>
+                    <div class="ico-menu text-right pull-right">
+                         <a tabindex="0" href="javascript:void(0);"
+                                                              class="close-widget pull-right" title="Hide Widget"><i
+                                class="md md-close"></i></a>
+                    {{#if refreshIconVisible}}
+                        <a tabindex="0" href="javascript:void(0);"
+                                                              class="refresh-{{content.id}}-link refresh-widget pull-right"
+                                                              title="Refresh Widget"><i
+                                class="md md-refresh"></i></a>
+                    {{/if}}
+
+                        {{#if_eq reportWidgetName "My Links"}}
+                            <div class="d-flex-center">
+                                <label for="alertsFilter" class="custom-search-links-wd-label">Search</label>
+                                <input id="custom-search-links-wd" class="pull-right dropdown-toggle form-control font-normal" style="margin-left: 5px">
+                                <a tabindex="0" href="javascript:void(0);"
+                                   class="add-ref-link-modal" title="Add Link"><i
+                                        class="md md-add" aria-hidden="true" title="Add Link"></i></a>
+                            </div>
+                        {{/if_eq}}
+                        {{#if_eq content.id "listAction"}}
+                            <div class="d-flex-center">
+                                <label for="alertsFilter" class="" style="margin-right: 5px;margin-bottom: 0px;"
+                                >Search</label>
+                                <input id="custom-search-action-item-wd" class="pull-right dropdown-toggle form-control font-normal" >
+                            </div>
+                        {{/if_eq}}
+
+
+                        {{#if_eq content.id "assignedTriggeredAlerts"}}
+
+                            <span tabindex="0" class="dropdown pull-right m-l-5 m-r-5">
+                                <i style="cursor: pointer"
+                                   class="dropdown-toggle mdi mdi-format-list-bulleted font-21 lh-1"
+                                   id="dropdownMenuTriggeredAlert" data-title="" data-toggle="dropdown"></i>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuTriggeredAlert"
+                                     style="height: 300px; overflow-y:auto; width: 240px;">
+
+                                    <div class="rxmain-container-dropdown">
+                                        <div>
+                                            <table id="tableColumns" class="table">
+                                                <thead><tr><th>Name</th><th>Show</th>
+                                                </tr></thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                            <span id="dropdownUsersAlertWidget1" class="pull-right">
+                                <span class="d-flex-center">
+                                    <label for="alertsFilter" class="col-md-2"
+                                           >Select
+                                        Users</label>
+                                    <select id="alertsFilterDashboard" name="alertsFilter"
+                                            class="sharedWithControl form-control select2 col-md-4"></select>
+
+                                    <label for="alertsFilter" class="col-md-2 m-l-10"
+                                           >Search</label>
+                                    <input id="custom-search-alert-wd" class="pull-right dropdown-toggle form-control col-md-4 font-normal">
+                                </span>
+                            </span>
+                        {{/if_eq}}
+
+                        {{#if_eq content.id "assignedSignalTable"}}
+
+                            <span id="dropdownUsersSignalWidget1" class="pull-right">
+                                <span class="d-flex-center">
+                                    <label for="signalsFilter" class="col-md-2">Select Users</label>
+                                    <select id="signalsFilter" name="alertsFilter"
+                                            class="sharedWithControl form-control select2 col-md-4"></select>
+
+                                    <label for="signalsSearch" class="col-md-2 m-l-10">Search</label>
+                                    <input id="custom-search-signal-wd" class="pull-right dropdown-toggle form-control col-md-4 font-normal" for="signalsFilter">
+                                </span>
+                            </span>
+                        {{/if_eq}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body pv-sec-bg rx-widget-content">
+            <div class="row inner-shadow-box">
+                {{#if_eq content.type "pvDashChart"}}
+                    <div id="{{content.id}}" data-type="{{content.type}}" class="chart-container"></div>
+                {{/if_eq}}
+                {{#if_eq content.type "pvDashCalendar"}}
+                    <div id="{{content.id}}" data-type="{{content.type}}" class="calendar"></div>
+                {{/if_eq}}
+                {{#if_eq content.type "pvDashReports"}}
+
+                    <div data-id="{{content.id}}" data-type="{{content.type}}">
+
+
+                        {{!-- <table id="{{content.id}}" class="dataTable table table-striped row-border hover no-footer"> --}}
+                        <table id="{{content.id}}" class="table table-striped">
+                            <thead>
+                            <tr>
+                                {{#if_eq content.id "assignedSignalTable"}}
+                                    <th>Signal Name</th>
+                                    <th style="max-width:300px">Product Name</th>
+                                    <th>Disposition</th>
+                                {{/if_eq}}
+                                {{#if_eq content.id "assignedTopicTable"}}
+                                    <th>Topic Name</th>
+                                    <th>Product Name</th>
+                                    <th>Count of PEC</th>
+                                    <th>Count of Cases</th>
+                                    <th>Disposition</th>
+                                {{/if_eq}}
+                                {{#if_eq content.id "assignedTriggeredAlerts"}}
+                                    <th >Product</th>
+                                    <th >Type</th>
+                                    <th >Name</th>
+                                    <th >Requires Review</th>
+                                    <th >Due In</th>
+                                    <th >Date Range</th>
+                                    <th ></th>
+                                {{/if_eq}}{{#if_eq content.id "listAction"}}
+                                <th>Id</th>
+                                <th>Action Type</th>
+                                <th>Action</th>
+                                <th>Details</th>
+                                <th>Alert Name</th>
+                                <th>Due Date</th>
+
+
+                            {{/if_eq}}
+                                {{#if_eq content.id "refrences"}}
+                                    <th class="col-md-2">Reference Type<span class="required-indicator">*</span></th>
+                                    <th class="col-md-3">Description</th>
+                                    <th class="col-md-3">Name<span class="required-indicator">*</span></th>
+                                    <th class="col-md-1">Performed By</th>
+                                    <th class="col-md-2">Date</th>
+                                    <th class="col-md-1"></th>
+                                {{/if_eq}}
+                            </tr>
+                            </thead>
+                            {{#if_eq content.id "refrences"}}
+                                <tfoot class="reference-table-foot newRow hide">
+                                <tr data-id="refrences" class="relative-position">
+                                    <td class="col-md-2">
+                                        <div class="rmm-type row">
+                                            <div class="col-md-10">
+                                                <select name="refrenceType" class="form-control refrenceType">
+                                                    <option value="">Select</option>
+                                                    <option value="Reference">Reference</option>
+                                                    <option value="Others">Others</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-3">
+                                        <div class="textarea-ext">
+                                            <input type="text" class="form-control description comment"
+                                                   name="description" maxlength="8000" style="width: 100%">
+                                            <a class="btn-text-ext openStatusComment" href="javascript:void(0);"
+                                               tabindex="0"
+                                               title="Open in extended form">
+                                                <i class="mdi mdi-arrow-expand font-20 blue-1"></i></a>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-3">
+                                        <div class="file-uploader" data-provides="fileupload">
+                                            <div class="input-group" style="width: 100%">
+                                                <input type="text" class="form-control " id="attachmentFilePathRmm"
+                                                       placeholder="Attach a file"
+                                                       name="assessment-file" value="" title="">
+                                                <span class="input-group-btn ">
+                                                            <button class="browse btn btn-primary btn-file-upload allow-rmm-edit"
+                                                                    type="button"
+                                                                    data-toggle="modal"
+                                                                    data-target="#refAttachmentFileModal">
+                                                                <i class="glyphicon glyphicon-search"></i>
+                                                            </button>
+                                                        </span>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="col-md-1">
+                                        {{createdBy}}
+                                    </td>
+                                    <td class="col-md-2">
+                                        <div class="currentDate">
+                                        </div>
+                                    </td>
+                                    <td class="col-md-1 text-center">
+                                        <a href="javascript:void(0);" title="Save"
+                                           class="table-row-saved saveRecord hidden-ic pv-ic">
+                                            <i class="mdi mdi-check" aria-hidden="true"></i>
+                                        </a>
+                                        <a href='javascript:void(0);' title='Delete'
+                                           class='table-row-del remove-rmm-row hidden-ic clsBtnEvent'>
+                                            <i class='mdi mdi-close clsBtnEvent' aria-hidden='true'></i>
+                                        </a>
+                                    </td>
+
+                                </tr>
+                                </tfoot>
+                            {{/if_eq}}
+                        </table>
+                    </div>
+                {{/if_eq}}
+                {{#if_eq content.type "pvDashbox"}}
+                    <div data-id="{{content.id}}" data-type="{{content.type}}">
+                        <div class="row form-inline link-box-filter m-b-10">
+                            <div class="col-md-12">
+                                <button data-type="name" class="link-btn-left">Name</button>
+                                <button data-type="date" class="link-btn-right">Date</button>
+                            </div>
+                        </div>
+
+                        <div class="pv-loader-bg">
+                            <div class="loader">
+                                <svg class="circular" viewBox="25 25 50 50">
+                                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke="#4f8ef2"
+                                            stroke-width="2" stroke-miterlimit="10"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div id="imageListId"></div>
+                    </div>
+                {{/if_eq}}
+
+                {{#if_eq content.type "pvDashPreChecks" }}
+                    <div data-id="{{content.id}}" data-type="{{content.type}}">
+                        <div id="systemValidationPreChecks">
+                            <table id="" class="row-border hover simple-alert-table dataTable no-footer" width="100%"
+                                   role="grid" aria-describedby="simpleCaseAlerts_info" style="width: 100%;">
+                                <tbody data-ol-has-click-handler="">
+                                {{#each preCheckList}}
+                                    {{#ifeq @index 0}}
+                                        <tr role="row" class="odd" id="accordion{{@index}}">
+                                    {{/ifeq}}
+                                    {{#ifnoteq @index 0}}
+                                        <tr role="row" class="even" id="accordion{{@index}}">
+                                    {{/ifnoteq}}
+
+                                    {{#ifCond @key "true"}}
+                                            <td class="col-min-300 col-max-650 cell-break check-role-access">
+                                                <a style="cursor: default !important;"
+                                                   disabled="disabled" class="accordion-toggle"
+                                                   data-toggle="collapse"
+                                                   data-parent="#accordion{{@index}}" href="#">
+                                                    {{{splitString @key}}}
+                                                    <i class="fa fa-check" aria-hidden="true"
+                                                       style="color:green;cursor: default !important;"
+                                                       disabled="disabled"></i>
+                                                    <span class="grid-loading precheck-loader hidden"><img src="/signal/assets/spinner.gif" width="20" align="middle" /></span>
+                                                </a>
+                                            </td>
+                                    {{else}}
+                                        {{#ifCond1 @key "true"}}
+                                                <td class="col-min-300 col-max-650 cell-break check-role-access">
+                                                    <a class="accordion-toggle" data-toggle="collapse"
+                                                       data-parent="#accordion{{@index}}" href="#id{{@index}}">
+                                                        {{{splitString @key}}}
+                                                        <i class="fa fa fa-warning"
+                                                           aria-hidden="true"
+                                                           style="color:orange;"
+                                                        ></i>
+                                                        <span class="grid-loading precheck-loader hidden"><img src="/signal/assets/spinner.gif" width="20" align="middle" /></span>
+                                                    </a>
+                                                </td>
+
+
+                                        {{else}}
+                                           <td class="col-min-300 col-max-650 cell-break check-role-access">
+                                                <a class="accordion-toggle" data-toggle="collapse"
+                                                   data-parent="#accordion{{@index}}" href="#id{{@index}}">
+                                                    {{{splitString @key}}}
+                                                    <i class="fa fa-window-close show-error-log"
+                                                       aria-hidden="true"
+                                                       style="color:red;"
+                                                    ></i>
+                                                    <span class="grid-loading precheck-loader hidden"><img src="/signal/assets/spinner.gif" width="20" align="middle" /></span>
+                                                </a>
+                                            </td>
+                                    {{/ifCond1}}
+                                    {{/ifCond}}
+
+
+                                    </tr>
+                                    <tr role="row" id="id{{@index}}" class="panel-collapse collapse p-10">
+                                        <td class="col-min-300 col-max-650 cell-break check-role-access">
+
+                                            <table id="" class="row-border hover simple-alert-table dataTable no-footer"
+                                                   width="100%" role="grid" aria-describedby="simpleCaseAlerts_info"
+                                                   style="width: 100%;">
+
+                                                <tbody data-ol-has-click-handler="">
+                                                <thead>
+                                                <tr role="row">
+                                                    <th
+                                                            class="nowrap-text col-min-300 col-max-650 cell-break sorting_disabled"
+                                                            tabindex="0"
+                                                            aria-controls="simpleCaseAlerts"
+                                                            rowspan="1"
+                                                            colspan="1"
+                                                            style="width: 300px;"
+                                                            aria-label="Alert Name: activate to sort column ascending"
+                                                            data-ol-has-click-handler="">
+                                                        Entity/Module
+                                                    </th>
+                                                    <th class="nowrap-text col-min-150 col-max-300 cell-break sorting_disabled"
+                                                        rowspan="1" colspan="1" style="width: 252px;"
+                                                        aria-label="Product">Status
+                                                    </th>
+                                                    <th
+                                                            class="nowrap-text col-min-250 col-max-300 cell-break sorting_disabled"
+                                                            tabindex="0"
+                                                            aria-controls="simpleCaseAlerts"
+                                                            rowspan="1"
+                                                            colspan="1"
+                                                            style="width: 250px;"
+                                                            aria-label="Description: activate to sort column ascending"
+                                                            data-ol-has-click-handler=""
+                                                    >
+                                                        Status Description
+                                                    </th>
+                                                </tr>
+                                                </thead>
+                                                {{#each @this}}
+                                                    {{#ifCondEq optional true}}
+                                                        {{#ifCondEq running false}}
+                                                        {{#ifeq @index 0}}
+                                                        <tr role="row" class="odd" id="accordion{{@index}}">
+                                                        {{/ifeq}}
+                                                        {{#ifnoteq @index 0}}
+                                                        <tr role="row" class="even" id="accordion{{@index}}">
+                                                        {{/ifnoteq}}
+                                                        <td class="col-min-300 col-max-650 cell-break check-role-access">
+                                                            {{{displayName}}}</td>
+                                                        <td class="col-min-150 col-max-300 cell-break">
+                                                            <div class="col-container">
+                                                                <div class="col-height">
+                                                                    <i class="fa fa fa-warning"
+                                                                       aria-hidden="true"
+                                                                       style="color:orange;"
+                                                                    ></i><span class="grid-loading precheck-loader hidden  precheck-loader hidden"><img src="/signal/assets/spinner.gif" width="20" align="middle" /></span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="col-min-250 col-max-300 cell-break">{{{reason}}}</td>
+                                                    </tr>
+                                                    {{/ifCondEq}}
+                                                    {{/ifCondEq}}
+                                                    {{#ifCondEq optional false}}
+                                                        {{#ifCondEq running false}}
+                                                            {{#ifeq @index 0}}
+                                                            <tr role="row" class="odd" id="accordion{{@index}}">
+                                                            {{/ifeq}}
+                                                            {{#ifnoteq @index 0}}
+                                                            <tr role="row" class="even" id="accordion{{@index}}">
+                                                            {{/ifnoteq}}
+                                                            <td class="col-min-300 col-max-650 cell-break check-role-access">
+                                                                {{{displayName}}}</td>
+                                                            <td class="col-min-150 col-max-300 cell-break">
+                                                                <div class="col-container">
+                                                                    <div class="col-height">
+                                                                        <i class="fa fa-window-close show-error-log "
+                                                                           aria-hidden="true"
+                                                                           style="color:red;"
+                                                                        ></i><span class="grid-loading precheck-loader hidden"><img src="/signal/assets/spinner.gif" width="20" align="middle" /></span>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="col-min-250 col-max-300 cell-break">{{{reason}}}</td>
+                                                        </tr>
+                                                        {{/ifCondEq}}
+                                                    {{/ifCondEq}}
+                                                {{/each}}
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                {{/each}}
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                {{/if_eq}}
+            </div>
+        </div>
+        {{#if_eq content.type "pvDashCalendar"}}
+            <div class="col-lg-12" style="margin-top: -90px;">
+                <div id="legend" class="fc-view-container">
+                    <p style="margin-bottom: 10px"><strong style="font-size: 12px;">Legend</strong></p>
+
+                    <div class="legendColorBox"
+                         style="background-color: #3b789e">&nbsp;
+                    </div>
+                    <span
+                            class="legendLabel text-muted">Individual Case Review Alert</span>
+
+                    <div class="legendColorBox"
+                         style="background-color: #acd3e1">&nbsp;
+                    </div>
+                    <span
+                            class="legendLabel text-muted">Aggregate Review Alert</span>
+
+                    <div class="legendColorBox"
+                         style="background-color: #FF99F0">&nbsp;
+                    </div>
+                    <span
+                            class="legendLabel text-muted">Action Item</span>
+
+                    <div class="legendColorBox"
+                         style="background-color: #45b25f">&nbsp;
+                    </div>
+                    <span
+                            class="legendLabel text-muted">Meeting</span>
+                </div>
+            </div>
+        {{/if_eq}}
+    </div>
+</div>
