@@ -30,8 +30,8 @@ pipeline {
                     -Dsonar.login=f2bfb920d317b79d27cb250456aa42c94099d44e \
                     -Dsonar.pullrequest.key=${env.CHANGE_ID} \
                     -Dsonar.pullrequest.branch=${env.CHANGE_BRANCH} \
-                    -Dsonar.pullrequest.base=${env.CHANGE_TARGET} \
-                    -Dsonar.pullrequest.github.repository=<owner>/<repo>
+                    -Dsonar.pullrequest.base=main \
+                    -Dsonar.pullrequest.github.repository=rxl-amitsharma1/testSIG7
                     """
                 }
             }
