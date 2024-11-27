@@ -267,6 +267,7 @@ class ImportConfigurationService {
         return resultMap
     }
 
+    //TODO
     List<Map> resultMapData(List<Configuration> alertsResultList, def alertType = '') {
         String userTimezone = userService.getCurrentUserPreference()?.timeZone ?: Constants.UTC
         List<Map> finalMap = []
